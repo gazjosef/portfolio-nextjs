@@ -16,17 +16,17 @@ export const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" className="nav-links">
+            <Link href="/story" className="nav-links">
               <a>Story</a>
             </Link>
           </li>
           <li>
-            <Link href="/" className="nav-links">
+            <Link href="/work" className="nav-links">
               <a>Work</a>
             </Link>
           </li>
           <li>
-            <Link href="/" className="nav-links">
+            <Link href="/contact" className="nav-links">
               <a>Contact</a>
             </Link>
           </li>
