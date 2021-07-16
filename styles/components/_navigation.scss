@@ -1,0 +1,23 @@
+.navbar {
+  width: 80rem;
+  margin: 1rem auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 2rem;
+
+  &__logo {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__links {
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+    }
+  }
+}
