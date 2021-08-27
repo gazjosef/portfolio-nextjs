@@ -1,0 +1,38 @@
+.post {
+  width: 100%;
+  padding: 1rem 6rem;
+  margin-top: 6rem;
+
+  &__image {
+    margin-bottom: 4rem;
+    border-radius: 0.25rem;
+  }
+
+  &__description {
+    margin-top: 2rem;
+
+    a {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__extra {
+    .author {
+      img {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      h3 {
+        font-weight: bold;
+      }
+    }
+  }
+}
