@@ -4,7 +4,7 @@ import laptopPic from "../public/img/laptop.jpeg";
 
 export default function Post() {
   return (
-    <div className="posts">
+    <div className="post">
       <Image
         src={laptopPic}
         alt=""

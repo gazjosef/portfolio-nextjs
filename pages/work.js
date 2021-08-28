@@ -6,10 +6,10 @@ export default function Work() {
       <h1>Work</h1>
       <div className="section-work__grid">
         <Post />
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
+        <Post />
+        <Post />
+        <Post />
+        <Post />
       </div>
     </section>
   );
