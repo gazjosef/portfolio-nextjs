@@ -11,6 +11,9 @@ export default function Work() {
         <Post />
         <Post />
       </div>
+      <div className="section-work__sidebar">
+        <h1>Sidebar</h1>
+      </div>
     </section>
   );
 }
