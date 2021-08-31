@@ -2,12 +2,21 @@
   display: flex;
   justify-content: space-between;
 
-  margin: 2.5rem;
+  h1 {
+    border-bottom-width: 4px;
+
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: bold;
+  }
 
   &__grid {
     width: 75%;
+    margin: 2.5rem;
+
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
 
     @include respond(big-desktop) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
