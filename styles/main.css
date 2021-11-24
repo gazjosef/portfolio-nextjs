@@ -271,15 +271,6 @@ body {
   height: 85vh;
 }
 
-.section-work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .section-work__title {
   padding: 1.25rem;
   width: 100%;

@@ -14,9 +14,11 @@ export const Layout = ({ children }) => {
       </header>
 
       <Nav />
+
       {router.pathname === "/"}
 
       <main>{children}</main>
+
       <Footer />
     </>
   );
