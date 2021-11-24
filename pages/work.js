@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import Post from "../components/Post";
 
 export default function Work() {
@@ -20,4 +22,14 @@ export default function Work() {
       </div>
     </section>
   );
+}
+
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join("projects"));
+
+  console.log(files);
+
+  return {
+    props: {},
+  };
 }
