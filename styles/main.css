@@ -31,7 +31,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 !important;
+  padding: 0;
   background-color: white;
 }
 
@@ -58,6 +58,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #1a1a1a;
+  padding: 1rem;
 }
 
 .paragraph {
@@ -273,7 +274,6 @@ body {
 
 .section-work__title {
   padding: 1.25rem;
-  width: 100%;
   border-bottom: 4px solid rgba(0, 0, 0, 0.5);
   font-size: 3rem;
   line-height: 1;
