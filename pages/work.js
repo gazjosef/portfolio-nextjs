@@ -3,11 +3,15 @@ import path from "path";
 import matter from "gray-matter";
 import Post from "../components/Post";
 
-export default function Work() {
+export default function Work({ projects }) {
+  console.log(projects);
+
   return (
     <section className="section-work">
-      <h1>Work</h1>
+      <h1 className="section-work__title">Latest Projects</h1>
+
       <div className="section-work__grid">
+        {/* <Post />
         <Post />
         <Post />
         <Post />
@@ -15,12 +19,15 @@ export default function Work() {
         <Post />
         <Post />
         <Post />
-        <Post />
-        <Post />
+        <Post /> */}
+        {projects.map((project, index) => (
+          <h3>{project.frontmatter.title}</h3>
+        ))}
       </div>
-      <div className="section-work__sidebar">
+
+      {/* <div className="section-work__sidebar">
         <h1>Sidebar</h1>
-      </div>
+      </div> */}
     </section>
   );
 }
@@ -47,6 +54,8 @@ export async function getStaticProps() {
   console.log(projects);
 
   return {
-    props: {},
+    props: {
+      projects,
+    },
   };
 }
