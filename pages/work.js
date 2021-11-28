@@ -2,18 +2,15 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import matter from "gray-matter";
-import Post from "../components/Post";
+import Post from "@/components/Post";
 
 export default function Work({ projects }) {
-  console.log(projects);
-
   return (
     <section className="section-work">
-      <h1 className="section-work__title">Latest Projects</h1>
+      <h1 className="section-work__title">Portfolio</h1>
 
       <div className="section-work__grid">
         {projects.map((project, index) => (
-          // <h3>{project.frontmatter.title}</h3>
           <Post key={index} project={project} />
         ))}
       </div>
@@ -44,7 +41,7 @@ export async function getStaticProps() {
     };
   });
 
-  console.log(projects);
+  // console.log(projects);
 
   return {
     props: {
