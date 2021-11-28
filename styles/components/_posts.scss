@@ -1,15 +1,10 @@
 .post {
-  //   $tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-  //     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
-  width: 100%;
-  padding: 1rem 6rem;
-  margin-top: 6rem;
-
+  background-color: #fff;
   border-radius: 0.5rem;
-
-  //   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-  //     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  margin-top: 6rem;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   &__image {
     margin-bottom: 4rem;
@@ -32,21 +27,39 @@
 
     p {
       margin-top: 0.5rem;
+      color: #4b5963;
     }
   }
 
   &__extra {
-    .author {
-      img {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        width: 2.5rem;
-        height: 2.5rem;
-      }
+    margin-top: 1.5rem;
+    width: 100%;
 
-      h3 {
-        font-weight: bold;
-      }
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__button {
+    color: #111827;
+
+    &:hover {
+      color: #2563eb;
     }
   }
+
+  // &__extra {
+  //   .author {
+  //     img {
+  //       margin-left: 1rem;
+  //       margin-right: 1rem;
+  //       width: 2.5rem;
+  //       height: 2.5rem;
+  //     }
+
+  //     h3 {
+  //       font-weight: bold;
+  //     }
+  //   }
+  // }
 }

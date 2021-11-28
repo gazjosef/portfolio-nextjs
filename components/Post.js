@@ -1,13 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import laptopPic from "../public/img/laptop.jpeg";
+import CategoryLabel from "./CategoryLabel";
 
 export default function Post({ project }) {
-  console.log(project);
   return (
     <div className="post">
       <Image
-        // src={laptopPic}
         src={project.frontmatter.cover_image}
         alt=""
         height={420}
@@ -17,22 +15,19 @@ export default function Post({ project }) {
 
       <div className="post__label">
         <span>{project.frontmatter.date}</span>
-        <p>label</p>
+        <CategoryLabel>{project.frontmatter.category}</CategoryLabel>
       </div>
 
       <div className="post__description">
         <Link href={``}>
-          <a>Post Title</a>
+          <a>{project.frontmatter.title}</a>
         </Link>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-          reprehenderit.
-        </p>
+        <p>{project.frontmatter.excerpt}</p>
       </div>
 
-      <div className="post__label+author">
+      <div className="post__extra">
         <Link href={``}>
-          <a>Read More</a>
+          <a className="post__button">Read More</a>
         </Link>
       </div>
     </div>

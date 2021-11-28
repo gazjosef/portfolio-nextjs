@@ -1,0 +1,30 @@
+.label {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+
+  a {
+    color: rgba(243, 244, 246, 1);
+    font-weight: 700;
+  }
+}
+
+.bg {
+  &--hotpink {
+    background-color: hotpink;
+  }
+  &--orangered {
+    background-color: orangered;
+  }
+  &--steelblue {
+    background-color: steelblue;
+  }
+  &--forestgreen {
+    background-color: forestgreen;
+  }
+  &--midnightblue {
+    background-color: midnightblue;
+  }
+  &--limegreen {
+    background-color: limegreen;
+  }
+}

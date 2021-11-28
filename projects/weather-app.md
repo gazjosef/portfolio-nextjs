@@ -3,7 +3,7 @@ title: "Weather App"
 date: "May 7, 2021"
 excerpt: "In this article we will look at some of the new features offered in version 8 of PHP"
 cover_image: "/images/posts/img4.jpg"
-category: "PHP"
+category: "React"
 author: "Sara Johnson"
 author_image: "https://randomuser.me/api/portraits/women/12.jpg"
 ---
