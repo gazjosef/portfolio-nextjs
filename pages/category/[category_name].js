@@ -1,23 +1,30 @@
 import fs from "fs";
 import path from "path";
-import Link from "next/link";
 import matter from "gray-matter";
+import Link from "next/link";
 import Post from "@/components/Post";
+import CategoryList from "@/components/CategoryList";
+import { getPosts } from "@/lib/posts";
 
-export default function CategoryBlogPage({ projects }) {
+export default function CategoryBlogPage({
+  projects,
+  categoryName,
+  categories,
+}) {
   return (
     <section className="section-work">
-      <h1 className="section-work__title">Portfolio</h1>
+      <main className="section-work__main">
+        <h1 className="section-work__title">Portfolio</h1>
+        <div className="section-work__grid">
+          {projects.map((project, index) => (
+            <Post key={index} project={project} />
+          ))}
+        </div>
+      </main>
 
-      <div className="section-work__grid">
-        {projects.map((project, index) => (
-          <Post key={index} project={project} />
-        ))}
-      </div>
-
-      {/* <div className="section-work__sidebar">
-        <h1>Sidebar</h1>
-      </div> */}
+      <aside className="section-work__sidebar">
+        <CategoryList categories={categories} />
+      </aside>
     </section>
   );
 }
@@ -49,38 +56,22 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { category_name } }) {
-  console.log(category_name);
+  const projects = getPosts();
 
-  const files = fs.readdirSync(path.join("projects"));
-
-  const projects = files.map((filename) => {
-    const slug = filename.replace(".md", "");
-
-    const markdownWithMeta = fs.readFileSync(
-      path.join("projects", filename),
-      "utf-8"
-    );
-
-    const { data: frontmatter } = matter(markdownWithMeta);
-
-    return {
-      slug,
-      frontmatter,
-    };
-  });
+  // Get categories for sidebar
+  const categories = projects.map((post) => post.frontmatter.category);
+  const uniqueCategories = [...new Set(categories)];
 
   // Filter Projects by Category
-  // const categoryProjects = projects.filter(
-  //   (project) => project.frontmatter.category.toLowerCase() === category_name
-  // );
-
-  // console.log(categoryProjects);
+  const categoryProjects = projects.filter(
+    (project) => project.frontmatter.category.toLowerCase() === category_name
+  );
 
   return {
     props: {
-      projects: projects,
-      // projects: categoryProjects.sort(sortByDate),
-      // categoryName: category_name,
+      projects: categoryProjects,
+      categoryName: category_name,
+      categories: uniqueCategories,
     },
   };
 }

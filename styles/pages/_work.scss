@@ -1,4 +1,12 @@
 .section-work {
+  display: flex;
+  justify-content: space-between;
+
+  &__main {
+    width: 75%;
+    margin: 2.5rem;
+  }
+
   &__title {
     padding: 1.25rem;
     border-bottom: 4px solid rgba(0, 0, 0, 0.5);
@@ -9,9 +17,6 @@
   }
 
   &__grid {
-    width: 75%;
-    margin: 2.5rem;
-
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.25rem;
