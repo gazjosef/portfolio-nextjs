@@ -38,18 +38,18 @@ export async function getStaticPaths() {
 
   console.log(categories);
 
-  // const paths = categories.map((category) => ({
-  //   params: { category_name: category },
-  // }));
+  const paths = categories.map((category) => ({
+    params: { category_name: category },
+  }));
 
   return {
-    paths: [],
+    paths,
     fallback: false,
   };
 }
 
-export async function getStaticProps() {
-  // console.log(category_name);
+export async function getStaticProps({ params: { category_name } }) {
+  console.log(category_name);
 
   const files = fs.readdirSync(path.join("projects"));
 
