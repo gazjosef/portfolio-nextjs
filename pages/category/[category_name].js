@@ -36,18 +36,20 @@ export async function getStaticPaths() {
     return frontmatter.category.toLowerCase();
   });
 
-  const paths = categories.map((category) => ({
-    params: { category_name: category },
-  }));
+  console.log(categories);
+
+  // const paths = categories.map((category) => ({
+  //   params: { category_name: category },
+  // }));
 
   return {
-    paths,
+    paths: [],
     fallback: false,
   };
 }
 
-export async function getStaticProps({ params: { category_name } }) {
-  console.log(category_name);
+export async function getStaticProps() {
+  // console.log(category_name);
 
   const files = fs.readdirSync(path.join("projects"));
 
@@ -67,11 +69,18 @@ export async function getStaticProps({ params: { category_name } }) {
     };
   });
 
-  //   console.log(projects);
+  // Filter Projects by Category
+  // const categoryProjects = projects.filter(
+  //   (project) => project.frontmatter.category.toLowerCase() === category_name
+  // );
+
+  // console.log(categoryProjects);
 
   return {
     props: {
-      projects,
+      projects: projects,
+      // projects: categoryProjects.sort(sortByDate),
+      // categoryName: category_name,
     },
   };
 }

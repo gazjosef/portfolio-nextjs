@@ -11,7 +11,7 @@ export default function CategoryLabel({ children }) {
   };
   return (
     <div className={`label bg--${colorKey[children]}`}>
-      <Link href={`/blog/catgeory/${children.toLowerCase()}`}>{children}</Link>
+      <Link href={`/category/${children.toLowerCase()}`}>{children}</Link>
     </div>
   );
 }
