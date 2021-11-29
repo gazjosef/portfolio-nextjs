@@ -24,7 +24,6 @@ export default function CategoryBlogPage({ projects }) {
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join("projects"));
-  console.log(files);
 
   const categories = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
@@ -47,7 +46,9 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: category_name }) {
+export async function getStaticProps({ params: { category_name } }) {
+  console.log(category_name);
+
   const files = fs.readdirSync(path.join("projects"));
 
   const projects = files.map((filename) => {
