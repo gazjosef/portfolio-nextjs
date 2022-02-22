@@ -1,12 +1,14 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import Image from "next/image";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
   return (
     <>
       <article className="article-home">
         <section className="article-home__text">
-          <h1 className="heading-one">Hi, my name is Gareth</h1>
+          <h1 className="heading-home">Hi, my name is Gareth</h1>
           <h2 className="heading-two">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
             similique quia sunt soluta porro illum?
@@ -36,15 +38,26 @@ export default function Home() {
         </section>
         <section className="article-story__text">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
-            voluptates laborum voluptatibus nostrum facilis dolorem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            aliquid nemo hic officiis ducimus magnam, quisquam pariatur quod
+            tempore corrupti est similique, culpa incidunt. Velit, nemo? Rerum
+            ab, consequatur maiores perferendis necessitatibus similique fugiat
+            quasi, alias cupiditate sapiente culpa distinctio.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            tempore voluptatibus itaque magni consectetur commodi temporibus
+            rem! Incidunt unde commodi velit. Libero odio non vitae eum vero at
+            eos aspernatur dignissimos magnam repudiandae saepe, minus,
+            voluptatibus dolorem ducimus veritatis perspiciatis?
           </p>
         </section>
       </article>
 
-      <article className="article-portfolio">
-        <h1 className="heading-one">Portfolio</h1>
-      </article>
+      {/* <article className="article-portfolio">
+      </article> */}
+      <Portfolio />
 
       <article className="article-contact">
         <section className="article-contact__title">

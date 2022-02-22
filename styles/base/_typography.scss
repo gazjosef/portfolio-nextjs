@@ -6,10 +6,17 @@ body {
   color: $color-black-900;
 }
 
+.heading-home {
+  color: $color-primary-300;
+  font-family: $font-primary;
+  font-size: 3.5rem;
+}
+
 .heading-one {
   color: $color-primary-300;
   font-family: $font-primary;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 .heading-two {
