@@ -35,6 +35,7 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
 
   &__title {
     grid-row: 1 / span 1;
@@ -74,15 +75,18 @@
     text-align: center;
   }
 
-  &__details {
+  &__image {
     padding: 2rem;
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__text {
     background-color: $color-white-100;
     padding: 2rem;
   }
-
-  // &__form {
-  // }
 }

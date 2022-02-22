@@ -13,6 +13,8 @@ export default function Home() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
             similique quia sunt soluta porro illum?
           </h2>
+          <button className="btn">Story</button>
+          <button className="btn">Portfoloio</button>
         </section>
         <section className="article-home__image">
           <Image
@@ -30,7 +32,7 @@ export default function Home() {
         </section>
         <section className="article-story__image">
           <Image
-            src="/images/article/undraw_startup_life_re_8ow9.svg"
+            src="/images/article/undraw_programming_re_kg9v.svg"
             alt="responsive"
             width={500}
             height={350}
@@ -63,60 +65,32 @@ export default function Home() {
         <section className="article-contact__title">
           <h1 className="heading-one">Contact</h1>
         </section>
-        <section className="article-contact__details">
+        <section className="article-contact__image">
           <Image
             src="/images/article/undraw_profile_re_4a55.svg"
             alt="responsive"
             width={500}
             height={350}
           />
+        </section>
+        <section className="article-contact__details">
           <div className="article-contact__text">
             <ul>
               <li>
                 <FaGithub /> Github
               </li>
               <li>
+                <a href="">https://github.com/gazjosef</a>
+              </li>
+              <br />
+              <li>
                 <FaLinkedin /> LinkedIn
+              </li>
+              <li>
+                <a href="">https://www.linkedin.com</a>
               </li>
             </ul>
           </div>
-        </section>
-        <section className="article-contact__form">
-          <form action="/action_page.php" className="form">
-            <label htmlFor="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-
-            <label htmlFor="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-
-            <label htmlFor="lname">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-            />
-
-            <label htmlFor="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style={{ height: "70px" }}
-            ></textarea>
-
-            <input type="submit" value="Submit" className="btn" />
-          </form>
         </section>
       </article>
     </>
