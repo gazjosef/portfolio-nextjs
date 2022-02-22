@@ -3,47 +3,25 @@
 //* --- Primary
 $color-primary-300: blue;
 
-//* --- White
+//* --- White To Black
 $color-white: hsl(0, 0%, 100%); //* White
+$color-white-50: hsl(0, 0%, 95%); //* Concrete White
 $color-white-100: hsl(0, 0%, 90%); //* Mercury White
 $color-white-200: hsl(0, 0%, 80%); //* Silver White
-
-//* --- Grey
 $color-grey-300: hsl(0, 0%, 70%); //* Nobel Grey
 $color-grey-400: hsl(0, 0%, 60%); //* Dusty Grey
 $color-grey-500: hsl(0, 0%, 50%); //* Grey
 $color-grey-600: hsl(0, 0%, 40%); //* Dove Grey
 $color-grey-700: hsl(0, 0%, 30%); //* Tundora Grey
-
-//* --- Black
-$color-black: hsl(0, 0%, 0%); //* Black
-$color-black-900: hsl(0, 0%, 10%); //* Cod Grey
 $color-black-800: hsl(0, 0%, 20%); //* Mine Shaft Grey
-
-//* --- Success
-$color-success-100: hsl(134, 61%, 81%); //* Madang Green
-$color-success-200: hsl(134, 61%, 61%); //* Pastel Green
-$color-success-300: hsl(134, 61%, 41%); //* Eucalyptus Green
-$color-success-350: hsl(134, 61%, 31%); //* Forest Green
-$color-success-400: hsl(134, 61%, 21%); //* Parsley Green
-
-//* --- Danger
-$color-danger-100: hsl(354, 68%, 94%); //* We Peep
-$color-danger-200: hsl(354, 70%, 74%); //* Sea Pink
-$color-danger-300: hsl(354, 70%, 54%); //* Valencia Red
-$color-danger-400: hsl(354, 70%, 34%); //* Old Brick Red
-$color-danger-500: hsl(354, 69%, 14%); //* Aubergine Red
-
-//* --- Warning
-$color-warning-100: hsl(46, 100%, 91%); //* Barley White
-$color-warning-200: hsl(45, 100%, 71%); //* Kournikova Orange
-$color-warning-300: hsl(45, 100%, 51%); //* Amber Orange
-$color-warning-400: hsl(45, 100%, 31%); //* Pirate Gold Orange
-$color-warning-500: hsl(45, 100%, 11%); //* Cola Orange
+$color-black-900: hsl(0, 0%, 10%); //* Cod Grey
+$color-black: hsl(0, 0%, 0%); //* Black
 
 //* FONT
 
 $default-font-size: 1.6rem;
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Lato", sans-serif;
 
 //* GRID
 

@@ -4,9 +4,11 @@ export const Nav = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <a href="/">
-          <span>Gareth Hind</span> Web Developer
-        </a>
+        <Link href="/">
+          <a>
+            <span>Gareth Hind</span> Web Developer
+          </a>
+        </Link>
       </div>
       <div className="navbar__links">
         <ul>

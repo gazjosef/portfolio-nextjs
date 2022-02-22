@@ -1,8 +1,8 @@
-import { Meta } from "../Meta/Meta";
+import { Meta } from "./Meta";
 import { useRouter } from "next/router";
 
-import { Nav } from "../Nav/Nav";
-import { Footer } from "../Footer/Footer";
+import { Nav } from "@/components/Nav";
+import { Footer } from "@/components/Footer";
 
 export const Layout = ({ children }) => {
   const router = useRouter();
