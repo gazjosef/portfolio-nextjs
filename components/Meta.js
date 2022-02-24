@@ -12,7 +12,11 @@ export const Meta = ({ title, keywords, description }) => {
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+      <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        // crossOrigin
+      />
 
       {/* //* Font: Lato */}
       <link

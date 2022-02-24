@@ -8,10 +8,8 @@
   &__text {
     grid-column: 1 / span 1;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    place-items: center;
   }
 
   &__image {
@@ -45,16 +43,13 @@
   }
 
   &__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
   }
 
   &__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
   }
 }
 
@@ -76,17 +71,17 @@
   }
 
   &__image {
-    padding: 2rem;
+    display: grid;
+    place-items: center;
   }
 
   &__details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
   }
 
   &__text {
     background-color: $color-white-100;
-    padding: 2rem;
+    padding: 3rem;
   }
 }

@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import Image from "next/image";
 import Portfolio from "@/components/Portfolio";
@@ -13,8 +13,10 @@ export default function Home() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
             similique quia sunt soluta porro illum?
           </h2>
-          <button className="btn">Story</button>
-          <button className="btn">Portfoloio</button>
+          <div>
+            <button className="btn btn--home">Story</button>
+            <button className="btn btn--home">Portfoloio</button>
+          </div>
         </section>
         <section className="article-home__image">
           <Image
@@ -76,6 +78,13 @@ export default function Home() {
         <section className="article-contact__details">
           <div className="article-contact__text">
             <ul>
+              <li>
+                <FaEnvelope /> Email
+              </li>
+              <li>
+                <a href="">garethjhind@gmail.com</a>
+              </li>
+              <br />
               <li>
                 <FaGithub /> Github
               </li>
