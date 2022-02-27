@@ -22,7 +22,6 @@
 }
 
 .article-story,
-.article-portfolio,
 .article-contact {
   height: 100vh;
   padding: 10rem 20rem;
@@ -53,8 +52,24 @@
   }
 }
 
-// .article-portfolio {
-// }
+.article-portfolio {
+  padding: 10rem 20rem;
+  display: grid;
+
+  &__title {
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  &__grid {
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
 
 .article-contact {
   background-color: lightblue;

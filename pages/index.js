@@ -1,9 +1,14 @@
+import fs from "fs";
+import path from "path";
+import Link from "next/link";
+import matter from "gray-matter";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-
+import Post from "@/components/Post";
 import Image from "next/image";
 import Portfolio from "@/components/Portfolio";
 
-export default function Home() {
+export default function Home({ projects }) {
+  console.log(projects);
   return (
     <>
       <article className="article-home">
@@ -59,9 +64,18 @@ export default function Home() {
         </section>
       </article>
 
-      {/* <article className="article-portfolio">
-      </article> */}
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <article className="article-portfolio">
+        <section className="article-portfolio__title">
+          <h1 className="heading-one">Portfolio</h1>
+        </section>
+        <section className="article-portfolio__grid">
+          {projects.map((project, index) => (
+            <Post key={index} project={project} />
+          ))}
+        </section>
+        <section className="article-portfolio__aside">Aside</section>
+      </article>
 
       <article className="article-contact">
         <section className="article-contact__title">
@@ -104,4 +118,30 @@ export default function Home() {
       </article>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join("projects"));
+
+  const projects = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+
+    const markdownWithMeta = fs.readFileSync(
+      path.join("projects", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      projects,
+    },
+  };
 }

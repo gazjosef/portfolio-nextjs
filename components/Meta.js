@@ -8,7 +8,7 @@ export const Meta = ({ title, keywords, description }) => {
       <meta name="description" content={description} />
       <meta charSet="utf-8" />
 
-      <link rel="manifest" href="img/favicon_io/site.webmanifest" />
+      {/* <link rel="manifest" href="img/favicon_io/site.webmanifest" /> */}
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />
 
