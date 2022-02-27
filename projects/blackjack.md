@@ -4,9 +4,7 @@ date: "May 5, 2021"
 excerpt: "The most widely played casino banking game in the world"
 cover_image: "/images/posts/img3.jpg"
 category: "JavaScript"
-categories:
-  - JavaScript
-  - SASS
+categories: ["JavaScript", "SASS"]
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

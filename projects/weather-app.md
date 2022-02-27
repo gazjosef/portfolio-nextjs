@@ -4,11 +4,7 @@ date: "May 7, 2021"
 excerpt: "In this article we will look at some of the new features offered in version 8 of PHP"
 cover_image: "/images/posts/img4.jpg"
 category: "React"
-categories:
-  - API
-  - NextJS
-  - React
-  - SASS
+categories: ["API", "NextJS", "React", "SASS"]
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
