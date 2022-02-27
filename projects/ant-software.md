@@ -4,6 +4,11 @@ date: "May 7, 2021"
 excerpt: "Professional website showcasing the works of Ant Software"
 cover_image: "/images/posts/img6.jpg"
 category: "React"
+categories:
+  - NextJS
+  - $Paid
+  - React
+  - SASS
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

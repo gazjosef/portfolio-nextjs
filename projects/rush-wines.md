@@ -4,6 +4,10 @@ date: "May 5, 2021"
 excerpt: "Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them"
 cover_image: "/images/posts/img2.jpg"
 category: "Shopify"
+categories:
+  - $Paid
+  - Shopify
+  - SASS
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
