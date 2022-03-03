@@ -6,7 +6,7 @@ import Post from "@/components/Post";
 import Image from "next/image";
 
 export default function Home({ projects }) {
-  console.log(projects);
+  // console.log(projects);
   return (
     <>
       <article className="article-home">
