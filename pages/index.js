@@ -1,11 +1,9 @@
 import fs from "fs";
 import path from "path";
-import Link from "next/link";
 import matter from "gray-matter";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Post from "@/components/Post";
 import Image from "next/image";
-import Portfolio from "@/components/Portfolio";
 
 export default function Home({ projects }) {
   console.log(projects);
@@ -64,7 +62,6 @@ export default function Home({ projects }) {
         </section>
       </article>
 
-      {/* <Portfolio /> */}
       <article className="article-portfolio">
         <section className="article-portfolio__title">
           <h1 className="heading-one">Portfolio</h1>
