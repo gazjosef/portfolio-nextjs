@@ -17,8 +17,12 @@ export default function Home({ projects }) {
             similique quia sunt soluta porro illum?
           </h2>
           <div>
-            <button className="btn btn--home">Story</button>
-            <button className="btn btn--home">Portfoloio</button>
+            <button className="btn btn--home">
+              <a href="#story">Story</a>
+            </button>
+            <button className="btn btn--home">
+              <a href="#portfolio">Portfoloio</a>
+            </button>
           </div>
         </section>
         <section className="article-home__image">
@@ -31,7 +35,7 @@ export default function Home({ projects }) {
         </section>
       </article>
 
-      <article className="article-story">
+      <article id="story" className="article-story">
         <section className="article-story__title">
           <h1 className="heading-one">Story</h1>
         </section>
@@ -62,7 +66,7 @@ export default function Home({ projects }) {
         </section>
       </article>
 
-      <article className="article-portfolio">
+      <article id="portfolio" className="article-portfolio">
         <section className="article-portfolio__title">
           <h1 className="heading-one">Portfolio</h1>
         </section>

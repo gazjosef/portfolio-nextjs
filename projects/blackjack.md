@@ -2,7 +2,7 @@
 title: "Blackjack"
 date: "May 5, 2021"
 excerpt: "The most widely played casino banking game in the world"
-cover_image: "/images/posts/img3.jpg"
+cover_image: "/images/posts/BlackJack.png"
 category: "JavaScript"
 categories: ["JavaScript", "SASS"]
 ---
