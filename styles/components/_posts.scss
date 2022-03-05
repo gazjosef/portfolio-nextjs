@@ -1,14 +1,15 @@
 .post {
   background-color: #fff;
   border-radius: 0.5rem;
-  // margin-top: 3rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 1.5rem 2.5rem;
   width: 100%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   &__image {
-    margin-bottom: 4rem;
     border-radius: 0.25rem;
+    // height: 100%;
+    margin-bottom: 4rem;
+    object-fit: contain;
   }
 
   &__label {
@@ -41,6 +42,7 @@
   }
 
   &__button {
+    margin-right: 1.5rem;
     color: #111827;
 
     &:hover {

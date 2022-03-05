@@ -2,9 +2,11 @@
 title: "Ant Software"
 date: "May 7, 2021"
 excerpt: "Professional website showcasing the works of Ant Software"
-cover_image: "/images/posts/img6.jpg"
+cover_image: "/images/posts/AntSoftwareDev.png"
 category: "React"
 categories: ["NextJS", "$Paid", "React", "SASS"]
+github: "https://github.com/gazjosef/"
+live: "https://gazjosef.github.io/blackjack-game/"
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

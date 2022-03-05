@@ -5,6 +5,8 @@ excerpt: "The most widely played casino banking game in the world"
 cover_image: "/images/posts/BlackJack.png"
 category: "JavaScript"
 categories: ["JavaScript", "SASS"]
+github: "https://github.com/gazjosef/blackjack-game"
+live: "https://gazjosef.github.io/blackjack-game/"
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

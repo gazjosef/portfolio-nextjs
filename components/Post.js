@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import CategoryLabel from "./CategoryLabel";
+import { FaEye, FaGithub } from "react-icons/fa";
 
 export default function Post({ project }) {
   return (
@@ -26,9 +27,13 @@ export default function Post({ project }) {
       </div>
 
       <div className="post__extra">
-        <Link href={``}>
-          <a className="post__button">Read More</a>
-        </Link>
+        <a className="post__button" href={`${project.frontmatter.github}`}>
+          <FaGithub /> Code
+        </a>
+
+        <a className="post__button" href={`${project.frontmatter.live}`}>
+          <FaEye /> Live
+        </a>
       </div>
     </div>
   );
