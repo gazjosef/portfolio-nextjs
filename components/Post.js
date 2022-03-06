@@ -5,7 +5,7 @@ import { FaEye, FaGithub } from "react-icons/fa";
 
 export default function Post({ project }) {
   let categories = project.frontmatter.categories;
-  console.log(categories);
+  // console.log(categories);
   return (
     <div className="post">
       <Image
@@ -17,7 +17,7 @@ export default function Post({ project }) {
       />
 
       <div className="post__label">
-        <span>{project.frontmatter.date}</span>
+        {/* <span>{project.frontmatter.date}</span> */}
         {/* <CategoryLabel>{project.frontmatter.category}</CategoryLabel> */}
         {categories.map((category, index) => {
           <CategoryLabel key={index}>{category}</CategoryLabel>;

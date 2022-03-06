@@ -6,15 +6,15 @@ import Post from "@/components/Post";
 import Image from "next/image";
 
 export default function Home({ projects }) {
-  // console.log(projects);
   return (
     <>
       <article id="home" className="article-home">
         <section className="article-home__text">
           <h1 className="heading-home">Hi, my name is Gareth</h1>
           <h2 className="heading-two">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-            similique quia sunt soluta porro illum?
+            I'm a web designer and web developer. I spend my days with my hands
+            in many different areas of web development from front-end
+            engineering to back end programming.
           </h2>
           <div>
             <button className="btn btn--home">
