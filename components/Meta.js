@@ -26,15 +26,11 @@ export const Meta = ({ title, keywords, description }) => {
         sizes="16x16"
         href="/images/favicon_io/favicon-16x16.png"
       />
-      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="manifest" href="/images/favicon_io/site.webmanifest" />
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-      <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-        // crossOrigin
-      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
 
       <title>{title}</title>
     </Head>

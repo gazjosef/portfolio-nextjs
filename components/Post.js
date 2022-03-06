@@ -4,6 +4,8 @@ import CategoryLabel from "./CategoryLabel";
 import { FaEye, FaGithub } from "react-icons/fa";
 
 export default function Post({ project }) {
+  let categories = project.frontmatter.categories;
+  console.log(categories);
   return (
     <div className="post">
       <Image
@@ -16,13 +18,15 @@ export default function Post({ project }) {
 
       <div className="post__label">
         <span>{project.frontmatter.date}</span>
-        <CategoryLabel>{project.frontmatter.category}</CategoryLabel>
+        {/* <CategoryLabel>{project.frontmatter.category}</CategoryLabel> */}
+        {categories.map((category, index) => {
+          <CategoryLabel key={index}>{category}</CategoryLabel>;
+          // console.log(category);
+        })}
       </div>
 
       <div className="post__description">
-        <Link href={``}>
-          <a>{project.frontmatter.title}</a>
-        </Link>
+        <a>{project.frontmatter.title}</a>
         <p>{project.frontmatter.excerpt}</p>
       </div>
 
