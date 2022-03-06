@@ -13,24 +13,24 @@ export const Nav = () => {
       <div className="navbar__links">
         <ul>
           <li>
-            <Link href="/" className="nav-links">
-              <a>Home</a>
-            </Link>
+            <a href="#home" className="nav-links">
+              Home
+            </a>
           </li>
           <li>
-            <Link href="/story" className="nav-links">
-              <a>Story</a>
-            </Link>
+            <a href="#story" className="nav-links">
+              Story
+            </a>
           </li>
           <li>
-            <Link href="/work" className="nav-links">
-              <a>Work</a>
-            </Link>
+            <a href="#portfolio" className="nav-links">
+              Portfolio
+            </a>
           </li>
           <li>
-            <Link href="/contact" className="nav-links">
-              <a>Contact</a>
-            </Link>
+            <a href="#contact" className="nav-links">
+              Contact
+            </a>
           </li>
         </ul>
       </div>

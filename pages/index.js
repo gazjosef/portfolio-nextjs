@@ -9,7 +9,7 @@ export default function Home({ projects }) {
   // console.log(projects);
   return (
     <>
-      <article className="article-home">
+      <article id="home" className="article-home">
         <section className="article-home__text">
           <h1 className="heading-home">Hi, my name is Gareth</h1>
           <h2 className="heading-two">
