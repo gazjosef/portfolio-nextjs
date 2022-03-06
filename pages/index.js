@@ -78,7 +78,7 @@ export default function Home({ projects }) {
         <section className="article-portfolio__aside">Aside</section>
       </article>
 
-      <article className="article-contact">
+      <article id="contact" className="article-contact">
         <section className="article-contact__title">
           <h1 className="heading-one">Contact</h1>
         </section>
