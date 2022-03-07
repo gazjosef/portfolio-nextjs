@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Post from "@/components/Post";
 import Image from "next/image";
 
@@ -9,13 +9,15 @@ export default function Home({ projects }) {
   return (
     <>
       <article id="home" className="article-home">
-        <section className="article-home__text">
+        <section className="article-home__title">
           <h1 className="heading-home">Hi, my name is Gareth</h1>
-          <h2 className="heading-two">
+        </section>
+        <section className="article-home__text">
+          <p className="heading-two">
             I'm a web designer and web developer. I spend my days with my hands
             in many different areas of web development from front-end
             engineering to back end programming.
-          </h2>
+          </p>
           <div>
             <button className="btn btn--home">
               <a href="#story">Story</a>
@@ -75,7 +77,6 @@ export default function Home({ projects }) {
             <Post key={index} project={project} />
           ))}
         </section>
-        <section className="article-portfolio__aside">Aside</section>
       </article>
 
       <article id="contact" className="article-contact">
@@ -92,28 +93,32 @@ export default function Home({ projects }) {
         </section>
         <section className="article-contact__details">
           <div className="article-contact__text">
-            <ul>
-              <li>
-                <FaEnvelope /> Email
-              </li>
-              <li>
-                <a href="">garethjhind@gmail.com</a>
-              </li>
-              <br />
-              <li>
-                <FaGithub /> Github
-              </li>
-              <li>
-                <a href="">https://github.com/gazjosef</a>
-              </li>
-              <br />
-              <li>
-                <FaLinkedin /> LinkedIn
-              </li>
-              <li>
-                <a href="">https://www.linkedin.com</a>
-              </li>
-            </ul>
+            <h3 className="heading-three">
+              <FaPhone /> Mobile
+            </h3>
+            <p>0402 830 315</p>
+            <br />
+
+            <h3 className="heading-three">
+              <FaEnvelope /> Email
+            </h3>
+            <p>garethjhind@gmail.com</p>
+            <br />
+
+            <h3 className="heading-three">
+              <FaGithub /> Github
+            </h3>
+            <p>
+              <a href="">https://github.com/gazjosef</a>
+            </p>
+            <br />
+
+            <h3 className="heading-three">
+              <FaLinkedin /> LinkedIn
+            </h3>
+            <p>
+              <a href="">https://www.linkedin.com</a>
+            </p>
           </div>
         </section>
       </article>
