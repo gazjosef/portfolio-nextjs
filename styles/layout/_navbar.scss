@@ -15,6 +15,10 @@
 
   font-size: 2rem;
 
+  a {
+    color: #000;
+  }
+
   &__logo {
     span {
       font-weight: 700;
@@ -28,7 +32,7 @@
     }
   }
 
-  // &__links:visited {
-  //   color: $color-black;
-  // }
+  &__links:visited {
+    color: $color-black;
+  }
 }

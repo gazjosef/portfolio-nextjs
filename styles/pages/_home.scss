@@ -6,7 +6,7 @@
 }
 
 .article-home {
-  background-color: $color-primary-300;
+  background-color: $color-primary-400;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -63,7 +63,7 @@
 }
 
 .article-portfolio {
-  background-color: $color-primary-300;
+  background-color: $color-primary-400;
   padding: 10rem 20rem;
 
   display: grid;
@@ -90,6 +90,11 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 
+  & > * {
+    display: grid;
+    place-items: center;
+  }
+
   &__title {
     grid-row: 1 / span 1;
     grid-column: 1 / -1;
@@ -97,18 +102,16 @@
     text-align: center;
   }
 
-  &__image {
-    display: grid;
-    place-items: center;
-  }
+  // &__image {
+  // }
 
-  &__details {
-    display: grid;
-    place-items: center;
-  }
+  // &__details {
+  // }
 
   &__text {
     background-color: $color-white-100;
-    padding: 3rem;
+    border-radius: 0.5rem;
+
+    padding: 3rem 5.5rem;
   }
 }

@@ -17,12 +17,9 @@ export default function Post({ project }) {
       />
 
       <div className="post__label">
-        {/* <span>{project.frontmatter.date}</span> */}
-        {/* <CategoryLabel>{project.frontmatter.category}</CategoryLabel> */}
-        {categories.map((category, index) => {
-          <CategoryLabel key={index}>{category}</CategoryLabel>;
-          // console.log(category);
-        })}
+        {categories.map((category, index) => (
+          <CategoryLabel key={index}>{category}</CategoryLabel>
+        ))}
       </div>
 
       <div className="post__description">

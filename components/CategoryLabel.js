@@ -2,12 +2,14 @@ import Link from "next/link";
 
 export default function CategoryLabel({ children }) {
   const colorKey = {
-    Sass: "hotpink",
+    API: "darkgrey",
+    SASS: "hotpink",
     JavaScript: "orangered",
     Python: "steelblue",
     Shopify: "forestgreen",
+    NextJS: "black",
     React: "midnightblue",
-    Paid: "limegreen",
+    $Paid: "limegreen",
   };
   return (
     <div className={`label bg--${colorKey[children]}`}>

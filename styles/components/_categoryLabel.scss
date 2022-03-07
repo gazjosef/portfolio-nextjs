@@ -1,6 +1,7 @@
 .label {
   padding: 0.5rem;
   border-radius: 0.25rem;
+  margin-left: 1rem;
 
   a {
     color: rgba(243, 244, 246, 1);
@@ -9,6 +10,12 @@
 }
 
 .bg {
+  &--black {
+    background-color: black;
+  }
+  &--darkgrey {
+    background-color: darkgrey;
+  }
   &--hotpink {
     background-color: hotpink;
   }

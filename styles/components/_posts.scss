@@ -7,14 +7,13 @@
 
   &__image {
     border-radius: 0.25rem;
-    // height: 100%;
     margin-bottom: 4rem;
     object-fit: contain;
   }
 
   &__label {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
 
