@@ -6,7 +6,7 @@ cover_image: "/images/posts/OddsTracker.png"
 category: "React"
 categories: ["API", "NextJS", "React", "SASS"]
 github: "https://github.com/gazjosef/"
-live: "https://gazjosef.github.io/blackjack-game/"
+live: "https://github.com/gazjosef/odds-tracker"
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
