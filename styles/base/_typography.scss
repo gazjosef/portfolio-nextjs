@@ -15,14 +15,22 @@ body {
 
 .heading-one {
   color: $color-secondary;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   font-size: 3.5rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .heading-two {
   font-family: $font-secondary;
   font-size: 2rem;
+}
+
+.heading-three {
+  color: $color-primary-100;
+  font-family: $font-secondary;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .paragraph {

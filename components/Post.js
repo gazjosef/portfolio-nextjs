@@ -8,6 +8,10 @@ export default function Post({ project }) {
   // console.log(categories);
   return (
     <div className="post">
+      <div className="post__title">
+        <h3 className="heading-three">{project.frontmatter.title}</h3>
+      </div>
+
       <Image
         src={project.frontmatter.cover_image}
         alt=""
@@ -23,7 +27,6 @@ export default function Post({ project }) {
       </div>
 
       <div className="post__description">
-        <a>{project.frontmatter.title}</a>
         <p>{project.frontmatter.excerpt}</p>
       </div>
 
