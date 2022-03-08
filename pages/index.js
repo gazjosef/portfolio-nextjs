@@ -21,7 +21,7 @@ export default function Home({ projects }) {
               Hi, my name is <span>Gareth</span>
             </h1>
             <p className="heading-two">
-              I'm a web designer and web developer. I spend my days with my
+              I am a web designer and web developer. I spend my days with my
               hands in many different areas of web development from front-end
               engineering to back end programming.
             </p>
