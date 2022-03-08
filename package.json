@@ -2,13 +2,14 @@
   "name": "portfolio-nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gazjosef.github.io/ant-software",
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
