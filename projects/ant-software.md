@@ -4,7 +4,7 @@ date: "May 7, 2021"
 excerpt: "Professional website showcasing the works of Ant Software"
 cover_image: "/images/posts/AntSoftwareDev.png"
 category: "React"
-categories: ["NextJS", "$Paid", "React", "SASS"]
+categories: ["$Paid", "NextJS", "React", "SASS"]
 github: "https://github.com/gazjosef/"
 live: "https://gazjosef.github.io/blackjack-game/"
 ---

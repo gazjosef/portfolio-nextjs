@@ -14,10 +14,12 @@
   align-items: center;
 
   font-size: 2rem;
+  text-transform: uppercase;
+  font-family: $font-primary;
+  font-weight: 500;
 
   a {
     color: #000;
-    text-transform: uppercase;
   }
 
   &__logo {

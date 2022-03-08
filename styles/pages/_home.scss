@@ -11,29 +11,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  &__title {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-
+  & > * {
     display: grid;
     place-items: center;
   }
 
   &__text {
     grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
 
-    display: grid;
-    place-items: center;
+    .btns {
+      margin-top: 3rem;
+    }
   }
 
   &__image {
     grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -86,32 +78,27 @@
 }
 
 .article-contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  &__title {
+    text-align: center;
+  }
 
-  & > * {
+  &__image {
+    margin-top: 3rem;
     display: grid;
     place-items: center;
   }
 
-  &__title {
-    grid-row: 1 / span 1;
-    grid-column: 1 / -1;
-
-    text-align: center;
-  }
-
-  // &__image {
-  // }
-
-  // &__details {
-  // }
-
-  &__text {
+  &__details {
     background-color: $color-white-100;
     border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 3rem;
+    width: 55rem;
 
-    padding: 3rem 5.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
 }

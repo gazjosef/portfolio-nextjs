@@ -9,22 +9,22 @@ export default function Home({ projects }) {
   return (
     <>
       <article id="home" className="article-home">
-        <section className="article-home__title">
-          <h1 className="heading-home">Hi, my name is Gareth</h1>
-        </section>
         <section className="article-home__text">
-          <p className="heading-two">
-            I'm a web designer and web developer. I spend my days with my hands
-            in many different areas of web development from front-end
-            engineering to back end programming.
-          </p>
           <div>
-            <button className="btn btn--home">
-              <a href="#story">Story</a>
-            </button>
-            <button className="btn btn--home">
-              <a href="#portfolio">Portfoloio</a>
-            </button>
+            <h1 className="heading-home">Hi, my name is Gareth</h1>
+            <p className="heading-two">
+              I'm a web designer and web developer. I spend my days with my
+              hands in many different areas of web development from front-end
+              engineering to back end programming.
+            </p>
+            <div className="btns">
+              <button className="btn">
+                <a href="#story">Story</a>
+              </button>
+              <button className="btn btn--cta">
+                <a href="#portfolio">Portfoloio</a>
+              </button>
+            </div>
           </div>
         </section>
         <section className="article-home__image">
@@ -83,36 +83,41 @@ export default function Home({ projects }) {
         <section className="article-contact__title">
           <h1 className="heading-one">Contact</h1>
         </section>
+
         <section className="article-contact__image">
           <Image
             src="/images/article/undraw_profile_re_4a55.svg"
             alt="responsive"
-            width={500}
-            height={350}
+            width={400}
+            height={280}
           />
         </section>
+
         <section className="article-contact__details">
-          <div className="article-contact__text">
+          <div className="article-contact__details--phone">
             <h3 className="heading-three">
               <FaPhone /> Mobile
             </h3>
             <p>0402 830 315</p>
-            <br />
+          </div>
 
+          <div className="article-contact__details--email">
             <h3 className="heading-three">
               <FaEnvelope /> Email
             </h3>
             <p>garethjhind@gmail.com</p>
-            <br />
+          </div>
 
+          <div className="article-contact__details--github">
             <h3 className="heading-three">
               <FaGithub /> Github
             </h3>
             <p>
               <a href="">https://github.com/gazjosef</a>
             </p>
-            <br />
+          </div>
 
+          <div className="article-contact__details--linkedIn">
             <h3 className="heading-three">
               <FaLinkedin /> LinkedIn
             </h3>
