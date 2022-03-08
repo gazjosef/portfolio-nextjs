@@ -17,7 +17,9 @@ export default function Home({ projects }) {
       <article id="home" className="article-home">
         <section className="article-home__text">
           <div>
-            <h1 className="heading-home">Hi, my name is Gareth</h1>
+            <h1 className="heading-home">
+              Hi, my name is <span>Gareth</span>
+            </h1>
             <p className="heading-two">
               I'm a web designer and web developer. I spend my days with my
               hands in many different areas of web development from front-end

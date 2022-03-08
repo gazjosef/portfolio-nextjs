@@ -16,15 +16,15 @@
   font-size: 2rem;
   text-transform: uppercase;
   font-family: $font-primary;
-  font-weight: 500;
+  font-weight: 600;
 
   a {
-    color: #000;
+    color: $color-primary-100;
   }
 
   &__logo {
     span {
-      font-weight: 700;
+      color: $color-primary-300;
     }
   }
 

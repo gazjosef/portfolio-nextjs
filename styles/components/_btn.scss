@@ -1,7 +1,7 @@
 .btn {
   cursor: pointer;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 1.5rem 3rem;
 
   font-size: 1.5rem;
@@ -10,7 +10,7 @@
   font-weight: 500;
 
   a {
-    color: $color-black;
+    color: $color-primary-200;
   }
 
   &--cta {
