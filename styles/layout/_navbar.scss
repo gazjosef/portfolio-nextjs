@@ -16,7 +16,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   font-family: $font-primary;
-  font-weight: 600;
+  font-weight: 500;
 
   a {
     color: $color-primary-100;
@@ -25,6 +25,7 @@
   &__logo {
     span {
       color: $color-primary-300;
+      font-weight: 700;
     }
   }
 
@@ -35,7 +36,7 @@
     }
   }
 
-  &__links:focused,
+  &__links:focus,
   &__links:visited {
     color: $color-black;
   }

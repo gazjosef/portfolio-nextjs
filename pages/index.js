@@ -42,7 +42,7 @@ export default function Home({ projects }) {
         </section>
         <section className="article-home__image">
           <Image
-            src="/images/article/undraw_developer_activity_re_39tg.svg"
+            src="/images/section/undraw_developer_activity_re_39tg.svg"
             alt="responsive"
             width={500}
             height={350}
@@ -56,7 +56,7 @@ export default function Home({ projects }) {
         </section>
         <section className="article-story__image">
           <Image
-            src="/images/article/undraw_programming_re_kg9v.svg"
+            src="/images/section/undraw_programming_re_kg9v.svg"
             alt="responsive"
             width={500}
             height={350}
@@ -99,7 +99,7 @@ export default function Home({ projects }) {
 
         <section className="article-contact__image">
           <Image
-            src="/images/article/undraw_profile_re_4a55.svg"
+            src="/images/section/undraw_profile_re_4a55.svg"
             alt="responsive"
             width={400}
             height={280}

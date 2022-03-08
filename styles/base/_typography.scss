@@ -11,12 +11,13 @@ body {
   color: $color-white;
   font-family: $font-primary;
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
 
   span {
     color: $color-primary-300;
+    font-weight: 700;
   }
 }
 
