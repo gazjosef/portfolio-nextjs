@@ -1,10 +1,26 @@
-// Text Center
+//* Align Items
+
+.align-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__arrow {
+    margin-left: 1rem;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
+
+//* Text Center
 
 .u-center-text {
   text-align: center !important;
 }
 
-// Margin Bottom
+//* Margin Bottom
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
@@ -26,7 +42,7 @@
   }
 }
 
-// Margin Top
+//* Margin Top
 
 .u-margin-top-medium {
   margin-top: 6rem !important;

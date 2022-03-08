@@ -1,7 +1,13 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaArrowCircleRight,
+  FaPhone,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import Post from "@/components/Post";
 import Image from "next/image";
 
@@ -19,10 +25,15 @@ export default function Home({ projects }) {
             </p>
             <div className="btns">
               <button className="btn">
-                <a href="#story">Story</a>
+                <a href="#story" className="align-items">
+                  Story <FaArrowCircleRight className="align-items__arrow" />
+                </a>
               </button>
               <button className="btn btn--cta">
-                <a href="#portfolio">Portfoloio</a>
+                <a href="#portfolio" className="align-items">
+                  Portfoloio
+                  <FaArrowCircleRight className="align-items__arrow" />
+                </a>
               </button>
             </div>
           </div>
@@ -95,22 +106,22 @@ export default function Home({ projects }) {
 
         <section className="article-contact__details">
           <div className="article-contact__details--phone">
-            <h3 className="heading-three">
-              <FaPhone /> Mobile
+            <h3 className="heading-three align-items">
+              <FaPhone className="align-items__icon" /> Mobile
             </h3>
             <p>0402 830 315</p>
           </div>
 
           <div className="article-contact__details--email">
-            <h3 className="heading-three">
-              <FaEnvelope /> Email
+            <h3 className="heading-three align-items">
+              <FaEnvelope className="align-items__icon" /> Email
             </h3>
             <p>garethjhind@gmail.com</p>
           </div>
 
           <div className="article-contact__details--github">
-            <h3 className="heading-three">
-              <FaGithub /> Github
+            <h3 className="heading-three align-items">
+              <FaGithub className="align-items__icon" /> Github
             </h3>
             <p>
               <a href="">https://github.com/gazjosef</a>
@@ -118,8 +129,8 @@ export default function Home({ projects }) {
           </div>
 
           <div className="article-contact__details--linkedIn">
-            <h3 className="heading-three">
-              <FaLinkedin /> LinkedIn
+            <h3 className="heading-three align-items">
+              <FaLinkedin className="align-items__icon" /> LinkedIn
             </h3>
             <p>
               <a href="">https://www.linkedin.com</a>

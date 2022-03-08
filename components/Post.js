@@ -31,12 +31,18 @@ export default function Post({ project }) {
       </div>
 
       <div className="post__extra">
-        <a className="post__button" href={`${project.frontmatter.github}`}>
-          <FaGithub /> Code
+        <a
+          className="post__button align-items"
+          href={`${project.frontmatter.github}`}
+        >
+          <FaGithub className="align-items__icon" /> Code
         </a>
 
-        <a className="post__button" href={`${project.frontmatter.live}`}>
-          <FaEye /> Live
+        <a
+          className="post__button align-items"
+          href={`${project.frontmatter.live}`}
+        >
+          <FaEye className="align-items__icon" /> Live
         </a>
       </div>
     </div>
