@@ -5,8 +5,8 @@ excerpt: "Both Tailwind and Bootstrap are very popular CSS frameworks. In this a
 cover_image: "/images/posts/RushWines.png"
 category: "Shopify"
 categories: ["$Paid", "SASS", "Shopify"]
-github: "https://github.com/gazjosef/"
-live: "https://gazjosef.github.io/blackjack-game/"
+github: "https://github.com/gazjosef/rush-wines"
+live: "https://www.rushwines.com.au"
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
