@@ -41,13 +41,15 @@ body {
 .heading-two {
   font-family: $font-secondary;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .heading-three {
-  color: $color-primary-100;
+  color: $color-primary-200;
   font-family: $font-secondary;
   font-size: 2rem;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .paragraph {

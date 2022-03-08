@@ -30,8 +30,6 @@
 }
 
 .article-story {
-  // background-color: lightblue;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
@@ -100,6 +98,15 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
+
+    a {
+      color: $color-black;
+
+      &:focus,
+      &:visited {
+        color: $color-black;
+      }
+    }
 
     h3 {
       justify-content: start;
