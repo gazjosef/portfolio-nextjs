@@ -5,9 +5,8 @@
   "homepage": "http://gazjosef.github.io/ant-software",
   "scripts": {
     "dev": "next dev",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
