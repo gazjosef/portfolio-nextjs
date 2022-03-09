@@ -6,7 +6,7 @@ cover_image: "/images/posts/OddsTracker.png"
 category: "React"
 categories: ["API", "NextJS", "React", "SASS"]
 github: "https://github.com/gazjosef/"
-live: "https://github.com/gazjosef/odds-tracker"
+live: "https://odds-tracker.vercel.app/"
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

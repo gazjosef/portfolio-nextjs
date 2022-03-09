@@ -40,6 +40,5 @@ export const Meta = ({ title, keywords, description }) => {
 Meta.defaultProps = {
   title: "Gareth Hind | Web Developer",
   keywords: "web design, web development",
-  description:
-    "Get scalable, modern and reliable custom software and let your business grow. ",
+  description: "Portfolio Website",
 };
