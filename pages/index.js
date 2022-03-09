@@ -135,7 +135,7 @@ export default function Home({ projects }) {
               <FaLinkedin className="align-items__icon" /> LinkedIn
             </h3>
             <p>
-              <a href="">https://www.linkedin.com</a>
+              <a href="">https://www.linkedin.com/in/gareth-h-a32448191/</a>
             </p>
           </div>
         </section>
