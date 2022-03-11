@@ -3,6 +3,10 @@
 .article-contact {
   min-height: 100vh;
   padding: 10rem 20rem;
+
+  @include respond(tab-land) {
+    padding: 5rem 10rem;
+  }
 }
 
 .article-home {
