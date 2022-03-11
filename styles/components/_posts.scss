@@ -20,6 +20,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    // @include respond(tab-port) {
+    //   display: inline;
+    // }
   }
 
   &__description {
@@ -52,5 +56,9 @@
     &:hover {
       color: #2563eb;
     }
+  }
+
+  @include respond(tab-port) {
+    // display: inline;
   }
 }

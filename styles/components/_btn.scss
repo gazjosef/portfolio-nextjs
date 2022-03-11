@@ -22,9 +22,11 @@
       margin-top: 1.5rem;
     }
 
-    // @include respond(tab-port) {
-    //   margin-left: 1rem;
-    // }
+    @include respond(tab-port) {
+      display: inline;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
   }
 
   @include respond(tab-land) {
@@ -33,10 +35,4 @@
     font-size: 1.25rem;
     letter-spacing: 1.25px;
   }
-
-  // @include respond(tab-port) {
-  //   padding: 0.5rem 1rem;
-  //   font-size: 1rem;
-  //   letter-spacing: 1px;
-  // }
 }
