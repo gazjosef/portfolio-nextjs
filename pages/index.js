@@ -20,10 +20,10 @@ export default function Home({ projects }) {
             <h1 className="heading-home">
               Hi, my name is <span>Gareth</span>
             </h1>
-            <p className="heading-two">
-              I am a web designer and web developer. I spend my days with my
-              hands in many different areas of web development from front-end
-              engineering to back end programming.
+            <p className="heading-two paragraph ">
+              I am a web designer, web developer and coffee addict. I spend my
+              time, night and day, coding in front-end engineering to back end
+              programming.
             </p>
             <div className="btns">
               <button className="btn">
@@ -63,21 +63,18 @@ export default function Home({ projects }) {
           />
         </section>
         <section className="article-story__text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            aliquid nemo hic officiis ducimus magnam, quisquam pariatur quod
-            tempore corrupti est similique, culpa incidunt. Velit, nemo? Rerum
-            ab, consequatur maiores perferendis necessitatibus similique fugiat
-            quasi, alias cupiditate sapiente culpa distinctio.
+          <p className="paragraph">
+            I'm a developer from Sydney, Australia. I've been programming for
+            over five years, mainly focusing on front-end projects.
           </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            tempore voluptatibus itaque magni consectetur commodi temporibus
-            rem! Incidunt unde commodi velit. Libero odio non vitae eum vero at
-            eos aspernatur dignissimos magnam repudiandae saepe, minus,
-            voluptatibus dolorem ducimus veritatis perspiciatis?
+
+          <p className="paragraph">
+            In this time, I've learnt an array of programming languages,
+            frameworks and libraries and continue to learn new trends and
+            industry standards.
           </p>
+
+          <p className="paragraph">Please check out my portfolio!</p>
         </section>
       </article>
 
