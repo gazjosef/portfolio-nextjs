@@ -39,6 +39,9 @@
     @include respond(tab-port) {
       grid-row: 1 / span 1;
       grid-column: 1 / -1;
+
+      padding-top: 4rem;
+      padding-bottom: 3rem;
     }
   }
 
