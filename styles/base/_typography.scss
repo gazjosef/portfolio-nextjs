@@ -19,6 +19,10 @@ body {
     color: $color-primary-300;
     font-weight: 700;
   }
+
+  @include respond(tab-land) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-one {
@@ -61,5 +65,9 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 1.5rem;
   }
 }

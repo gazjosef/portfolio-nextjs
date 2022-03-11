@@ -20,7 +20,7 @@
     grid-column: 1 / span 1;
 
     .btns {
-      margin-top: 3rem;
+      margin-top: 3.5rem;
     }
   }
 
@@ -67,6 +67,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 }
 

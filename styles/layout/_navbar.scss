@@ -40,4 +40,8 @@
   &__links:visited {
     color: $color-black;
   }
+
+  @include respond(tab-land) {
+    font-size: 1.75rem;
+  }
 }
