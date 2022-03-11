@@ -126,7 +126,9 @@ export default function Home({ projects }) {
               <FaGithub className="align-items__icon" /> Github
             </h3>
             <p>
-              <a href="">https://github.com/gazjosef</a>
+              <a href="https://github.com/gazjosef">
+                https://github.com/gazjosef
+              </a>
             </p>
           </div>
 
@@ -135,7 +137,9 @@ export default function Home({ projects }) {
               <FaLinkedin className="align-items__icon" /> LinkedIn
             </h3>
             <p>
-              <a href="">https://www.linkedin.com/in/gareth-h-a32448191/</a>
+              <a href="https://www.linkedin.com/in/gareth-h-a32448191/">
+                https://www.linkedin.com/in/gareth-h-a32448191/
+              </a>
             </p>
           </div>
         </section>
