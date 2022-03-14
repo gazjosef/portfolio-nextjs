@@ -20,10 +20,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    // @include respond(tab-port) {
-    //   display: inline;
-    // }
   }
 
   &__description {
@@ -51,6 +47,7 @@
 
   &__button {
     margin-right: 2rem;
+
     color: #111827;
 
     &:hover {

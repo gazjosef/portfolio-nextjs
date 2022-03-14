@@ -1,24 +1,25 @@
-import Link from "next/link";
 import Image from "next/image";
 import CategoryLabel from "./CategoryLabel";
 import { FaEye, FaGithub } from "react-icons/fa";
 
 export default function Post({ project }) {
   let categories = project.frontmatter.categories;
-  // console.log(categories);
+
   return (
     <div className="post">
       <div className="post__title">
         <h3 className="heading-three">{project.frontmatter.title}</h3>
       </div>
 
-      <Image
-        src={project.frontmatter.cover_image}
-        alt=""
-        height={420}
-        width={600}
-        className="post__image"
-      />
+      <a href={`${project.frontmatter.live}`}>
+        <Image
+          src={project.frontmatter.cover_image}
+          alt=""
+          height={420}
+          width={600}
+          className="post__image"
+        />
+      </a>
 
       <div className="post__label">
         {categories.map((category, index) => (
