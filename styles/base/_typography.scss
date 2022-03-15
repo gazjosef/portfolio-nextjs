@@ -64,7 +64,7 @@ body {
   text-align: justify;
 
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   @include respond(tab-land) {

@@ -20,10 +20,12 @@ export default function Home({ projects }) {
             <h1 className="heading-home">
               Hi, my name is <span>Gareth</span>
             </h1>
-            <p className="heading-two paragraph ">
-              I am a web designer, web developer and coffee addict. I spend my
-              time, night and day, coding in front-end engineering to back end
-              programming.
+            <p className="heading-two paragraph">
+              I am a web designer, web developer and coffee addict.
+            </p>
+            <p className="heading-two paragraph">
+              I spend my time, night and day, coding in front-end engineering to
+              back end programming.
             </p>
             <div className="btns">
               <button className="btn">
