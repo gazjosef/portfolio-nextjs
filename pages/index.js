@@ -18,28 +18,18 @@ export default function Home({ projects }) {
         <section className="article-home__text">
           <div>
             <h1 className="heading-home">
-              Hi, my name is <span>Gareth</span>
+              Hi, I'm Gareth. I'm a <span>Web Dev</span>.
             </h1>
             <p className="heading-two paragraph">
-              I am a web designer, web developer and coffee addict.
+              I spend my time, night and day, coding front-end websites to
+              back-end databases.
             </p>
-            <p className="heading-two paragraph">
-              I spend my time, night and day, coding in front-end engineering to
-              back end programming.
-            </p>
-            <div className="btns">
-              <button className="btn">
-                <a href="#story" className="align-items">
-                  Story <FaArrowCircleRight className="align-items__arrow" />
-                </a>
-              </button>
-              <button className="btn btn--cta">
-                <a href="#portfolio" className="align-items">
-                  Portfoloio
-                  <FaArrowCircleRight className="align-items__arrow" />
-                </a>
-              </button>
-            </div>
+            <button className="btn btn--cta">
+              <a href="#portfolio" className="align-items">
+                Portfoloio
+                <FaArrowCircleRight className="align-items__arrow" />
+              </a>
+            </button>
           </div>
         </section>
         <section className="article-home__image">
@@ -72,7 +62,7 @@ export default function Home({ projects }) {
 
           <p className="paragraph">
             In this time, I've learnt an array of programming languages,
-            frameworks and libraries and continue to learn new trends and
+            frameworks and libraries and continue to learn the latest trends and
             industry standards.
           </p>
 

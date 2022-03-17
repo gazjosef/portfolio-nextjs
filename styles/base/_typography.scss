@@ -8,16 +8,17 @@ body {
 
 .heading-home {
   margin-bottom: 3.5rem;
+  max-width: 16ch;
+
   color: $color-white;
   font-family: $font-secondary;
-  font-size: 3.5rem;
-  font-weight: bold;
+  font-size: 6rem;
+  font-weight: 900;
   letter-spacing: 3px;
   text-transform: uppercase;
 
   span {
     color: $color-primary-300;
-    font-weight: 700;
   }
 
   @include respond(tab-land) {
@@ -52,12 +53,13 @@ body {
 .heading-three {
   color: $color-primary-200;
   font-family: $font-secondary;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .paragraph {
+  max-width: 45ch;
   color: $color-primary-100;
   font-size: 2rem;
   line-height: 2;
