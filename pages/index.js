@@ -21,7 +21,7 @@ export default function Home({ projects }) {
               Hi, I'm Gareth. I'm a <span>Web Dev</span>.
             </h1>
             <p className="heading-two paragraph">
-              I spend my time, night and day, coding front-end websites to
+              I spend my time, night and day, coding front-end websites and
               back-end databases.
             </p>
             <button className="btn btn--cta">
@@ -63,7 +63,7 @@ export default function Home({ projects }) {
           <p className="paragraph">
             In this time, I've learnt an array of programming languages,
             frameworks and libraries and continue to learn the latest trends and
-            industry standards.
+            web technologies.
           </p>
 
           <p className="paragraph">Please check out my portfolio!</p>

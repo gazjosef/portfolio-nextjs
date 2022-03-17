@@ -27,6 +27,10 @@
       grid-row: 2 / span 1;
       grid-column: 1 / -1;
     }
+
+    & > * {
+      padding: 3rem;
+    }
   }
 
   &__image {
