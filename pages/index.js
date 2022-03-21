@@ -18,7 +18,7 @@ export default function Home({ projects }) {
         <section className="article-home__text">
           <div>
             <h1 className="heading-home">
-              Hi, I'm Gareth. I'm a <span>Web Dev</span>.
+              Hi, I&apos;m Gareth. I&apos;m a <span>Web Dev</span>.
             </h1>
             <p className="heading-two paragraph">
               I spend my time, night and day, coding front-end websites and
@@ -56,12 +56,13 @@ export default function Home({ projects }) {
         </section>
         <section className="article-story__text">
           <p className="paragraph">
-            I'm a developer from Sydney, Australia. I've been programming for
-            over five years, mainly focusing on front-end projects.
+            I&apos;m a developer from Sydney, Australia. I&apos;ve been
+            programming for over five years, mainly focusing on front-end
+            projects.
           </p>
 
           <p className="paragraph">
-            In this time, I've learnt an array of programming languages,
+            In this time, I&apos;ve learnt an array of programming languages,
             frameworks and libraries and continue to learn the latest trends and
             web technologies.
           </p>
