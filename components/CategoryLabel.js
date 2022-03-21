@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function CategoryLabel({ children }) {
   const colorKey = {
     API: "darkgrey",
@@ -11,9 +9,5 @@ export default function CategoryLabel({ children }) {
     React: "midnightblue",
     $Paid: "limegreen",
   };
-  return (
-    <div className={`label bg--${colorKey[children]}`}>
-      <Link href={`/category/${children.toLowerCase()}`}>{children}</Link>
-    </div>
-  );
+  return <div className={`label bg--${colorKey[children]}`}>{children}</div>;
 }
