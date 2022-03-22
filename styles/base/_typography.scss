@@ -29,6 +29,10 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .heading-one {

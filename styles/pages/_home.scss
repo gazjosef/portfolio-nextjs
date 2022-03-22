@@ -1,11 +1,16 @@
 .article-home,
 .article-story,
+.article-portfolio,
 .article-contact {
   min-height: 100vh;
   padding: 10rem 20rem;
 
   @include respond(tab-land) {
     padding: 5rem 10rem;
+  }
+
+  @include respond(phone) {
+    padding: 2.5rem 5rem;
   }
 }
 
@@ -48,6 +53,10 @@
       padding-bottom: 3rem;
     }
   }
+
+  @include respond(phone) {
+    padding-top: 7.5rem;
+  }
 }
 
 .article-story {
@@ -81,7 +90,6 @@
 
 .article-portfolio {
   background-color: $color-primary-400;
-  padding: 10rem 20rem;
 
   display: grid;
   grid-gap: 4rem;
