@@ -30,6 +30,10 @@
 
     & > * {
       padding: 3rem;
+
+      @include respond(tab-port) {
+        padding: 6rem;
+      }
     }
   }
 
@@ -44,16 +48,16 @@
       padding-bottom: 3rem;
     }
   }
-
-  @include respond(tab-port) {
-    grid-gap: 3rem;
-  }
 }
 
 .article-story {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   &__title {
     grid-row: 1 / span 1;
@@ -67,8 +71,11 @@
     place-items: center;
   }
 
-  @include respond(tab-port) {
-    grid-template-columns: repeat(1, 1fr);
+  &__text {
+    @include respond(tab-port) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

@@ -22,7 +22,12 @@ body {
   }
 
   @include respond(tab-land) {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+  }
+
+  @include respond(tab-port) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -64,13 +69,17 @@ body {
   color: $color-primary-100;
   font-size: 2rem;
   line-height: 2;
-  // text-align: justify;
+  text-align: justify;
 
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
 
   @include respond(tab-land) {
+    font-size: 1.75rem;
+  }
+
+  @include respond(tab-port) {
     font-size: 1.5rem;
   }
 }
