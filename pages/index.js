@@ -20,7 +20,7 @@ export default function Home({ projects }) {
             <h1 className="heading-home">
               Hi, I&apos;m Gareth. I&apos;m a <span>Web Dev</span>.
             </h1>
-            <p className="heading-two paragraph">
+            <p className="paragraph">
               I spend my time, night and day, coding front-end websites and
               back-end databases.
             </p>

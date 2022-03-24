@@ -1,8 +1,8 @@
 import { Meta } from "./Meta";
 import { useRouter } from "next/router";
 
-import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import Navbar from "./Navbar/Navbar";
 
 export const Layout = ({ children }) => {
   const router = useRouter();
@@ -13,7 +13,7 @@ export const Layout = ({ children }) => {
         <Meta />
       </header>
 
-      <Nav />
+      <Navbar />
 
       {router.pathname === "/"}
 

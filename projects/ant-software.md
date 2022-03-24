@@ -6,5 +6,5 @@ cover_image: "/images/posts/AntSoftwareDev.png"
 category: "React"
 categories: ["$Paid", "NextJS", "React", "SASS"]
 github: "https://github.com/gazjosef/ant-software"
-live: "https://ant-software-kr8a083lp-gazjosef.vercel.app"
+live: "https://ant-software.vercel.app/"
 ---
