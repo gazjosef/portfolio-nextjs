@@ -1,9 +1,7 @@
 ---
 title: "Weather App"
-date: "May 7, 2021"
 excerpt: "A weather app forecasting the current weather temperature as well as the next five hours."
 cover_image: "/images/posts/WeatherApp.png"
-category: "React"
 categories: ["API", "NextJS", "React", "SASS"]
 github: "https://github.com/gazjosef/weather-app"
 live: "https://weather-app-nine-amber.vercel.app/"
