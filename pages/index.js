@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import Post from "@/components/Post";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home({ projects }) {
   return (
@@ -46,14 +47,20 @@ export default function Home({ projects }) {
         <section className="article-story__title">
           <h1 className="heading-one">Story</h1>
         </section>
-        <section className="article-story__image">
+        <motion.section
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="article-story__image"
+        >
           <Image
             src="/images/section/undraw_programming_re_kg9v.svg"
             alt="responsive"
             width={500}
             height={350}
           />
-        </section>
+        </motion.section>
         <section className="article-story__text">
           <p className="paragraph">
             I&apos;m a developer from Sydney, Australia. I&apos;ve been

@@ -5,10 +5,6 @@
   padding: 1rem 4rem;
   width: 100%;
 
-  position: fixed;
-  top: 0;
-  z-index: 99;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +69,10 @@
 
       opacity: 1;
       transition: all 0.5s ease;
+    }
+
+    @include respond(phone) {
+      height: 42.5vh;
     }
 
     &.active {

@@ -46,6 +46,7 @@
     grid-column: 2 / span 1;
 
     @include respond(tab-port) {
+      height: 35vh;
       grid-row: 1 / span 1;
       grid-column: 1 / -1;
 
