@@ -108,21 +108,21 @@ export default function Home({ projects }) {
             <h3 className="heading-three align-items">
               <FaPhone className="align-items__icon" /> Mobile
             </h3>
-            <p>0402 830 315</p>
+            <p className="paragraph">0402 830 315</p>
           </div>
 
           <div className="article-contact__details--email">
             <h3 className="heading-three align-items">
               <FaEnvelope className="align-items__icon" /> Email
             </h3>
-            <p>garethjhind@gmail.com</p>
+            <p className="paragraph">garethjhind@gmail.com</p>
           </div>
 
           <div className="article-contact__details--github">
             <h3 className="heading-three align-items">
               <FaGithub className="align-items__icon" /> Github
             </h3>
-            <p>
+            <p className="paragraph">
               <a href="https://github.com/gazjosef">
                 https://github.com/gazjosef
               </a>
@@ -133,7 +133,7 @@ export default function Home({ projects }) {
             <h3 className="heading-three align-items">
               <FaLinkedin className="align-items__icon" /> LinkedIn
             </h3>
-            <p>
+            <p className="paragraph">
               <a href="https://www.linkedin.com/in/gareth-h-a32448191/">
                 https://www.linkedin.com/in/gareth-h-a32448191/
               </a>
