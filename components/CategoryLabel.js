@@ -3,10 +3,11 @@ export default function CategoryLabel({ children }) {
     API: "darkgrey",
     SASS: "hotpink",
     JavaScript: "orangered",
-    Python: "steelblue",
+    Python: "yellow",
     Shopify: "forestgreen",
     NextJS: "black",
-    React: "midnightblue",
+    React: "skyblue",
+    TypeScript: "midnightblue",
     $Paid: "limegreen",
   };
   return <div className={`label bg--${colorKey[children]}`}>{children}</div>;
