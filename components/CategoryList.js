@@ -6,7 +6,11 @@ export default function CategoryList({ categories }) {
       <h3 className="categoryList__heading">Blog Categories</h3>
       <ul className="categoryList__divider">
         {categories.map((category, index) => (
-          <Link key={index} href={`/category/${category.toLowerCase()}`}>
+          <Link
+            key={index}
+            href={`/category/${category.toLowerCase()}`}
+            passHref
+          >
             <li>{category}</li>
           </Link>
         ))}
