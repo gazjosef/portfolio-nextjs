@@ -40,7 +40,13 @@ export async function getStaticPaths() {
 
     const { data: frontmatter } = matter(markdownWithMeta);
 
-    return frontmatter.category.toLowerCase();
+    // return frontmatter.category.toLowerCase();
+
+    const fm = frontmatter.category.toLowerCase();
+
+    if (fm) {
+      return fm;
+    }
   });
 
   console.log(categories);
