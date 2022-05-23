@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 
     const fm = frontmatter.category.toLowerCase();
 
-    if (fm) {
+    if (fm !== null || fm !== undefined) {
       return fm;
     }
   });
