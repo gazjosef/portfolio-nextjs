@@ -40,13 +40,7 @@ export async function getStaticPaths() {
 
     const { data: frontmatter } = matter(markdownWithMeta);
 
-    // return frontmatter.category.toLowerCase();
-
-    const fm = frontmatter.category.toLowerCase();
-
-    if (fm !== null || fm !== undefined) {
-      return fm;
-    }
+    return frontmatter.category.toLowerCase();
   });
 
   console.log(categories);
@@ -69,9 +63,9 @@ export async function getStaticProps({ params: { category_name } }) {
   const uniqueCategories = [...new Set(categories)];
 
   // Filter Projects by Category
-  const categoryProjects = projects.filter(
-    (project) => project.frontmatter.category.toLowerCase() === category_name
-  );
+  const categoryProjects = projects.filter((project) => {
+    project.frontmatter.category.toLowerCase() === category_name;
+  });
 
   return {
     props: {
