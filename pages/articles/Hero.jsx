@@ -1,21 +1,20 @@
+import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { FaArrowCircleRight } from "react-icons/fa";
-import { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsapFadeIn } from "@/components/Animation";
 
 export default function Hero() {
-  const homeImgRef = useRef(null);
+  const heroImgRef = useRef(null);
+  const heroTextRef = useRef(null);
 
-  // useEffect(() => {
-  //   const el = homeImgRef.current;
-  //   gsap.fromTo(el, { rotation: 0 }, { rotation: 180, duration: 3 });
-  // }, []);
+  useEffect(() => {
+    gsapFadeIn(heroImgRef, 0.5);
+    gsapFadeIn(heroTextRef, 0.25);
+  }, []);
 
   return (
     <article id="home" className="article-home">
-      <section className="article-home__text">
+      <section className="article-home__text" ref={heroTextRef}>
         <div>
           <h1 className="heading-home">
             Hi, I&apos;m Gareth. I&apos;m a <span>Web Dev</span>.
@@ -32,7 +31,7 @@ export default function Hero() {
           </button>
         </div>
       </section>
-      <section className="article-home__image" ref={homeImgRef}>
+      <section className="article-home__image" ref={heroImgRef}>
         <Image
           src="/images/section/undraw_developer_activity_re_39tg.svg"
           alt="responsive"

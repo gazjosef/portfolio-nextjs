@@ -2,10 +2,10 @@
 // import path from "path";
 // import matter from "gray-matter";
 
-import Hero from "./articles/hero";
-import Story from "./articles/story";
-import Portfolio from "./articles/portfolio";
-import Contact from "./articles/contact";
+import Hero from "./articles/Hero";
+import Story from "./articles/Story";
+import Portfolio from "./articles/Portfolio";
+import Contact from "./articles/Contact";
 
 export default function Home({ projects }) {
   return (

@@ -1,25 +1,14 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsapFadeIn } from "@/components/Animation";
 
 export default function Story() {
   const storyImgRef = useRef(null);
+  const storyTextRef = useRef(null);
 
   useEffect(() => {
-    const el = storyImgRef.current;
-    gsap.fromTo(
-      el,
-      { rotation: 0 },
-      {
-        rotation: 180,
-        duration: 3,
-        scrollTrigger: {
-          trigger: el,
-        },
-      }
-    );
+    gsapFadeIn(storyImgRef, 0.25);
+    gsapFadeIn(storyTextRef, 0.5);
   }, []);
 
   return (
@@ -35,7 +24,7 @@ export default function Story() {
           height={350}
         />
       </section>
-      <section className="article-story__text">
+      <section className="article-story__text" ref={storyTextRef}>
         <p className="paragraph">
           I&apos;m a developer from Sydney, Australia. I&apos;ve been
           programming for over five years, mainly focusing on front-end

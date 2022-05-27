@@ -1,26 +1,15 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsapFadeIn } from "@/components/Animation";
 
 export default function Contact() {
   const contactImgRef = useRef(null);
+  const contactDetailsRef = useRef(null);
 
   useEffect(() => {
-    const el = contactImgRef.current;
-    gsap.fromTo(
-      el,
-      { rotation: 0 },
-      {
-        rotation: 180,
-        duration: 3,
-        scrollTrigger: {
-          trigger: el,
-        },
-      }
-    );
+    gsapFadeIn(contactImgRef, 0.5);
+    gsapFadeIn(contactDetailsRef, 0.25);
   }, []);
 
   return (
@@ -38,7 +27,7 @@ export default function Contact() {
         />
       </section>
 
-      <section className="article-contact__details">
+      <section className="article-contact__details" ref={contactDetailsRef}>
         <div className="article-contact__details--phone">
           <h3 className="heading-three align-items">
             <FaPhone className="align-items__icon" /> Mobile
