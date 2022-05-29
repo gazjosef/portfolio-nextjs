@@ -8,13 +8,13 @@ import Portfolio from "./articles/Portfolio";
 import Contact from "./articles/Contact";
 
 export default function Home({ projects }) {
-  console.log(projects);
+  // console.log(projects);
 
   return (
     <>
       <Hero />
       <Story />
-      <Portfolio />
+      <Portfolio projects={projects} />
       <Contact />
     </>
   );
@@ -46,28 +46,3 @@ export async function getStaticProps() {
     },
   };
 }
-
-// export async function getStaticProps() {
-
-//   const projects = files.map((filename) => {
-//     const slug = filename.replace(".md", "");
-
-//     const markdownWithMeta = fs.readFileSync(
-//       path.join("projects", filename),
-//       "utf-8"
-//     );
-
-//     const { data: frontmatter } = matter(markdownWithMeta);
-
-//     return {
-//       slug,
-//       frontmatter,
-//     };
-//   });
-
-//   return {
-//     props: {
-//       projects,
-//     },
-//   };
-// }

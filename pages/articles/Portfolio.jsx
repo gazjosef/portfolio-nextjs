@@ -3,7 +3,9 @@ import Image from "next/image";
 
 import Post from "@/components/Post";
 
-export default function Portfolio() {
+export default function Portfolio({ projects }) {
+  console.log("Portfolio", projects);
+
   return (
     <article id="portfolio" className="article-portfolio">
       <section className="article-portfolio__title">
