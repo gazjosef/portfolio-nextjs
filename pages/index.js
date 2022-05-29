@@ -1,6 +1,6 @@
-// import fs from "fs";
-// import path from "path";
-// import matter from "gray-matter";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 
 import Hero from "./articles/Hero";
 import Story from "./articles/Story";
@@ -18,8 +18,32 @@ export default function Home({ projects }) {
   );
 }
 
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join("projects"));
+
+  const projects = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+
+    const markdownWithMeta = fs.readFileSync(
+      path.join("projects", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+  console.log(projects);
+
+  return {
+    props: {},
+  };
+}
+
 // export async function getStaticProps() {
-//   const files = fs.readdirSync(path.join("projects"));
 
 //   const projects = files.map((filename) => {
 //     const slug = filename.replace(".md", "");

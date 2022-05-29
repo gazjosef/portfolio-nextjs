@@ -18,6 +18,8 @@ export default function Portfolio() {
         {/* {projects.map((project, index) => (
           <Post key={index} project={project} />
         ))} */}
+
+        <h2>Hello World</h2>
       </section>
     </article>
   );
