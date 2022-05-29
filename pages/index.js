@@ -8,6 +8,8 @@ import Portfolio from "./articles/Portfolio";
 import Contact from "./articles/Contact";
 
 export default function Home({ projects }) {
+  console.log(projects);
+
   return (
     <>
       <Hero />
@@ -39,7 +41,9 @@ export async function getStaticProps() {
   console.log(projects);
 
   return {
-    props: {},
+    props: {
+      projects,
+    },
   };
 }
 
