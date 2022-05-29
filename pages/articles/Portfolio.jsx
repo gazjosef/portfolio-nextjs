@@ -11,11 +11,12 @@ export default function Portfolio({ projects }) {
         <h1 className="heading-one">Portfolio</h1>
       </section>
       <section className="article-portfolio__grid">
-        {/* {projects.map((project, index) => (
-          <Post key={index} project={project} />
-        ))} */}
+        {projects &&
+          projects.map((project, index) => (
+            <Post key={index} project={project} />
+          ))}
 
-        <h4>TEST</h4>
+        <h4>WORKING</h4>
       </section>
     </article>
   );
