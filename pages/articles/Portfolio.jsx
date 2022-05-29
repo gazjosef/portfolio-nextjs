@@ -1,5 +1,4 @@
 import { useRef, useEffect } from "react";
-import Image from "next/image";
 
 import Post from "@/components/Post";
 
@@ -12,11 +11,11 @@ export default function Portfolio({ projects }) {
         <h1 className="heading-one">Portfolio</h1>
       </section>
       <section className="article-portfolio__grid">
-        {projects.map((project, index) => (
+        {/* {projects.map((project, index) => (
           <Post key={index} project={project} />
-        ))}
+        ))} */}
 
-        <h2>Hello World</h2>
+        <h4>TEST</h4>
       </section>
     </article>
   );
