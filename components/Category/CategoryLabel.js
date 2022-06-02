@@ -1,12 +1,15 @@
 export default function CategoryLabel({ children }) {
   const colorKey = {
     API: "darkgrey",
-    SASS: "hotpink",
-    JavaScript: "orangered",
+    Express: "yellowgreen",
+    JavaScript: "crimson",
     Python: "yellow",
-    Shopify: "forestgreen",
+    MongoDB: "green",
     NextJS: "black",
-    React: "skyblue",
+    React: "deepskyblue",
+    RestAPI: "dodgerblue",
+    SASS: "hotpink",
+    Shopify: "forestgreen",
     TypeScript: "midnightblue",
     $Paid: "limegreen",
   };

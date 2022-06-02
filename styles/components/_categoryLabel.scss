@@ -16,6 +16,9 @@
 }
 
 .bg {
+  &--aqua {
+    background-color: aqua;
+  }
   &--black {
     background-color: black;
   }
@@ -25,11 +28,20 @@
   &--hotpink {
     background-color: hotpink;
   }
+  &--dodgerblue {
+    background-color: dodgerblue;
+  }
+  &--deepskyblue {
+    background-color: deepskyblue;
+  }
   &--orangered {
     background-color: orangered;
   }
   &--steelblue {
     background-color: steelblue;
+  }
+  &--green {
+    background-color: green;
   }
   &--forestgreen {
     background-color: forestgreen;
@@ -43,7 +55,10 @@
   &--yellow {
     background-color: yellow;
   }
-  &--skyblue {
-    background-color: skyblue;
+  &--crimson {
+    background-color: crimson;
+  }
+  &--yellowgreen {
+    background-color: yellowgreen;
   }
 }

@@ -14,9 +14,7 @@ export default function Contact() {
 
   return (
     <article id="contact" className="article-contact">
-      <section className="article-contact__title">
-        <h1 className="heading-one">Contact</h1>
-      </section>
+      {/* <section className="article-contact__title"></section> */}
 
       <section className="article-contact__image" ref={contactImgRef}>
         <Image
@@ -28,6 +26,7 @@ export default function Contact() {
       </section>
 
       <section className="article-contact__details" ref={contactDetailsRef}>
+        <h1 className="heading-one">Contact</h1>
         <div className="article-contact__details--phone">
           <h3 className="heading-three align-items">
             <FaPhone className="align-items__icon" /> Mobile

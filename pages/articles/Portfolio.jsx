@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 
-import Post from "@/components/Post";
+import Project from "@/components/Project/Project";
 
 export default function Portfolio({ projects }) {
   console.log("Portfolio", projects);
@@ -13,10 +13,8 @@ export default function Portfolio({ projects }) {
       <section className="article-portfolio__grid">
         {projects &&
           projects.map((project, index) => (
-            <Post key={index} project={project} />
+            <Project key={index} project={project} />
           ))}
-
-        <h4>WORKING</h4>
       </section>
     </article>
   );

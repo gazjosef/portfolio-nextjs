@@ -31,12 +31,13 @@ export default function Hero() {
           </button>
         </div>
       </section>
+
       <section className="article-home__image" ref={heroImgRef}>
         <Image
           src="/images/section/undraw_developer_activity_re_39tg.svg"
           alt="responsive"
-          width={500}
-          height={350}
+          width={1000}
+          height={700}
         />
       </section>
     </article>
