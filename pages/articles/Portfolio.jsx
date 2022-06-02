@@ -12,9 +12,9 @@ export default function Portfolio({ projects }) {
       </section>
       <section className="article-portfolio__grid">
         {projects &&
-          projects.map((project, index) => (
-            <Project key={index} project={project} />
-          ))}
+          projects
+            .sort((a, b) => (b.order > a.order ? 1 : -1))
+            .map((project, index) => <Project key={index} project={project} />)}
       </section>
     </article>
   );
