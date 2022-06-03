@@ -124,10 +124,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 
-  // padding: 0 20rem;
-
   @include respond(tab-land) {
     padding: 5rem 10rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
   }
 
   @include respond(phone) {
@@ -140,7 +140,6 @@
   }
 
   &__image {
-    // grid-row: 2 / span 1;
     grid-column: 1 / span 1;
   }
 
@@ -152,7 +151,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 2rem 3rem;
-    height: 60vh;
+    // min-height: 60vh;
 
     display: grid;
     row-gap: 2rem;
@@ -177,6 +176,7 @@
     @include respond(tab-port) {
       width: 60vw;
 
+      grid-column: 1 / span 1;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 3rem;
     }

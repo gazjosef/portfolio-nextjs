@@ -20,8 +20,8 @@ export default function Contact() {
         <Image
           src="/images/section/undraw_profile_re_4a55.svg"
           alt="responsive"
-          width={400}
-          height={280}
+          width={800}
+          height={560}
         />
       </section>
 

@@ -20,8 +20,8 @@ export default function Story() {
         <Image
           src="/images/section/undraw_programming_re_kg9v.svg"
           alt="responsive"
-          width={500}
-          height={350}
+          width={1000}
+          height={700}
         />
       </section>
       <section className="article-story__text" ref={storyTextRef}>

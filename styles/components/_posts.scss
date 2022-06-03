@@ -1,9 +1,11 @@
 .post {
   background-color: #fff;
   border-radius: 0.5rem;
+
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 1.5rem 2.5rem;
   width: 100%;
+  min-width: 100%;
 
   @include respond(tab-port) {
     margin-left: auto;
@@ -21,15 +23,19 @@
   }
 
   &__image {
+    border: 1px $color-black solid;
     border-radius: 0.25rem;
     margin-bottom: 4rem;
     object-fit: contain;
   }
 
   &__label {
+    min-height: 7rem;
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
 
   &__description {
