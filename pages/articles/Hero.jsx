@@ -17,7 +17,7 @@ export default function Hero() {
       <section className="article-home__text" ref={heroTextRef}>
         <div>
           <h1 className="heading-home">
-            Hi, I&apos;m Gareth. I&apos;m a <span>Web Dev</span>.
+            Hi, I&apos;m Gareth. I&apos;m a <span>Web Developer</span>.
           </h1>
           <p className="paragraph">
             I spend my time, night and day, coding front-end websites and
