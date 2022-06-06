@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { sortByOrder } from "../utils";
 
 import Hero from "./articles/Hero";
 import Story from "./articles/Story";
@@ -39,7 +40,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      projects,
+      projects: projects.sort(sortByOrder),
     },
   };
 }
