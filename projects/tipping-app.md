@@ -1,9 +1,9 @@
 ---
-title: "Tipping App"
-excerpt: "An office tipping app for work colleagues"
+title: "Footy Tips"
+excerpt: "An office tipping app for friends or work colleagues."
 cover_image: "/images/posts/TippingApp.png"
 categories: ["MongoDB", "Express", "RestAPI", "React", "Redux", "SASS"]
-github: "https://github.com/gazjosef/ant-software"
-live: "https://ant-software.vercel.app/"
+github: "https://github.com/gazjosef/new-tipping-app"
+live: "https://mern-footy-tips.herokuapp.com/"
 order: 1
 ---
