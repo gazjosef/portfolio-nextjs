@@ -1,6 +1,6 @@
 ---
 title: "Footy Tips"
-excerpt: "An office tipping app for friends or work colleagues."
+excerpt: "A tipping competition app for friends or work colleagues."
 cover_image: "/images/posts/TippingApp.png"
 categories: ["MongoDB", "Express", "RestAPI", "React", "Redux", "SASS"]
 github: "https://github.com/gazjosef/new-tipping-app"
