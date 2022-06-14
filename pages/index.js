@@ -7,7 +7,7 @@ import Hero from "./articles/Hero";
 import Story from "./articles/Story";
 import Portfolio from "./articles/Portfolio";
 import Contact from "./articles/Contact";
-import ScrollButton from "../components/Button/ScrollButton";
+import ScrollButton from "@/components/Button/ScrollButton";
 
 export default function Home({ projects }) {
   return (
@@ -16,7 +16,7 @@ export default function Home({ projects }) {
       <Story />
       <Portfolio projects={projects} />
       <Contact />
-      {/* <ScrollButton /> */}
+      <ScrollButton />
     </>
   );
 }
