@@ -16,7 +16,7 @@ export default function Home({ projects }) {
       <Story />
       <Portfolio projects={projects} />
       <Contact />
-      <ScrollButton />
+      {/* <ScrollButton /> */}
     </>
   );
 }
