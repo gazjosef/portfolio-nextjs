@@ -239,15 +239,21 @@ body {
 }
 
 .scrollButton {
-  width: 100%;
-  left: 20%;
-  bottom: 40px;
-  height: 20px;
+  border: none;
+  background-color: transparent;
+  height: 6rem;
+  width: 6rem;
   cursor: pointer;
   position: fixed;
+  right: 4rem;
+  bottom: 4rem;
   z-index: 1;
   font-size: 3rem;
-  color: green;
+  color: #0c2d48;
+}
+
+.scrollButton__icon {
+  font-size: 8rem;
 }
 
 .label {
