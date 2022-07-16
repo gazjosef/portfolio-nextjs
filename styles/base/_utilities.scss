@@ -14,13 +14,67 @@
   }
 }
 
-//* Text Center
+//* Background Color
+
+.u-bg-primary-400 {
+  background-color: $color-primary-400;
+}
+
+//* Center Text
 
 .u-center-text {
   text-align: center !important;
 }
 
-//* Margin Bottom
+//* Font Size
+
+.u-fs-300 {
+  font-size: $fs-300;
+}
+
+.u-fs-400 {
+  font-size: $fs-400;
+}
+
+.u-fs-500 {
+  font-size: $fs-500;
+}
+
+.u-fs-600 {
+  font-size: $fs-600;
+}
+
+.u-fs-700 {
+  font-size: $fs-700;
+}
+
+.u-fs-800 {
+  font-size: $fs-800;
+}
+
+.u-fs-primary-heading {
+  font-size: $fs-primary-heading;
+}
+
+.u-fs-secondary-heading {
+  font-size: $fs-secondary-heading;
+}
+
+//* Font Weight
+
+.u-fw-bold {
+  font-weight: $fw-bold;
+}
+
+.u-fw-semi-bold {
+  font-weight: $fw-semi-bold;
+}
+
+.u-fw-regular {
+  font-weight: $fw-regular;
+}
+
+//* Margin
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
@@ -42,8 +96,6 @@
   }
 }
 
-//* Margin Top
-
 .u-margin-top-medium {
   margin-top: 6rem !important;
 }
@@ -54,4 +106,18 @@
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+//* Text Color
+
+.u-text-primary-400 {
+  color: $color-primary-400;
+}
+
+.u-text-color-white {
+  color: $color-white;
+}
+
+.u-text-color-black {
+  color: $color-black;
 }

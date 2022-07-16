@@ -29,7 +29,10 @@ function Navbar() {
           )}
         </IconContext.Provider>
       </div>
-      <ul className={toggle ? "navbar__menu active" : "navbar__menu"}>
+      <ul
+        role="list"
+        className={toggle ? "navbar__menu active" : "navbar__menu"}
+      >
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>

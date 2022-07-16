@@ -6,7 +6,7 @@ $color-primary-200: #145da0; //* Fun Blue
 $color-primary-300: #2e8bc0; //* Curious Blue
 $color-primary-400: #b1d4e0; //* Ziggurat Blue
 
-//* --- secondary
+//* --- Secondary
 $color-secondary: #c0632e; //* Tuscany Yellow
 
 //* --- White To Black
@@ -26,9 +26,33 @@ $color-black: hsl(0, 0%, 0%); //* Black
 //* FONT
 
 $default-font-size: 1.6rem;
+
+//* --- Font Family
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Raleway", sans-serif;
 $font-third: "Montserrat", serif;
+$ff-body: $font-primary;
+$ff-heading: $font-primary;
+
+//* --- Font Size
+$fs-300: 1.3rem;
+$fs-400: 1.4rem;
+$fs-500: 1.5rem;
+$fs-600: 1.6rem;
+$fs-700: 3rem;
+$fs-800: 3.5rem;
+$fs-900: 4rem;
+
+$fs-body: $fs-400;
+$fs-primary-heading: $fs-800;
+$fs-secondary-heading: $fs-700;
+$fs-nav: $fs-500;
+$fs-button: $fs-300;
+
+//* --- Font Weight
+$fw-regular: 400;
+$fw-semi-bold: 500;
+$fw-bold: 700;
 
 //* GRID
 
@@ -36,3 +60,10 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+//* RESPONSIVE BREAKPOINTS
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px

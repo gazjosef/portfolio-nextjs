@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer": "^2.1.0",
     "gray-matter": "^4.0.3",
     "gsap": "^3.10.4",
     "next": "^12.1.0",
