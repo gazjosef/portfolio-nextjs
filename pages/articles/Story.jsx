@@ -1,6 +1,8 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { gsapFadeIn } from "@/components/Animation";
+import { FaArrowCircleRight } from "react-icons/fa";
+import CategoryLabel from "../../components/Category/CategoryLabel";
 
 export default function Story() {
   const storyImgRef = useRef(null);
@@ -37,7 +39,31 @@ export default function Story() {
           web technologies.
         </p>
 
+        <p className="paragraph post__label">
+          <CategoryLabel>HTML</CategoryLabel>
+          <CategoryLabel>CSS</CategoryLabel>
+          <CategoryLabel>SASS</CategoryLabel>
+          <CategoryLabel>JavaScript</CategoryLabel>
+          <CategoryLabel>TypeScript</CategoryLabel>
+          <CategoryLabel>React</CategoryLabel>
+          <CategoryLabel>NextJS</CategoryLabel>
+        </p>
+
+        <p className="paragraph post__label">
+          <CategoryLabel>Express</CategoryLabel>
+          <CategoryLabel>MongoDB</CategoryLabel>
+          <CategoryLabel>Redux</CategoryLabel>
+          <CategoryLabel>Shopify</CategoryLabel>
+        </p>
+
         <p className="paragraph">Please check out my portfolio!</p>
+
+        <button className="btn btn--cta btn--inverse">
+          <a href="#portfolio" className="align-items">
+            Click here
+            <FaArrowCircleRight className="align-items__arrow" />
+          </a>
+        </button>
       </section>
     </article>
   );

@@ -21,6 +21,14 @@
   &--cta {
     margin-top: 1.5rem;
   }
+
+  &--inverse {
+    background-color: $color-primary-300;
+
+    a {
+      color: $color-white;
+    }
+  }
 }
 
 .scrollButton {
