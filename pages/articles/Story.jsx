@@ -47,6 +47,7 @@ export default function Story() {
           <CategoryLabel>TypeScript</CategoryLabel>
           <CategoryLabel>React</CategoryLabel>
           <CategoryLabel>NextJS</CategoryLabel>
+          <CategoryLabel>Testing</CategoryLabel>
         </p>
 
         <p className="paragraph post__label">
