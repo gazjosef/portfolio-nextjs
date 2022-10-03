@@ -33,11 +33,7 @@ export default function Story() {
           projects.
         </p>
 
-        <p className="paragraph">
-          In this time, I&apos;ve learnt an array of programming languages,
-          frameworks and libraries and continue to learn the latest trends and
-          web technologies.
-        </p>
+        <p className="paragraph u-margin-bottom-small">Tech Stack:</p>
 
         <p className="paragraph post__label">
           <CategoryLabel>HTML</CategoryLabel>
