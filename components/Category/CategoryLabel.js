@@ -14,7 +14,7 @@ export default function CategoryLabel({ children }) {
     RestAPI: "dodgerblue",
     SASS: "hotpink",
     Shopify: "forestgreen",
-    TypeScript: "midnightblue",
+    TypeScript: "dodgerblue",
     $Paid: "limegreen",
   };
   return <div className={`label bg--${colorKey[children]}`}>{children}</div>;
