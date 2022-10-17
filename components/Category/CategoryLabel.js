@@ -9,7 +9,7 @@ export default function CategoryLabel({ children }) {
     MongoDB: "green",
     NextJS: "black",
     React: "deepskyblue",
-    Testing: "green",
+    Testing: "firebrick",
     Redux: "rebeccapurple",
     RestAPI: "dodgerblue",
     SASS: "hotpink",
