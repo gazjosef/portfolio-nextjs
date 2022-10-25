@@ -18,7 +18,7 @@ export default function Contact() {
 
       <section className="article-contact__image" ref={contactImgRef}>
         <Image
-          src="/images/section/undraw_profile_re_4a55.svg"
+          src="/images/section/undraw_designer_re_5v95.svg"
           alt="responsive"
           width={800}
           height={560}
