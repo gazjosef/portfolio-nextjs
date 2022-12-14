@@ -1,11 +1,14 @@
 .post {
   background-color: #fff;
   border-radius: 0.5rem;
-
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 1.5rem 2.5rem;
   width: 100%;
   min-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include respond(tab-port) {
     margin-left: auto;
@@ -55,7 +58,11 @@
 
   &__extra {
     margin-top: 3rem;
+    margin-bottom: 0;
     // width: min-content;
+
+    // position: fixed;
+    // bottom: 0;
 
     display: flex;
     align-items: center;
