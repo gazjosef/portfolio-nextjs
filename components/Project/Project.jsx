@@ -1,5 +1,5 @@
-import { useRef, useEffect } from "react";
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CategoryLabel from "../Category/CategoryLabel";

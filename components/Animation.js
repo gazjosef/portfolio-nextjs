@@ -27,3 +27,7 @@ export const gsapFadeIn = (ref, delay) => {
     }
   );
 };
+
+// TODO: gsapFadeLeft
+
+// TODO: gsapFadeRight
