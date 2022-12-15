@@ -1,15 +1,15 @@
-import { useRef, useEffect } from "react";
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import { gsapFadeIn } from "@/components/Animation";
+import { gsapFadeLeft, gsapFadeRight } from "@/components/Animation";
 
 export default function Contact() {
   const contactImgRef = useRef(null);
   const contactDetailsRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(contactImgRef, 0.5);
-    gsapFadeIn(contactDetailsRef, 0.25);
+    gsapFadeLeft(contactImgRef, 0.5);
+    gsapFadeRight(contactDetailsRef, 0.25);
   }, []);
 
   return (

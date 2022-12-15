@@ -1,16 +1,16 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-import { gsapFadeIn } from "@/components/Animation";
 import { FaArrowCircleRight } from "react-icons/fa";
-import CategoryLabel from "../../components/Category/CategoryLabel";
+import CategoryLabel from "@/components/Category/CategoryLabel";
+import { gsapFadeLeft, gsapFadeRight } from "@/components/Animation";
 
 export default function Story() {
   const storyImgRef = useRef(null);
   const storyTextRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(storyImgRef, 0.25);
-    gsapFadeIn(storyTextRef, 0.5);
+    gsapFadeLeft(storyImgRef, 0.25);
+    gsapFadeRight(storyTextRef, 0.5);
   }, []);
 
   return (
