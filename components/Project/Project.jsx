@@ -3,13 +3,13 @@ import { useRef, useEffect } from "react";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CategoryLabel from "../Category/CategoryLabel";
-import { gsapFadeIn } from "@/components/Animation";
+import { gsapFadeDown } from "@/components/Animation";
 
 export default function Project({ project }) {
   const projectRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(projectRef, 0.5);
+    gsapFadeDown(projectRef, 0.5);
   }, []);
 
   let categories = project.frontmatter.categories;

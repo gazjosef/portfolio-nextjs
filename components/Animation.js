@@ -2,7 +2,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const gsapFadeIn = (ref, delay) => {
+export const gsapFadeDown = (ref, delay) => {
   const el = ref.current;
   gsap.fromTo(
     el,
@@ -27,8 +27,6 @@ export const gsapFadeIn = (ref, delay) => {
     }
   );
 };
-
-// TODO: gsapFadeLeft
 
 export const gsapFadeLeft = (ref, delay) => {
   const el = ref.current;
@@ -55,8 +53,6 @@ export const gsapFadeLeft = (ref, delay) => {
     }
   );
 };
-
-// TODO: gsapFadeRight
 
 export const gsapFadeRight = (ref, delay) => {
   const el = ref.current;

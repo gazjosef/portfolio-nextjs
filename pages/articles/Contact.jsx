@@ -8,8 +8,8 @@ export default function Contact() {
   const contactDetailsRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeLeft(contactImgRef, 0.5);
-    gsapFadeRight(contactDetailsRef, 0.25);
+    gsapFadeLeft(contactImgRef, 0.3);
+    gsapFadeRight(contactDetailsRef, 0.15);
   }, []);
 
   return (

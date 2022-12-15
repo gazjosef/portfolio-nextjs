@@ -1,15 +1,15 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { FaArrowCircleRight } from "react-icons/fa";
-import { gsapFadeIn } from "@/components/Animation";
+import { gsapFadeDown } from "@/components/Animation";
 
 export default function Hero() {
   const heroImgRef = useRef(null);
   const heroTextRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(heroImgRef, 0.5);
-    gsapFadeIn(heroTextRef, 0.25);
+    gsapFadeDown(heroImgRef, 0.5);
+    gsapFadeDown(heroTextRef, 0.25);
   }, []);
 
   return (

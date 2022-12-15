@@ -1,6 +1,4 @@
-// import { useRef, useEffect } from "react";
 import Project from "@/components/Project/Project";
-// import { gsapFadeIn } from "@/components/Animation";
 
 export default function Portfolio({ projects }) {
   return (

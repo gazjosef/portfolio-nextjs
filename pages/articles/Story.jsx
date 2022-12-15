@@ -9,8 +9,8 @@ export default function Story() {
   const storyTextRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeLeft(storyImgRef, 0.25);
-    gsapFadeRight(storyTextRef, 0.5);
+    gsapFadeLeft(storyImgRef, 0.15);
+    gsapFadeRight(storyTextRef, 0.3);
   }, []);
 
   return (
