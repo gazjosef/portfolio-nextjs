@@ -21,7 +21,7 @@ export default function Hero() {
           </h1>
           <p className="paragraph">
             I spend my time, night and day, coding front-end websites and
-            back-end databases.
+            building content management systems.
           </p>
           <button className="btn btn--cta">
             <a href="#portfolio" className="align-items">

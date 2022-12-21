@@ -39,15 +39,19 @@ export default function Story() {
           <CategoryLabel>HTML</CategoryLabel>
           <CategoryLabel>CSS</CategoryLabel>
           <CategoryLabel>SASS</CategoryLabel>
+          <CategoryLabel>Tailwind</CategoryLabel>
           <CategoryLabel>JavaScript</CategoryLabel>
           <CategoryLabel>TypeScript</CategoryLabel>
           <CategoryLabel>React</CategoryLabel>
           <CategoryLabel>NextJS</CategoryLabel>
+          <CategoryLabel>Vue</CategoryLabel>
+          <CategoryLabel>Nuxt</CategoryLabel>
           <CategoryLabel>Testing</CategoryLabel>
         </p>
 
         <p className="paragraph post__label">
           <CategoryLabel>Express</CategoryLabel>
+          <CategoryLabel>HeadlessCMS</CategoryLabel>
           <CategoryLabel>MongoDB</CategoryLabel>
           <CategoryLabel>Redux</CategoryLabel>
           <CategoryLabel>Shopify</CategoryLabel>
