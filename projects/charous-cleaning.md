@@ -4,6 +4,6 @@ excerpt: "A professional and user-friendly website for a pool cleaning, repairin
 cover_image: "/images/posts/charous-cleaning.png"
 categories: ["$Paid", "Vue", "Nuxt", "Tailwind", "HeadlessCMS"]
 github: "https://github.com/gazjosef/charous-cleaning"
-live: "https://ant-software.vercel.app/"
-order: 8
+live: "https://charous-cleaning.netlify.app/"
+order: 3
 ---

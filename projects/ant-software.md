@@ -5,5 +5,5 @@ cover_image: "/images/posts/AntSoftwareDev.png"
 categories: ["$Paid", "NextJS", "React", "SASS", "HeadlessCMS"]
 github: "https://github.com/gazjosef/ant-software"
 live: "https://ant-software.vercel.app/"
-order: 3
+order: 8
 ---
