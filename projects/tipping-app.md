@@ -1,6 +1,6 @@
 ---
 title: "Footy Tips"
-excerpt: "A tipping competition app for friends or work colleagues."
+excerpt: "A tipping app allowing users to select tips for upcoming fixtures and store them in a database. The database then compares all tips to determine a leaderboard, showcasing the top tipsters"
 cover_image: "/images/posts/TippingApp.png"
 categories:
   ["JavaScript", "React", "SASS", "MongoDB", "Express", "RestAPI", "Redux"]

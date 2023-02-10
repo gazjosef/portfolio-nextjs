@@ -1,6 +1,6 @@
 ---
 title: "Weather App"
-excerpt: "A weather app forecasting the current weather temperature as well as the next five hours."
+excerpt: "A weather app that uses the Open Weather API to find the latest weather information. The app also provides temperatures for future times."
 cover_image: "/images/posts/WeatherApp.png"
 categories: ["TypeScript", "NextJS", "React", "SASS"]
 github: "https://github.com/gazjosef/weather-app"

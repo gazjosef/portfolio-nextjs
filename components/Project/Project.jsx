@@ -39,11 +39,12 @@ export default function Project({ project }) {
               <CategoryLabel key={index}>{category}</CategoryLabel>
             ))}
         </div>
-      </div>
-      <div className="post__buttons">
+
         <div className="post__description">
           <p>{project.frontmatter.excerpt}</p>
         </div>
+      </div>
+      <div className="post__buttons">
         <div className="post__extra">
           <a
             className="post__button align-items"

@@ -1,6 +1,6 @@
 ---
 title: "Sunderland"
-excerpt: "A professional website showcasing the services of Sunderland Accounting."
+excerpt: "A professional website for a financial accounting firm. The website is connected to a headless CMS - Sanity.Io"
 cover_image: "/images/posts/SunderlandAccounting.png"
 categories: ["NextJS", "React", "SASS", "HeadlessCMS"]
 github: "https://github.com/gazjosef/sunderland-accounting"
