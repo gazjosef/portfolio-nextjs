@@ -1,20 +1,26 @@
 .container {
   margin: 0;
-  max-width: 100%;
   width: 100%;
-  min-height: 50rem;
-
-  @include respond(desktop) {
-    max-width: 120rem;
-    margin: 8rem auto;
-  }
+  max-width: 120rem;
 }
 
 .section {
-  padding: 1.5rem;
-  min-width: 100%;
+  min-height: 100vh;
+  padding: 10rem 20rem;
 
-  @include respond(desktop) {
-    padding: 4rem;
+  @include respond(tab-land) {
+    padding: 7.5rem 15rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 5rem 10rem;
+  }
+
+  @include respond(phone) {
+    padding: 2.5rem 5rem;
+  }
+
+  @include respond(sm-phone) {
+    padding: 1rem 2rem;
   }
 }

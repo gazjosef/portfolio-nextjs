@@ -3,11 +3,11 @@ import path from "path";
 import matter from "gray-matter";
 import { sortByOrder } from "../utils";
 
-import Hero from "./articles/Hero";
-import Story from "./articles/Story";
-import Portfolio from "./articles/Portfolio";
-import Contact from "./articles/Contact";
-import ScrollButton from "@/components/Button/ScrollButton";
+import Hero from "@/components/Section/Hero";
+import Story from "@/components/Section/Story";
+import Portfolio from "@/components/Section/Portfolio";
+import Contact from "@/components/Section/Contact";
+import ScrollButton from "@/components/UI/ScrollButton";
 
 export default function Home({ projects }) {
   return (

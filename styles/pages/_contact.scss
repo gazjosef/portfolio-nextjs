@@ -1,23 +1,4 @@
 .article-contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-
-  @include respond(tab-land) {
-    padding: 5rem 10rem;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-  }
-
-  @include respond(phone) {
-    padding: 2.5rem 5rem;
-  }
-
-  & > * {
-    display: grid;
-    place-content: center;
-  }
-
   &__image {
     grid-column: 1 / span 1;
   }
@@ -25,7 +6,7 @@
   &__details {
     grid-column: 2 / span 1;
 
-    background-color: $color-white-100;
+    background-color: $clr-white-100;
     border-radius: 0.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -39,11 +20,11 @@
     }
 
     a {
-      color: $color-black;
+      color: $clr-black;
 
       &:focus,
       &:visited {
-        color: $color-black;
+        color: $clr-black;
       }
     }
 

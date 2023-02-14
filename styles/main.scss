@@ -3,7 +3,6 @@
 @import "abstract/variables";
 
 @import "base/base";
-@import "base/elements";
 @import "base/typography";
 @import "base/utilities";
 
@@ -14,16 +13,19 @@
 @import "components/posts";
 
 @import "layout/footer";
+@import "layout/header";
 @import "layout/navbar";
 
 @import "pages/all";
-@import "pages/home";
-@import "pages/story";
+// @import "pages/home";
+// @import "pages/story";
 @import "pages/portfolio";
 @import "pages/contact";
 
 @import "utils/color";
+@import "utils/display";
 @import "utils/elements";
+@import "utils/flex";
 @import "utils/font";
 @import "utils/grid";
 @import "utils/margin";

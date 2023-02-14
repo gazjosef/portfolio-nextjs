@@ -1,5 +1,5 @@
 .article-portfolio {
-  background-color: $color-primary-400;
+  background-color: $clr-primary-400;
 
   display: grid;
   grid-gap: 4rem;
@@ -9,7 +9,7 @@
     grid-column: 1 / -1;
 
     text-align: center;
-    color: $color-white;
+    color: $clr-white;
   }
 
   &__grid {

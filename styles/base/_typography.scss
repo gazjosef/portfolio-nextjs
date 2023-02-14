@@ -1,5 +1,5 @@
 body {
-  color: $color-black-900;
+  color: $clr-black-900;
   font-family: $font-primary;
   font-weight: 400;
   font-size: 16px;
@@ -11,7 +11,7 @@ body {
   margin-bottom: 3.5rem;
   max-width: 14ch;
 
-  color: $color-white;
+  color: $clr-white;
   font-family: $font-secondary;
   font-size: 5.5rem;
   font-weight: 900;
@@ -20,7 +20,7 @@ body {
   text-transform: uppercase;
 
   span {
-    color: $color-primary-300;
+    color: $clr-primary-300;
   }
 
   @include respond(tab-land) {
@@ -39,7 +39,7 @@ body {
 }
 
 .heading-one {
-  color: $color-secondary;
+  color: $clr-secondary;
   font-family: $font-third;
   font-size: 3.5rem;
   font-weight: 800;
@@ -52,8 +52,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 10rem;
-    padding-top: 1rem;
-    border-bottom: 4px solid $color-secondary;
+    padding-top: 0.6rem;
+    border-bottom: 4px solid $clr-secondary;
   }
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .heading-three {
-  color: $color-primary-200;
+  color: $clr-primary-200;
   font-family: $font-secondary;
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ body {
 
 .paragraph {
   max-width: 45ch;
-  color: $color-primary-100;
+  color: $clr-primary-100;
   font-size: 2rem;
   line-height: 2;
   letter-spacing: 0.15rem;

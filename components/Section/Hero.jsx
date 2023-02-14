@@ -1,21 +1,14 @@
-import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { FaArrowCircleRight } from "react-icons/fa";
-import { gsapFadeDown } from "@/components/Animation";
+import useGsapFadeDown from "hooks/useGsapFadeDown";
 
 export default function Hero() {
-  const heroImgRef = useRef(null);
-  const heroTextRef = useRef(null);
-
-  useEffect(() => {
-    gsapFadeDown(heroImgRef, 0.5);
-    gsapFadeDown(heroTextRef, 0.25);
-  }, []);
+  const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
-    <article id="home" className="article-home">
-      <section className="article-home__text" ref={heroTextRef}>
-        <div>
+    <section id="home" className="section | u-bg-primary-400">
+      <div className="container | u-mx-auto   u-grid u-even-columns">
+        <div ref={heroTextRef}>
           <h1 className="heading-home">
             Hi, I&apos;m Gareth. I&apos;m a <span>Web Developer</span>.
           </h1>
@@ -30,16 +23,16 @@ export default function Hero() {
             </a>
           </button>
         </div>
-      </section>
 
-      <section className="article-home__image" ref={heroImgRef}>
-        <Image
-          src="/images/section/undraw_developer_activity_re_39tg.svg"
-          alt="responsive"
-          width={1000}
-          height={700}
-        />
-      </section>
-    </article>
+        <div ref={heroImgRef}>
+          <Image
+            src="/images/section/undraw_developer_activity_re_39tg.svg"
+            alt="responsive"
+            width={1000}
+            height={700}
+          />
+        </div>
+      </div>
+    </section>
   );
 }
