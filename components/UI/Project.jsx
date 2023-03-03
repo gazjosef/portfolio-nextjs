@@ -1,21 +1,16 @@
 import Image from "next/image";
-import { useRef, useEffect } from "react";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CategoryLabel from "../Category/CategoryLabel";
-import { gsapFadeDown } from "@/components/Animation";
+import useGsapFadeDown from "hooks/useGsapFadeDown";
 
 export default function Project({ project }) {
-  const projectRef = useRef(null);
-
-  useEffect(() => {
-    gsapFadeDown(projectRef, 0.5);
-  }, []);
+  const [projectTitleRef, projectImgRef, projectTextRef] = useGsapFadeDown();
 
   let categories = project.frontmatter.categories;
 
   return (
-    <div className="post" ref={projectRef}>
+    <div className="post" ref={projectTitleRef}>
       <div className="post__project">
         <div className="post__title">
           <h3 className="heading-three">{project.frontmatter.title}</h3>

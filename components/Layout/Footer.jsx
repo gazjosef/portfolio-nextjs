@@ -1,8 +1,10 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="container | u-mx-auto u-center-text">
-        <div>Copyright &copy; Gareth Hind 2023</div>
+        <div>Copyright &copy; Gareth Hind {currentYear}</div>
       </div>
     </footer>
   );
