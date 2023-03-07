@@ -4,9 +4,12 @@
   border-radius: 5rem;
   padding: 1.5rem 3rem;
 
+  display: inline-block;
+
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.5px;
+  text-decoration: none;
   text-transform: uppercase;
 
   @include respond(tab-port) {
@@ -32,11 +35,11 @@
 }
 
 .scrollButton {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   height: 6rem;
   width: 6rem;
-  cursor: pointer;
 
   position: fixed;
   right: 4rem;

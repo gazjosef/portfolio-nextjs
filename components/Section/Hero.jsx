@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="section | u-bg-primary-400">
-      <div className="container | u-mx-auto | u-grid u-even-columns">
+      <div className="container | u-grid u-even-columns">
         <div ref={heroTextRef}>
           <h1 className="heading-home">
             Hi, I&apos;m Gareth. I&apos;m a <span>Web Developer</span>.
