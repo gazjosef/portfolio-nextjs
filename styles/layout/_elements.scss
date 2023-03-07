@@ -1,11 +1,11 @@
 .container {
-  margin: 0;
-  width: 100%;
-  max-width: 120rem;
+  margin-inline: auto;
+  width: min(90%, 120rem);
 }
 
 .section {
   min-height: 100vh;
+  min-height: 100svh;
   padding: 10rem 20rem;
 
   @include respond(tab-land) {
