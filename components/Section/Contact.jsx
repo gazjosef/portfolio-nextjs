@@ -18,7 +18,10 @@ export default function Contact() {
         </section>
 
         <section>
-          <section className="article-contact__details" ref={contactDetailsRef}>
+          <section
+            className="article-contact__details | u-bg-white-200 u-mx-auto"
+            ref={contactDetailsRef}
+          >
             <h1 className="heading-one | u-margin-bottom-small">Contact</h1>
             <div className="article-contact__details--phone">
               <h3 className="heading-three align-items">

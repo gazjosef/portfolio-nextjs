@@ -37,15 +37,6 @@ function Navbar2() {
 
   return (
     <nav className="navbar2 | u-fs-nav u-fw-semi-bold u-uppercase">
-      <div className="navbar2__icon">
-        <IconContext.Provider value={{ className: "fa-react" }}>
-          {toggle ? (
-            <FaTimes onClick={handleClick} />
-          ) : (
-            <FaBars onClick={handleClick} />
-          )}
-        </IconContext.Provider>
-      </div>
       <ul
         role="list"
         className={
@@ -62,6 +53,16 @@ function Navbar2() {
           );
         })}
       </ul>
+
+      <div className="navbar2__icon">
+        <IconContext.Provider value={{ className: "fa-react" }}>
+          {toggle ? (
+            <FaTimes onClick={handleClick} />
+          ) : (
+            <FaBars onClick={handleClick} />
+          )}
+        </IconContext.Provider>
+      </div>
     </nav>
   );
 }
