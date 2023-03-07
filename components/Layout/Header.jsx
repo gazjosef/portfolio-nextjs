@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Navbar2 from "./Navbar2";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -9,12 +9,12 @@ const Header = () => {
           <Link href="/">
             <a className="u-fw-semi-bold u-text-black u-uppercase">
               <span className="u-fw-bold u-text-primary-300">Gareth Hind</span>{" "}
-              Web Developer
+              <span className="header__span">Web Developer</span>
             </a>
           </Link>
         </div>
 
-        <Navbar2 />
+        <Navbar />
       </div>
     </header>
   );

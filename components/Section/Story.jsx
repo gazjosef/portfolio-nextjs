@@ -61,9 +61,12 @@ export default function Story() {
           <p className="paragraph">Please check out my portfolio!</p>
 
           <button className="btn btn--cta btn--inverse">
-            <a href="#portfolio" className="align-items">
+            <a
+              href="#portfolio"
+              className="u-flex u-items-center u-justify-center"
+            >
               Click here
-              <FaArrowCircleRight className="align-items__arrow" />
+              <FaArrowCircleRight className="u-ml-1" />
             </a>
           </button>
         </section>

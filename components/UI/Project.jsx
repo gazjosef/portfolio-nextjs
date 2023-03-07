@@ -28,7 +28,11 @@ export default function Project({ project }) {
           )}
         </a>
 
-        <div className="post__label">
+        <div
+          className="post__label | 
+          "
+          // u-flex u-flex-wrap u-items-start u-justify-start
+        >
           {categories &&
             categories.map((category, index) => (
               <CategoryLabel key={index}>{category}</CategoryLabel>
@@ -42,24 +46,20 @@ export default function Project({ project }) {
       <div className="post__buttons">
         <div className="post__extra">
           <a
-            className="post__button align-items"
+            className="post__button | u-flex u-items-center u-justify-center"
             href={`${project.frontmatter.github}`}
           >
-            <IconContext.Provider
-              value={{ className: "post__icon align-items__icon" }}
-            >
-              <FaGithub className="align-items__icon" /> GitHub
+            <IconContext.Provider value={{ className: "post__icon" }}>
+              <FaGithub className="u-mr-0-75" /> GitHub
             </IconContext.Provider>
           </a>
 
           <a
-            className="post__button align-items"
+            className="post__button | u-flex u-items-center u-justify-center"
             href={`${project.frontmatter.live}`}
           >
-            <IconContext.Provider
-              value={{ className: "post__icon align-items__icon" }}
-            >
-              <FaEye className="align-items__icon" /> Live
+            <IconContext.Provider value={{ className: "post__icon" }}>
+              <FaEye className="u-mr-0-75" /> Live
             </IconContext.Provider>
           </a>
         </div>

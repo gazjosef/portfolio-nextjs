@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -14,36 +13,49 @@ function Navbar() {
     {
       title: "Home",
       url: "#home",
-      cName: "navbar__links",
     },
     {
       title: "Story",
       url: "#story",
-      cName: "navbar__links",
     },
     {
       title: "Portfolio",
       url: "#portfolio",
-      cName: "navbar__links",
     },
     {
       title: "Contact",
       url: "#contact",
-      cName: "navbar__links",
     },
   ];
 
   return (
-    <nav className="navbar">
-      <div className="navbar__logo">
-        <Link href="/">
-          <a>
-            <span>Gareth Hind</span> Web Developer
-          </a>
-        </Link>
-      </div>
-      <div className="navbar__menu-icon">
-        <IconContext.Provider value={{ className: "fa-react" }}>
+    <nav className="navbar | u-flex u-items-center | u-fs-nav">
+      <ul
+        id="primary-navigation"
+        data-visible="false"
+        role="list"
+        className={`navbar__menu | u-flex u-items-center u-gap-3
+          ${toggle ? "navbar__active" : ""}
+            `}
+      >
+        {MenuItems.map((item, index) => {
+          return (
+            <li key={index}>
+              <a className="u-mx-1 u-text-black" href={item.url}>
+                {item.title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+
+      {/* TOGGLE BUTTON */}
+      <div
+        className="navbar__mobile-nav-toggle sr-only"
+        aria-label="Toggle navigation"
+        aria-expanded={toggle}
+      >
+        <IconContext.Provider value={{}}>
           {toggle ? (
             <FaTimes onClick={handleClick} />
           ) : (
@@ -51,22 +63,6 @@ function Navbar() {
           )}
         </IconContext.Provider>
       </div>
-      <ul
-        role="list"
-        className={toggle ? "navbar__menu active" : "navbar__menu"}
-      >
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link href={item.url}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
     </nav>
   );
 }

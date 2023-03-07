@@ -1,169 +1,39 @@
 .navbar {
-  background-color: $clr-white-50;
-  border-bottom: 1px solid $clr-white-100;
-  height: 6rem;
-  padding: 1rem 4rem;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2rem;
-  font-family: $font-primary;
-  font-weight: 500;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-
-  @include respond(tab-land) {
-    font-size: 1.75rem;
-  }
-
-  @include respond(tab-port) {
-    position: relative;
-  }
-
-  a {
-    color: $clr-primary-100;
-  }
-
-  &__logo {
-    justify-self: start;
-
-    span {
-      color: $clr-primary-300;
-      font-weight: 700;
-    }
-
-    @include respond(tab-port) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
-    }
-
-    &:focus,
-    &:visited {
-      color: $clr-black;
-    }
-  }
-
-  &__menu {
-    width: 70vw;
-
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 1rem;
-    justify-content: end;
-
-    @include respond(tab-port) {
-      width: 100%;
-      height: 50vh;
-
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      position: absolute;
-      top: 6rem;
-      left: -100%;
-
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-
-    @include respond(phone) {
-      height: 42.5vh;
-    }
-
-    &.active {
-      @include respond(tab-port) {
-        background: $clr-white-50;
-        left: 0;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
-      }
-    }
-  }
-
-  &__menu-icon {
-    display: none;
-
-    @include respond(tab-port) {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-  }
-}
-
-.navbar2 {
   position: relative;
 
-  &__links {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-
-    @include respond(tab-port) {
-      text-align: center;
-      padding: 2rem;
+  &__menu {
+    @include respond(sm) {
+      background-color: steelblue;
+      height: 40vh;
       width: 100%;
-      display: table;
-    }
+      padding: 5rem;
 
-    &:focus,
-    &:visited {
-      color: $clr-black;
-    }
-
-    &:hover {
-      background-color: $clr-primary-300;
-      border-radius: 4px;
-      color: $clr-white;
-      transition: all 0.2s ease-out;
-
-      @include respond(tab-port) {
-        border-radius: 0;
-      }
-    }
-  }
-
-  &__list {
-    @include respond(tab-port) {
-      width: 100%;
-      height: 50vh;
-
-      display: flex;
-      justify-content: flex-start;
+      position: fixed;
       flex-direction: column;
-      position: absolute;
-      top: 6rem;
-      left: -100%;
+      top: 0vh;
+      right: 0;
 
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-
-    @include respond(phone) {
-      height: 42.5vh;
+      transform: translateX(100%);
+      transition: 0.5s ease-in;
     }
   }
 
-  &__icon {
+  &__active {
+    transform: translateX(0);
+  }
+
+  &__mobile-nav-toggle {
+    cursor: pointer;
+    aspect-ratio: 1;
+    width: 2rem;
+
     display: none;
 
-    @include respond(tab-port) {
+    font-size: 3rem;
+
+    @include respond(sm) {
       display: block;
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-      // transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
+      z-index: 9999;
     }
   }
 }
