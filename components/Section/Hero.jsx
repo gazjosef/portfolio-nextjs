@@ -7,16 +7,21 @@ export default function Hero() {
 
   return (
     <section id="home" className="section | u-bg-primary-400">
-      <div className="container | u-grid u-even-columns">
+      <div className="container | u-mt-md | u-grid u-even-columns">
         <div ref={heroTextRef}>
           <h1 className="heading-home">
-            Hi, I&apos;m Gareth. I&apos;m a <span>Web Developer</span>.
+            Hi, I&apos;m <span>Gareth</span>.
           </h1>
           <p className="paragraph">
-            I spend my time, night and day, coding front-end websites and
-            building content management systems.
+            Welcome to my portfolio website! I am a web developer with a passion
+            for creating engaging, responsive, and user-friendly websites.
           </p>
-          <button className="btn btn--cta">
+          <p className="paragraph">
+            Whether you&apos;re a prospective employer, client, or just someone
+            interested in web development, I invite you to explore my portfolio
+            and learn more about my work.
+          </p>
+          <button className="btn btn--cta | u-max-w-max">
             <a
               href="#portfolio"
               className="u-flex u-items-center u-justify-center"

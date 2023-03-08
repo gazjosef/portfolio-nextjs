@@ -1,8 +1,23 @@
+$default-font-size: 1.6rem;
+$max-ch-width: 70ch;
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Raleway", sans-serif;
+$font-third: "Montserrat", serif;
+$ff-body: $font-primary;
+$ff-heading: $font-primary;
+
+$fs-body: clamp(1.4rem, 1.5vw, 1.6rem);
+$fs-primary-heading: clamp(2.5rem, 3vw, 3.5rem);
+$fs-secondary-heading: clamp(2.5rem, 2.75vw, 3rem);
+$fs-nav: clamp(1.6rem, 1.8vw, 2rem);
+$fs-button: 1.3rem;
+
 body {
-  color: $clr-black-900;
+  color: var(--clr-black-900);
   font-family: $font-primary;
   font-weight: 400;
-  font-size: 16px;
+  font-size: $default-font-size;
   line-height: 1.7;
   text-rendering: optimizeSpeed;
 }
@@ -11,7 +26,7 @@ body {
   margin-bottom: 3.5rem;
   max-width: 14ch;
 
-  color: $clr-white;
+  color: var(--clr-white-0);
   font-family: $font-secondary;
   font-size: 5.5rem;
   font-weight: 900;
@@ -39,7 +54,7 @@ body {
 }
 
 .heading-one {
-  color: $clr-secondary;
+  color: var(--clr-primary-500);
   font-family: $font-third;
   font-size: 3.5rem;
   font-weight: 800;
@@ -53,7 +68,7 @@ body {
     margin-right: auto;
     width: 10rem;
     padding-top: 0.6rem;
-    border-bottom: 4px solid $clr-secondary;
+    border-bottom: 4px solid var(--clr-primary-500);
   }
 }
 
@@ -74,20 +89,11 @@ body {
 .paragraph {
   max-width: 45ch;
   color: $clr-primary-100;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1.8vw, 2rem);
   line-height: 2;
   letter-spacing: 0.15rem;
-  // text-align: justify;
 
   &:not(:last-child) {
     margin-bottom: 2rem;
-  }
-
-  @include respond(tab-land) {
-    font-size: 1.75rem;
-  }
-
-  @include respond(phone) {
-    font-size: 1.5rem;
   }
 }

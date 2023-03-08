@@ -1,14 +1,13 @@
 :root {
-  --clr-primary-50: hsl(213, 100%, 98%);
-  --clr-primary-100: hsl(223, 48%, 69%);
-  --clr-primary-200: hsl(219, 89%, 70%);
-  --clr-primary-300: hsl(219, 89%, 60%);
-  --clr-primary-400: hsl(223, 100%, 33%);
-  --clr-primary-500: hsl(223, 100%, 13%);
+  --clr-primary-100: hsl(213, 100%, 98%);
+  --clr-primary-200: hsl(195, 43%, 79%);
+  --clr-primary-300: hsl(202, 61%, 67%);
+  --clr-primary-400: hsl(202, 61%, 47%);
+  --clr-primary-500: hsl(209, 78%, 35%);
   --clr-secondary-100: hsl(14, 100%, 80%);
   --clr-secondary-200: hsl(14, 100%, 70%);
-  --clr-secondary-300: hsl(14, 100%, 60%);
-  --clr-secondary-400: hsl(14, 100%, 43%);
+  --clr-secondary-300: hsl(14, 87%, 49%);
+  --clr-secondary-400: hsl(12, 87%, 37%);
   --clr-secondary-500: hsl(14, 100%, 20%);
   --clr-white-0: hsl(0, 0%, 100%);
   --clr-white-100: hsl(0, 0%, 95%);
@@ -23,28 +22,24 @@
   --clr-black-1000: hsl(0, 0%, 0%);
 }
 
-.u-bg-primary-50 {
+.u-bg-primary-100 {
   background-color: hsl(213, 100%, 98%);
 }
 
-.u-bg-primary-100 {
-  background-color: hsl(223, 48%, 69%);
-}
-
 .u-bg-primary-200 {
-  background-color: hsl(219, 89%, 70%);
+  background-color: hsl(195, 43%, 79%);
 }
 
 .u-bg-primary-300 {
-  background-color: hsl(219, 89%, 60%);
+  background-color: hsl(202, 61%, 67%);
 }
 
 .u-bg-primary-400 {
-  background-color: hsl(223, 100%, 33%);
+  background-color: hsl(202, 61%, 47%);
 }
 
 .u-bg-primary-500 {
-  background-color: hsl(223, 100%, 13%);
+  background-color: hsl(209, 78%, 35%);
 }
 
 .u-bg-secondary-100 {
@@ -56,11 +51,11 @@
 }
 
 .u-bg-secondary-300 {
-  background-color: hsl(14, 100%, 60%);
+  background-color: hsl(14, 87%, 49%);
 }
 
 .u-bg-secondary-400 {
-  background-color: hsl(14, 100%, 43%);
+  background-color: hsl(12, 87%, 37%);
 }
 
 .u-bg-secondary-500 {
@@ -111,28 +106,24 @@
   background-color: hsl(0, 0%, 0%);
 }
 
-.u-clr-primary-50 {
+.u-clr-primary-100 {
   color: hsl(213, 100%, 98%);
 }
 
-.u-clr-primary-100 {
-  color: hsl(223, 48%, 69%);
-}
-
 .u-clr-primary-200 {
-  color: hsl(219, 89%, 70%);
+  color: hsl(195, 43%, 79%);
 }
 
 .u-clr-primary-300 {
-  color: hsl(219, 89%, 60%);
+  color: hsl(202, 61%, 67%);
 }
 
 .u-clr-primary-400 {
-  color: hsl(223, 100%, 33%);
+  color: hsl(202, 61%, 47%);
 }
 
 .u-clr-primary-500 {
-  color: hsl(223, 100%, 13%);
+  color: hsl(209, 78%, 35%);
 }
 
 .u-clr-secondary-100 {
@@ -144,11 +135,11 @@
 }
 
 .u-clr-secondary-300 {
-  color: hsl(14, 100%, 60%);
+  color: hsl(14, 87%, 49%);
 }
 
 .u-clr-secondary-400 {
-  color: hsl(14, 100%, 43%);
+  color: hsl(12, 87%, 37%);
 }
 
 .u-clr-secondary-500 {
@@ -1994,7 +1985,7 @@ html:focus-within {
 /* Set box-sizing & background color */
 body {
   box-sizing: border-box;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--clr-white-100);
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -2063,10 +2054,10 @@ a:not([class]) {
 }
 
 body {
-  color: hsl(0, 0%, 10%);
+  color: var(--clr-black-900);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   text-rendering: optimizeSpeed;
 }
@@ -2074,7 +2065,7 @@ body {
 .heading-home {
   margin-bottom: 3.5rem;
   max-width: 14ch;
-  color: hsl(0, 0%, 100%);
+  color: var(--clr-white-0);
   font-family: "Raleway", sans-serif;
   font-size: 5.5rem;
   font-weight: 900;
@@ -2099,7 +2090,7 @@ body {
 }
 
 .heading-one {
-  color: #c0632e;
+  color: var(--clr-primary-500);
   font-family: "Montserrat", serif;
   font-size: 3.5rem;
   font-weight: 800;
@@ -2113,7 +2104,7 @@ body {
   margin-right: auto;
   width: 10rem;
   padding-top: 0.6rem;
-  border-bottom: 4px solid #c0632e;
+  border-bottom: 4px solid var(--clr-primary-500);
 }
 
 .heading-two {
@@ -2133,22 +2124,12 @@ body {
 .paragraph {
   max-width: 45ch;
   color: #0c2d48;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1.8vw, 2rem);
   line-height: 2;
   letter-spacing: 0.15rem;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 2rem;
-}
-@media (max-width: 75em) {
-  .paragraph {
-    font-size: 1.75rem;
-  }
-}
-@media (max-width: 37.5em) {
-  .paragraph {
-    font-size: 1.5rem;
-  }
 }
 
 .btn {
@@ -2156,9 +2137,11 @@ body {
   border: none;
   border-radius: 5rem;
   padding: 1.5rem 3rem;
+  display: inline-block;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.5px;
+  text-decoration: none;
   text-transform: uppercase;
 }
 @media (max-width: 56.25em) {
@@ -2181,11 +2164,11 @@ body {
 }
 
 .scrollButton {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   height: 6rem;
   width: 6rem;
-  cursor: pointer;
   position: fixed;
   right: 4rem;
   bottom: 4rem;
@@ -2404,13 +2387,13 @@ body {
   background-color: #2e8bc0;
 }
 .container {
-  margin: 0;
-  width: 100%;
-  max-width: 120rem;
+  margin-inline: auto;
+  width: min(90%, 120rem);
 }
 
 .section {
   min-height: 100vh;
+  min-height: 100svh;
   padding: 10rem 20rem;
 }
 @media (max-width: 75em) {
@@ -2513,7 +2496,6 @@ body {
 }
 
 .article-portfolio {
-  background-color: #b1d4e0;
   display: grid;
   grid-gap: 4rem;
 }
@@ -2521,7 +2503,6 @@ body {
   grid-row: 1/span 1;
   grid-column: 1/-1;
   text-align: center;
-  color: hsl(0, 0%, 100%);
 }
 .article-portfolio__grid {
   grid-row: 2/span 1;
@@ -2623,6 +2604,16 @@ body {
   height: min-content;
 }
 
+.u-max-w-min {
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+
+.u-max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 .u-bg-white {
   background-color: hsl(0, 0%, 100%);
 }
@@ -2631,16 +2622,12 @@ body {
   background-color: hsl(0, 0%, 90%);
 }
 
-.u-bg-primary-200 {
-  background-color: #145da0;
-}
-
 .u-bg-primary-300 {
   background-color: #2e8bc0;
 }
 
 .u-bg-primary-400 {
-  background-color: #b1d4e0;
+  background-color: hsl(195, 43%, 79%);
 }
 
 .u-bg-black {
@@ -2725,116 +2712,20 @@ body {
   display: grid;
 }
 
+.u-place-content-center {
+  place-content: center;
+}
+
+.u-place-content-start {
+  place-content: start !important;
+}
+
+.u-place-content-start-center {
+  place-content: start center !important;
+}
+
 .u-col-span-full {
   grid-column: 1/-1;
-}
-
-.u-col-start-1 {
-  grid-column-start: 1;
-}
-
-.u-col-start-2 {
-  grid-column-start: 2;
-}
-
-.u-col-start-3 {
-  grid-column-start: 3;
-}
-
-.u-col-start-4 {
-  grid-column-start: 4;
-}
-
-.u-col-end-1 {
-  grid-column-end: 1;
-}
-
-.u-col-end-2 {
-  grid-column-end: 2;
-}
-
-.u-col-end-3 {
-  grid-column-end: 3;
-}
-
-.u-col-end-4 {
-  grid-column-end: 4;
-}
-
-.u-gap-1 {
-  gap: 1rem;
-}
-
-.u-gap-2 {
-  gap: 2rem;
-}
-
-.u-gap-3 {
-  gap: 3rem;
-}
-
-.u-gap-4 {
-  gap: 4rem;
-}
-
-.u-gap-5 {
-  gap: 5rem;
-}
-
-.u-row-span-full {
-  grid-row: 1/-1;
-}
-
-.u-row-start-1 {
-  grid-row-start: 1;
-}
-
-.u-row-start-2 {
-  grid-row-start: 2;
-}
-
-.u-row-start-3 {
-  grid-row-start: 3;
-}
-
-.u-row-start-4 {
-  grid-row-start: 4;
-}
-
-.u-row-end-1 {
-  grid-row-end: 1;
-}
-
-.u-row-end-2 {
-  grid-row-end: 2;
-}
-
-.u-row-end-3 {
-  grid-row-end: 3;
-}
-
-.u-row-end-4 {
-  grid-row-end: 4;
-}
-
-.u-gap-1 {
-  gap: 1rem;
-}
-
-.u-gap-2 {
-  gap: 2rem;
-}
-
-.u-gap-3 {
-  gap: 3rem;
-}
-
-.u-gap-4 {
-  gap: 4rem;
-}
-
-.u-gap-5 {
-  gap: 5rem;
 }
 
 .u-auto-columns {
@@ -2903,11 +2794,11 @@ body {
 }
 
 .u-fs-primary-heading {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
 }
 
 .u-fs-secondary-heading {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 2.75vw, 3rem);
 }
 
 .u-fs-button {
@@ -2915,7 +2806,7 @@ body {
 }
 
 .u-fs-nav {
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 1.8vw, 2rem);
   letter-spacing: 0.15rem;
 }
 

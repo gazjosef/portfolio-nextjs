@@ -28,13 +28,13 @@ export default function Story() {
           />
         </section>
         <section className="article-story__text" ref={storyTextRef}>
-          <p className="paragraph">
-            I&apos;m a developer from Sydney, Australia. I&apos;ve been
-            programming for over five years, mainly focusing on front-end
-            projects.
+          <p className="paragraph | u-mb-md">
+            Through my projects, I strive to combine my technical skills with my
+            creative vision to develop websites that not only meet the needs of
+            clients but also provide a positive user experience.
           </p>
 
-          <p className="paragraph u-margin-bottom-medium">Tech Stack:</p>
+          <p className="paragraph">Tech Stack:</p>
 
           <p className="paragraph post__label">
             <CategoryLabel>HTML</CategoryLabel>
@@ -58,9 +58,7 @@ export default function Story() {
             <CategoryLabel>Shopify</CategoryLabel>
           </p>
 
-          <p className="paragraph">Please check out my portfolio!</p>
-
-          <button className="btn btn--cta btn--inverse">
+          <button className="btn btn--cta btn--inverse | u-max-w-max">
             <a
               href="#portfolio"
               className="u-flex u-items-center u-justify-center"
