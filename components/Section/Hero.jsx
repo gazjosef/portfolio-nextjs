@@ -16,11 +16,7 @@ export default function Hero() {
             Welcome to my portfolio website! I am a web developer with a passion
             for creating engaging, responsive, and user-friendly websites.
           </p>
-          <p className="paragraph">
-            Whether you&apos;re a prospective employer, client, or just someone
-            interested in web development, I invite you to explore my portfolio
-            and learn more about my work.
-          </p>
+
           <button className="btn btn--cta | u-max-w-max">
             <a
               href="#portfolio"

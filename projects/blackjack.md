@@ -5,5 +5,5 @@ cover_image: "/images/posts/BlackJack.png"
 categories: ["JavaScript", "SASS"]
 github: "https://github.com/gazjosef/blackjack-game"
 live: "https://gazjosef.github.io/blackjack-game/"
-order: 6
+order: 8
 ---

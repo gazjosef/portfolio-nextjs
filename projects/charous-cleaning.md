@@ -5,5 +5,5 @@ cover_image: "/images/posts/charous-cleaning.png"
 categories: ["Vue", "Nuxt", "Tailwind", "HeadlessCMS"]
 github: "https://github.com/gazjosef/charous-cleaning"
 live: "https://charous-cleaning.netlify.app/"
-order: 2
+order: 5
 ---

@@ -5,5 +5,5 @@ cover_image: "/images/posts/OddsTracker.png"
 categories: ["JavaScript", "NextJS", "React", "SASS", "Testing"]
 github: "https://github.com/gazjosef/odds-tracker"
 live: "https://odds-tracker.vercel.app/"
-order: 4
+order: 2
 ---

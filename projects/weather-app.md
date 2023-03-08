@@ -5,5 +5,5 @@ cover_image: "/images/posts/WeatherApp.png"
 categories: ["TypeScript", "NextJS", "React", "SASS"]
 github: "https://github.com/gazjosef/weather-app"
 live: "https://weather-app-gazjosef.vercel.app/"
-order: 7
+order: 3
 ---

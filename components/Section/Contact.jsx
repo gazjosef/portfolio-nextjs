@@ -23,21 +23,21 @@ export default function Contact() {
             ref={contactDetailsRef}
           >
             <h1 className="heading-one | u-margin-bottom-small">Contact</h1>
-            <div className="article-contact__details--phone">
+            <div>
               <h3 className="heading-three | u-flex u-items-center">
                 <FaPhone className="u-mr-1" /> Mobile
               </h3>
               <p className="paragraph">0402 830 315</p>
             </div>
 
-            <div className="article-contact__details--email">
+            <div>
               <h3 className="heading-three | u-flex u-items-center">
                 <FaEnvelope className="u-mr-1" /> Email
               </h3>
               <p className="paragraph">garethjhind@gmail.com</p>
             </div>
 
-            <div className="article-contact__details--github">
+            <div>
               <h3 className="heading-three | u-flex u-items-center">
                 <FaGithub className="u-mr-1" /> Github
               </h3>
@@ -48,7 +48,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="article-contact__details--linkedIn">
+            <div>
               <h3 className="heading-three | u-flex u-items-center">
                 <FaLinkedin className="u-mr-1" /> LinkedIn
               </h3>

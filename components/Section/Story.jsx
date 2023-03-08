@@ -18,23 +18,22 @@ export default function Story() {
           </h1>
         </section>
       </div>
-      <div className="container | u-mx-auto u-grid u-even-columns">
-        <section className="article-story__image" ref={storyImgRef}>
+      <div className="container | u-mx-auto u-grid u-even-columns u-gap-5">
+        <section ref={storyImgRef}>
           <Image
             src="/images/section/undraw_programming_re_kg9v.svg"
             alt="responsive"
             width={1000}
             height={700}
           />
-        </section>
-        <section className="article-story__text" ref={storyTextRef}>
-          <p className="paragraph | u-mb-md">
+          <p className="paragraph | u-mt-md">
             Through my projects, I strive to combine my technical skills with my
             creative vision to develop websites that not only meet the needs of
             clients but also provide a positive user experience.
           </p>
-
-          <p className="paragraph">Tech Stack:</p>
+        </section>
+        <section className="article-story__text" ref={storyTextRef}>
+          <p className="paragraph | u-fw-semi-bold">Tech Stack:</p>
 
           <p className="paragraph post__label">
             <CategoryLabel>HTML</CategoryLabel>
@@ -50,7 +49,7 @@ export default function Story() {
             <CategoryLabel>Testing</CategoryLabel>
           </p>
 
-          <p className="paragraph post__label">
+          <p className="paragraph post__label | u-mb-md">
             <CategoryLabel>Express</CategoryLabel>
             <CategoryLabel>HeadlessCMS</CategoryLabel>
             <CategoryLabel>MongoDB</CategoryLabel>
@@ -63,7 +62,7 @@ export default function Story() {
               href="#portfolio"
               className="u-flex u-items-center u-justify-center"
             >
-              Click here
+              Portfolio
               <FaArrowCircleRight className="u-ml-1" />
             </a>
           </button>

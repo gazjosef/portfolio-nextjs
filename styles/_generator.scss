@@ -289,3 +289,46 @@
     }
   }
 }
+
+// * LAYOUT
+// ! BUGS - Value in layout-sizes contain %. Find way to check for %
+
+@each $size, $value in $layout-sizes {
+  .u-left-#{$size} {
+    @if not(type-of($value) == "number") {
+      left: #{$value};
+    } @else {
+      left: #{$value}rem;
+    }
+  }
+}
+
+@each $size, $value in $layout-sizes {
+  .u-right-#{$size} {
+    @if not(type-of($value) == "number") {
+      right: #{$value};
+    } @else {
+      right: #{$value}rem;
+    }
+  }
+}
+
+@each $size, $value in $layout-sizes {
+  .u-top-#{$size} {
+    @if not(type-of($value) == "number") {
+      top: #{$value};
+    } @else {
+      top: #{$value}rem;
+    }
+  }
+}
+
+@each $size, $value in $layout-sizes {
+  .u-bottom-#{$size} {
+    @if not(type-of($value) == "number") {
+      bottom: #{$value};
+    } @else {
+      bottom: #{$value}rem;
+    }
+  }
+}
