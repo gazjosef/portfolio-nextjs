@@ -2376,7 +2376,6 @@ a:not([class]) {
 body {
   color: var(--clr-black-900);
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
   text-rendering: optimizeSpeed;
@@ -2386,26 +2385,20 @@ body {
   margin-bottom: 3.5rem;
   max-width: 14ch;
   color: var(--clr-white-0);
-  font-family: "Raleway", sans-serif;
-  font-size: 5.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(3.5rem, 4.5vw, 5.5rem);
   font-weight: 900;
   letter-spacing: 2px;
   line-height: 1.3;
   text-transform: uppercase;
 }
 .heading-home span {
-  color: #2e8bc0;
-}
-@media (max-width: 75em) {
-  .heading-home {
-    font-size: 4.5rem;
-  }
+  color: var(--clr-primary-400);
 }
 @media (max-width: 56.25em) {
   .heading-home {
     margin-left: auto;
     margin-right: auto;
-    font-size: 3.75rem;
   }
 }
 
@@ -2430,7 +2423,7 @@ body {
 .heading-two {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: var(--fw-bold);
 }
 
 .heading-three {

@@ -12,9 +12,10 @@ export default function Hero() {
           <h1 className="heading-home">
             Hi, I&apos;m <span>Gareth</span>.
           </h1>
+          <p className="paragraph">Welcome to my portfolio website!</p>
           <p className="paragraph">
-            Welcome to my portfolio website! I am a web developer with a passion
-            for creating engaging, responsive, and user-friendly websites.
+            I am a web developer with a passion for creating engaging,
+            responsive, and user-friendly websites.
           </p>
 
           <button className="btn btn--cta | u-max-w-max">
