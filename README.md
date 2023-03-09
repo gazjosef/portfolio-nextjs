@@ -14,8 +14,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/gazjosef/ant-software">
-    <img src="/public/img/favicon_io/android-chrome-512x512.png" alt="Logo" width="250" height="250">
+  <a href="https://github.com/gazjosef/portfolio-nextjs">
+    <img src="/public/images/favicon_io/android-chrome-512x512.png" alt="Logo" width="250" height="250">
   </a>
 
 <h3 align="center">Gareth Hind Portfolio Website</h3>
