@@ -21,8 +21,6 @@
 <h3 align="center">Gareth Hind Portfolio Website</h3>
 
   <p align="center">
-Welcome to my portfolio website!
-
 I am a web developer with a passion for creating engaging, responsive, and user-friendly websites.
     <br />
   </p>
