@@ -50,7 +50,7 @@ export default function Project({ project }) {
             href={`${project.frontmatter.github}`}
           >
             <IconContext.Provider value={{ className: "post__icon" }}>
-              <FaGithub className="u-mr-0-75" /> GitHub
+              <FaGithub className="u-mr-0_75" /> GitHub
             </IconContext.Provider>
           </a>
 
@@ -59,7 +59,7 @@ export default function Project({ project }) {
             href={`${project.frontmatter.live}`}
           >
             <IconContext.Provider value={{ className: "post__icon" }}>
-              <FaEye className="u-mr-0-75" /> Live
+              <FaEye className="u-mr-0_75" /> Live
             </IconContext.Provider>
           </a>
         </div>
