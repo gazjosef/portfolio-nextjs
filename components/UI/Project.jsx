@@ -28,11 +28,7 @@ export default function Project({ project }) {
           )}
         </a>
 
-        <div
-          className="post__label | 
-          "
-          // u-flex u-flex-wrap u-items-start u-justify-start
-        >
+        <div className="post__label">
           {categories &&
             categories.map((category, index) => (
               <CategoryLabel key={index}>{category}</CategoryLabel>
