@@ -33,6 +33,8 @@
   }
 
   &__label {
+    min-height: 10rem;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
