@@ -26,7 +26,7 @@
   }
 
   &__image {
-    border: 1px $clr-black solid;
+    border: 1px solid var(--clr-black-1000);
     border-radius: 0.25rem;
     margin-bottom: 4rem;
     object-fit: contain;
