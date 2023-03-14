@@ -28,7 +28,7 @@ function ScrollButton() {
   }
 
   return (
-    <button className="scrollButton">
+    <button aria-label="Scroll-to-top Button" className="scrollButton">
       <IconContext.Provider value={{ className: "scrollButton__icon" }}>
         <FaArrowCircleUp
           onClick={scrollToTop}
