@@ -28,29 +28,13 @@ body {
   color: var(--clr-white-0);
   font-family: $ff-heading;
   font-size: clamp(3.5rem, 4.5vw, 5.5rem);
-  // font-size: 5.5rem;
-  font-weight: 900;
+
   letter-spacing: 2px;
   line-height: 1.3;
-  text-transform: uppercase;
-
-  span {
-    color: var(--clr-primary-400);
-  }
-
-  // @include respond(tab-land) {
-  //   font-size: 4.5rem;
-  // }
 
   @include respond(tab-port) {
-    margin-left: auto;
-    margin-right: auto;
-    // font-size: 3.75rem;
+    margin-inline: auto;
   }
-
-  // @include respond(phone) {
-  //   font-size: 3.5rem;
-  // }
 }
 
 .heading-one {

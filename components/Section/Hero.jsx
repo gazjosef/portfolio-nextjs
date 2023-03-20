@@ -10,9 +10,9 @@ export default function Hero() {
       <div className="container | u-mt-md | u-grid u-even-columns">
         <div ref={heroTextRef}>
           <h1 className="heading-home">
-            Hi, I&apos;m <span>Gareth</span>.
+            Hi, I&apos;m <span className="u-clr-primary-400">Gareth</span>.
           </h1>
-          <p className="paragraph">Welcome to my portfolio website!</p>
+
           <p className="paragraph">
             I am a web developer with a passion for creating engaging,
             responsive, and user-friendly websites.

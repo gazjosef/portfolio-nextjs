@@ -10,10 +10,7 @@ export default function Story() {
     <section id="story" className="section">
       <div className="container | u-mx-auto">
         <section className="article-story__title">
-          <h1
-            className="heading-one | u-margin-bottom-medium u-center-text"
-            ref={storyImgRef}
-          >
+          <h1 className="heading-one | u-mb-lg u-center-text" ref={storyImgRef}>
             Story
           </h1>
         </section>
@@ -26,38 +23,38 @@ export default function Story() {
             width={1000}
             height={700}
           />
-          <p className="paragraph | u-mt-md">
+        </section>
+        <section className="article-story__text" ref={storyTextRef}>
+          <section>
+            <p className="paragraph post__label">
+              <CategoryLabel>HTML</CategoryLabel>
+              <CategoryLabel>CSS</CategoryLabel>
+              <CategoryLabel>SASS</CategoryLabel>
+              <CategoryLabel>Tailwind</CategoryLabel>
+              <CategoryLabel>JavaScript</CategoryLabel>
+              <CategoryLabel>TypeScript</CategoryLabel>
+              <CategoryLabel>React</CategoryLabel>
+              <CategoryLabel>NextJS</CategoryLabel>
+              <CategoryLabel>Vue</CategoryLabel>
+              <CategoryLabel>Nuxt</CategoryLabel>
+              <CategoryLabel>Testing</CategoryLabel>
+            </p>
+
+            <p className="paragraph post__label">
+              <CategoryLabel>Express</CategoryLabel>
+              <CategoryLabel>HeadlessCMS</CategoryLabel>
+              <CategoryLabel>MongoDB</CategoryLabel>
+              <CategoryLabel>Redux</CategoryLabel>
+              <CategoryLabel>Shopify</CategoryLabel>
+            </p>
+          </section>
+          <p className="paragraph">
             Through my projects, I strive to combine my technical skills with my
             creative vision to develop websites that not only meet the needs of
             clients but also provide a positive user experience.
           </p>
-        </section>
-        <section className="article-story__text" ref={storyTextRef}>
-          <p className="paragraph | u-fw-semi-bold">Tech Stack:</p>
 
-          <p className="paragraph post__label">
-            <CategoryLabel>HTML</CategoryLabel>
-            <CategoryLabel>CSS</CategoryLabel>
-            <CategoryLabel>SASS</CategoryLabel>
-            <CategoryLabel>Tailwind</CategoryLabel>
-            <CategoryLabel>JavaScript</CategoryLabel>
-            <CategoryLabel>TypeScript</CategoryLabel>
-            <CategoryLabel>React</CategoryLabel>
-            <CategoryLabel>NextJS</CategoryLabel>
-            <CategoryLabel>Vue</CategoryLabel>
-            <CategoryLabel>Nuxt</CategoryLabel>
-            <CategoryLabel>Testing</CategoryLabel>
-          </p>
-
-          <p className="paragraph post__label | u-mb-md">
-            <CategoryLabel>Express</CategoryLabel>
-            <CategoryLabel>HeadlessCMS</CategoryLabel>
-            <CategoryLabel>MongoDB</CategoryLabel>
-            <CategoryLabel>Redux</CategoryLabel>
-            <CategoryLabel>Shopify</CategoryLabel>
-          </p>
-
-          <button className="btn btn--cta btn--inverse | u-max-w-max">
+          <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">
             <a
               href="#portfolio"
               className="u-flex u-items-center u-justify-center"

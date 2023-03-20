@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.u-flex-col {
+  flex-direction: column;
+}
+
 .u-flex-wrap {
   flex-wrap: wrap;
 }
@@ -26,4 +30,8 @@
 
 .u-justify-start {
   justify-content: flex-start;
+}
+
+.u-justify-end {
+  justify-content: flex-end;
 }

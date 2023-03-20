@@ -11,22 +11,25 @@ export default function Project({ project }) {
 
   return (
     <div className="post" ref={projectTitleRef}>
-      <div className="post__project">
-        <div className="post__title">
-          <h3 className="heading-three">{project.frontmatter.title}</h3>
-        </div>
+      <a href={`${project.frontmatter.live}`}>
+        {project.frontmatter.cover_image && (
+          <Image
+            src={project.frontmatter.cover_image}
+            alt={project.frontmatter.title}
+            height={250}
+            width={500}
+            className="post__image"
+          />
+        )}
+      </a>
+      <div className="u-px-2 u-py-2 | u-flex u-flex-col u-gap-2">
+        <h3 className="heading-three | u-center-text">
+          {project.frontmatter.title}
+        </h3>
 
-        <a href={`${project.frontmatter.live}`}>
-          {project.frontmatter.cover_image && (
-            <Image
-              src={project.frontmatter.cover_image}
-              alt={project.frontmatter.title}
-              height={420}
-              width={600}
-              className="post__image"
-            />
-          )}
-        </a>
+        <div className="post__description">
+          <p>{project.frontmatter.excerpt}</p>
+        </div>
 
         <div className="post__label">
           {categories &&
@@ -35,26 +38,15 @@ export default function Project({ project }) {
             ))}
         </div>
 
-        <div className="post__description">
-          <p>{project.frontmatter.excerpt}</p>
-        </div>
-      </div>
-      <div className="post__buttons">
-        <div className="post__extra">
-          <a
-            className="post__button | u-flex u-items-center u-justify-center"
-            href={`${project.frontmatter.github}`}
-          >
-            <IconContext.Provider value={{ className: "post__icon" }}>
+        <div className="u-mt-md | u-flex u-items-center u-justify-end">
+          <a className="post__button" href={`${project.frontmatter.github}`}>
+            <IconContext.Provider value={{}}>
               <FaGithub className="u-mr-0_75" /> GitHub
             </IconContext.Provider>
           </a>
 
-          <a
-            className="post__button | u-flex u-items-center u-justify-center"
-            href={`${project.frontmatter.live}`}
-          >
-            <IconContext.Provider value={{ className: "post__icon" }}>
+          <a className="post__button" href={`${project.frontmatter.live}`}>
+            <IconContext.Provider value={{}}>
               <FaEye className="u-mr-0_75" /> Live
             </IconContext.Provider>
           </a>

@@ -1,16 +1,10 @@
 .label {
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  border-radius: 0.5rem;
 
   color: $clr-white;
-  font-weight: 700;
-
-  // @include respond(tab-land) {
-  //   padding: 0.5rem;
-  //   margin-right: 1rem;
-  // }
+  font-size: 1.3rem;
+  font-weight: var(--fw-bold);
 }
 
 .bg {
