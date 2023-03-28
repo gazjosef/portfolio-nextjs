@@ -7,18 +7,16 @@
     object-fit: cover;
   }
 
-  &__label {
-    min-height: min(8rem, 10rem);
+  &__description {
+    min-height: min(6rem, 8rem);
+  }
 
+  &__label {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0.5rem;
-  }
-
-  &__description {
-    min-height: min(8rem, 12rem);
   }
 
   &__button {

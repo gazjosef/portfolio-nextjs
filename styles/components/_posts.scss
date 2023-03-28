@@ -2,8 +2,10 @@
   background-color: var(--clr-white-0);
   border-radius: 0.5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
 
   &__image {
+    border-bottom: 2px solid #000;
     object-fit: cover;
   }
 

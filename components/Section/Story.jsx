@@ -25,33 +25,10 @@ export default function Story() {
           />
         </section>
         <section className="article-story__text" ref={storyTextRef}>
-          <section>
-            <p className="paragraph post__label">
-              <CategoryLabel>HTML</CategoryLabel>
-              <CategoryLabel>CSS</CategoryLabel>
-              <CategoryLabel>SASS</CategoryLabel>
-              <CategoryLabel>Tailwind</CategoryLabel>
-              <CategoryLabel>JavaScript</CategoryLabel>
-              <CategoryLabel>TypeScript</CategoryLabel>
-              <CategoryLabel>React</CategoryLabel>
-              <CategoryLabel>NextJS</CategoryLabel>
-              <CategoryLabel>Vue</CategoryLabel>
-              <CategoryLabel>Nuxt</CategoryLabel>
-              <CategoryLabel>Testing</CategoryLabel>
-            </p>
-
-            <p className="paragraph post__label">
-              <CategoryLabel>Express</CategoryLabel>
-              <CategoryLabel>HeadlessCMS</CategoryLabel>
-              <CategoryLabel>MongoDB</CategoryLabel>
-              <CategoryLabel>Redux</CategoryLabel>
-              <CategoryLabel>Shopify</CategoryLabel>
-            </p>
-          </section>
           <p className="paragraph">
             Through my projects, I strive to combine my technical skills with my
-            creative vision to develop websites that not only meet the needs of
-            clients but also provide a positive user experience.
+            creative vision to develop websites that provide a positive user
+            experience.
           </p>
 
           <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">

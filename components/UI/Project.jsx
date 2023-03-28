@@ -22,12 +22,12 @@ export default function Project({ project }) {
           />
         )}
       </a>
-      <div className="u-px-2 u-py-2 | u-flex u-flex-col u-gap-2">
+      <div className="post__description | u-min-h-min u-px-2 u-py-2 | u-flex u-flex-col u-gap-2">
         <h3 className="heading-three | u-center-text">
           {project.frontmatter.title}
         </h3>
 
-        <div className="post__description">
+        <div className="">
           <p>{project.frontmatter.excerpt}</p>
         </div>
 
@@ -38,7 +38,7 @@ export default function Project({ project }) {
             ))}
         </div>
 
-        <div className="u-mt-md | u-flex u-items-center u-justify-end">
+        <div className="u-mt-md u-mt-auto | u-flex u-items-center u-justify-end">
           <a className="post__button" href={`${project.frontmatter.github}`}>
             <IconContext.Provider value={{}}>
               <FaGithub className="u-mr-0_75" /> GitHub

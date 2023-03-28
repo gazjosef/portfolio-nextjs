@@ -12,14 +12,14 @@ export default function Contact() {
           <Image
             src="/images/section/undraw_designer_re_5v95.svg"
             alt="responsive"
-            width={800}
-            height={560}
+            width={960}
+            height={572}
           />
         </section>
 
         <section>
           <section
-            className="article-contact__details | u-bg-white-200 u-mx-auto"
+            className="article-contact__details | u-bg-white-0 u-mx-auto"
             ref={contactDetailsRef}
           >
             <h1 className="heading-one | u-margin-bottom-small">Contact</h1>
