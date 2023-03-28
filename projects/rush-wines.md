@@ -1,6 +1,6 @@
 ---
 title: "Rush Wines"
-excerpt: "A professional website powered by Shopify's e-commerce showcasing the finest selection of wines from Rush Wines."
+excerpt: "A professional website powered by Shopify's e-commerce content management system."
 cover_image: "/images/posts/RushWines.png"
 categories: ["SASS", "Shopify"]
 github: "https://github.com/gazjosef/rush-wines"

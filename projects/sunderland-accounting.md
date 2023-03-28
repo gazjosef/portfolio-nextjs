@@ -1,6 +1,6 @@
 ---
 title: "Sunderland"
-excerpt: "A professional website for a financial accounting firm."
+excerpt: "A professional modern website for a financial accounting business."
 cover_image: "/images/posts/SunderlandAccounting.png"
 categories: ["JavaScript", "React", "NextJS", "SASS", "HeadlessCMS"]
 github: "https://github.com/gazjosef/sunderland-accounting"
