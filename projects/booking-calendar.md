@@ -1,7 +1,7 @@
 ---
 title: "Booking Calendar"
 excerpt: "An interactive calendar to book accommodation."
-cover_image: "/images/posts/booking-calendar2.png"
+cover_image: "/images/posts/booking-calendar3.png"
 categories:
   [
     "JavaScript",
