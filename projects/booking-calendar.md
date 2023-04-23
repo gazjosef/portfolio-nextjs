@@ -13,6 +13,6 @@ categories:
     "MongoDB",
   ]
 github: "https://github.com/gazjosef/booking-calendar"
-live: "https://odds-tracker.vercel.app/"
+live: "https://booking-calendar.herokuapp.com/"
 order: 2
 ---
