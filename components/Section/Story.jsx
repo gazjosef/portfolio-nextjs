@@ -26,9 +26,13 @@ export default function Story() {
         </section>
         <section className="article-story__text" ref={storyTextRef}>
           <p className="paragraph">
-            Through my projects, I strive to combine my technical skills with my
-            creative vision to develop websites that provide a positive user
-            experience.
+            Armed with my laptop and a strong cup of coffee, I spend my whole
+            day experimenting with HTML, CSS, and JavaScript.
+          </p>
+          <p className="paragraph">
+            Whether you&lsquo;re seeking inspiration, searching for a skilled
+            developer, or simply curious about the possibilities of web
+            development, please check out my portfolio.
           </p>
 
           <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">
