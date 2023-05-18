@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { FaArrowCircleRight } from "react-icons/fa";
-import CategoryLabel from "@/components/Category/CategoryLabel";
 import useGsapFadeDown from "hooks/useGsapFadeDown";
 
 export default function Story() {
@@ -26,12 +25,11 @@ export default function Story() {
         </section>
         <section className="article-story__text" ref={storyTextRef}>
           <p className="paragraph">
-            I’m a web developer with in-depth experience in UI/UX design. In a
-            nutshell, I create websites that help organizations address business
-            challenges and meet their needs.
+            I&lsquo;m a web developer with in-depth experience in UI/UX design.
+            In a nutshell, I create websites that help organizations address
+            business challenges and meet their needs.
           </p>
           <p className="paragraph">
-            {" "}
             I manage everything from website navigation and layout to a
             company&lsquo;s web hosting and security architecture. Please check
             out my portfolio below.
