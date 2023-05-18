@@ -26,13 +26,15 @@ export default function Story() {
         </section>
         <section className="article-story__text" ref={storyTextRef}>
           <p className="paragraph">
-            Armed with my laptop and a strong cup of coffee, I spend my whole
-            day experimenting with HTML, CSS, and JavaScript.
+            I’m a web developer with in-depth experience in UI/UX design. In a
+            nutshell, I create websites that help organizations address business
+            challenges and meet their needs.
           </p>
           <p className="paragraph">
-            Whether you&lsquo;re seeking inspiration, searching for a skilled
-            developer, or simply curious about the possibilities of web
-            development, please check out my portfolio.
+            {" "}
+            I manage everything from website navigation and layout to a
+            company&lsquo;s web hosting and security architecture. Please check
+            out my portfolio below.
           </p>
 
           <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">
