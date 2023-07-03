@@ -25,14 +25,17 @@ export default function Story() {
         </section>
         <section className="article-story__text" ref={storyTextRef}>
           <p className="paragraph">
-            I&lsquo;m a web developer with in-depth experience in UI/UX design.
-            In a nutshell, I create websites that help organizations address
-            business challenges and meet their needs.
+            With expertise in HTML, CSS, and SASS, I craft beautiful and
+            responsive user interfaces.
           </p>
           <p className="paragraph">
-            I manage everything from website navigation and layout to a
-            company&lsquo;s web hosting and security architecture. Please check
-            out my portfolio below.
+            I excel in React, Shopify and headless CMS implementations,
+            optimizing e-commerce experiences and leveraging platforms like
+            Sanity.io for seamless content management.
+          </p>
+          <p className="paragraph">
+            Let&lsquo;s collaborate to turn your vision into a successful
+            reality.
           </p>
 
           <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">

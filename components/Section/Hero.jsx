@@ -14,8 +14,8 @@ export default function Hero() {
           </h1>
 
           <p className="paragraph">
-            I am a web developer with a passion for creating engaging,
-            responsive, and user-friendly websites.
+            I am a Sydney-based web developer with a passion for creating
+            engaging, responsive, and user-friendly websites.
           </p>
 
           <button className="btn btn--cta | u-max-w-max">
