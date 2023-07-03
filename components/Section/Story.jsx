@@ -35,7 +35,7 @@ export default function Story() {
           </p>
           <p className="paragraph">
             Let&lsquo;s collaborate to turn your vision into a successful
-            reality.
+            reality!
           </p>
 
           <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">
