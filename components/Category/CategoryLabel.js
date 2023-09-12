@@ -6,6 +6,7 @@ export default function CategoryLabel({ children }) {
     HeadlessCMS: "deeppink",
     HTML: "orangered",
     JavaScript: "crimson",
+    Liquid: "cornflowerblue",
     MongoDB: "green",
     NextJS: "black",
     Nuxt: "forestgreen",
