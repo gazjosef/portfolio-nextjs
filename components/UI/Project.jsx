@@ -31,23 +31,23 @@ export default function Project({ project }) {
           <p>{project.frontmatter.excerpt}</p>
         </div>
 
-        {/* <div className="post__label">
+        <div className="post__label">
           {categories &&
             categories.map((category, index) => (
               <CategoryLabel key={index}>{category}</CategoryLabel>
             ))}
-        </div> */}
+        </div>
 
         <div className="u-mt-sm u-mx-auto | u-flex u-items-center">
           <a className="post__button" href={`${project.frontmatter.github}`}>
             <IconContext.Provider value={{}}>
-              <FaGithub className="u-mr-0_75" /> READ
+              <FaGithub className="u-mr-0_75" /> GitHub
             </IconContext.Provider>
           </a>
 
           <a className="post__button" href={`${project.frontmatter.live}`}>
             <IconContext.Provider value={{}}>
-              <FaEye className="u-mr-0_75" /> LIVE
+              <FaEye className="u-mr-0_75" /> Live
             </IconContext.Provider>
           </a>
         </div>
