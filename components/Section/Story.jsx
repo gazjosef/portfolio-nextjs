@@ -33,7 +33,7 @@ export default function Story() {
           <p className="paragraph">
             With expertise in React, Shopify, and a sprinkle of Vue, I&apos;m on
             a mission to create seamless user experiences. Let&apos;s build
-            something awesome together! TEST
+            something awesome together!
           </p>
 
           <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">
