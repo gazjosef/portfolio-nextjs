@@ -36,5 +36,9 @@
     &:hover {
       background-color: var(--clr-primary-400);
     }
+
+    & span {
+      margin-left: 2rem;
+    }
   }
 }

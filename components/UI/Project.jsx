@@ -47,7 +47,7 @@ export default function Project({ project }) {
 
           <a className="post__button" href={`${project.frontmatter.live}`}>
             <IconContext.Provider value={{}}>
-              <FaEye className="u-mr-0_75" /> Live
+              <FaEye className="u-mr-0_75" /> <span>Live</span>
             </IconContext.Provider>
           </a>
         </div>
