@@ -1,6 +1,6 @@
 ---
 title: "Tetris"
-excerpt: "A tipping app allowing users to select tips for upcoming fixtures and store them in a database."
+excerpt: "The game follows the iconic Tetris gameplay where players manipulate falling tetrominoes"
 cover_image: "/images/posts/Tetris.png"
 categories: ["JavaScript", "SASS"]
 github: "https://github.com/gazjosef/tetris"
