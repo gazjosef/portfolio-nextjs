@@ -25,21 +25,21 @@ export default function Contact() {
             <h1 className="heading-one | u-margin-bottom-small">Contact</h1>
             <div>
               <h3 className="heading-three | u-flex u-items-center">
-                <FaPhone className="u-mr-1" /> Mobile
+                <FaPhone className="u-mr-xsm" /> Mobile
               </h3>
               <p className="paragraph">0402 830 315</p>
             </div>
 
             <div>
               <h3 className="heading-three | u-flex u-items-center">
-                <FaEnvelope className="u-mr-1" /> Email
+                <FaEnvelope className="u-mr-xsm" /> Email
               </h3>
               <p className="paragraph">garethjhind@gmail.com</p>
             </div>
 
             <div>
               <h3 className="heading-three | u-flex u-items-center">
-                <FaGithub className="u-mr-1" /> Github
+                <FaGithub className="u-mr-xsm" /> Github
               </h3>
               <p className="paragraph">
                 <a href="https://github.com/gazjosef">
@@ -50,11 +50,11 @@ export default function Contact() {
 
             <div>
               <h3 className="heading-three | u-flex u-items-center">
-                <FaLinkedin className="u-mr-1" /> LinkedIn
+                <FaLinkedin className="u-mr-xsm" /> LinkedIn
               </h3>
               <p className="paragraph">
                 <a href="https://www.linkedin.com/in/gareth-h-a32448191/">
-                  https://www.linkedin.com/in/gareth-h-a32448191/
+                  https://www.linkedin.com/in/gareth-h/
                 </a>
               </p>
             </div>

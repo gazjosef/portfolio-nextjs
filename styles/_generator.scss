@@ -126,7 +126,7 @@
 // * -- GRID GAP
 @each $size, $value in $grid-gaps {
   .u-gap-#{$size} {
-    gap: #{$value}rem;
+    gap: #{$value}rem !important;
   }
 }
 

@@ -23,12 +23,12 @@ export default function Project({ project }) {
         )}
       </a>
 
-      <div className="u-min-h-min u-px-sm u-py-sm">
-        <h3 className="heading-three | u-center-text u-mb-xsm">
+      <div className="u-min-h-min u-px-sm u-py-sm | u-flex u-flex-col u-gap-1">
+        <h3 className="heading-three | u-center-text">
           {project.frontmatter.title}
         </h3>
 
-        <div className="post__description">
+        <div className="post__description |">
           <p>{project.frontmatter.excerpt}</p>
         </div>
 
@@ -39,18 +39,22 @@ export default function Project({ project }) {
             ))}
         </div>
 
-        <div className="u-mt-sm u-mx-auto | u-flex u-items-center">
-          <a className="post__button" href={`${project.frontmatter.github}`}>
-            <IconContext.Provider value={{}}>
-              <FaGithub className="u-mr-0_75" /> GitHub
-            </IconContext.Provider>
-          </a>
+        <div className="u-grid u-place-content-center">
+          <div className="u-mt-xsm  | u-flex u-justify-around">
+            <a className="post__button" href={`${project.frontmatter.github}`}>
+              <IconContext.Provider value={{}}>
+                <FaGithub />
+                <span className="u-ml-xsm">GitHub</span>
+              </IconContext.Provider>
+            </a>
 
-          <a className="post__button" href={`${project.frontmatter.live}`}>
-            <IconContext.Provider value={{}}>
-              <FaEye className="u-mr-0_75" /> <span>Live</span>
-            </IconContext.Provider>
-          </a>
+            <a className="post__button" href={`${project.frontmatter.live}`}>
+              <IconContext.Provider value={{}}>
+                <FaEye />
+                <span className="u-ml-xsm">Live</span>
+              </IconContext.Provider>
+            </a>
+          </div>
         </div>
       </div>
     </div>

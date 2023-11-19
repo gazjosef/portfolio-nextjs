@@ -26,8 +26,8 @@
   &__button {
     background-color: var(--clr-primary-500);
 
-    width: 10rem;
-    padding: 0.25em 1rem;
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
     margin-inline: 0.5rem;
 
