@@ -22,7 +22,7 @@ export default function Project({ project }) {
           />
         )}
       </a>
-      <div className="post__description | u-min-h-min u-px-2 u-py-2 | u-flex u-flex-col u-gap-2_5">
+      <div className="post__description | u-min-h-min u-px-2 u-py-2">
         <h3 className="heading-three | u-center-text">
           {project.frontmatter.title}
         </h3>

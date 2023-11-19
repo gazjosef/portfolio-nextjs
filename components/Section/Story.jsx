@@ -25,15 +25,15 @@ export default function Story() {
         </section>
         <section className="article-story__text" ref={storyTextRef}>
           <p className="paragraph">
-            I&apos;m a front-end wizard with a knack for turning ideas into
-            interactive and user-friendly websites. From crafting clean HTML/CSS
-            to diving deep into JavaScript magic, I thrive on making the web a
-            better place.
+            From crafting clean HTML/CSS to diving deep into JavaScript magic, I
+            thrive on making the web a better place.
           </p>
           <p className="paragraph">
             With expertise in React, Shopify, and a sprinkle of Vue, I&apos;m on
-            a mission to create seamless user experiences. Let&apos;s build
-            something awesome together!
+            a mission to create seamless user experiences.
+          </p>
+          <p className="paragraph">
+            Let&apos;s build something awesome together!
           </p>
 
           <button className="btn btn--cta btn--inverse | u-max-w-max u-py-2">
