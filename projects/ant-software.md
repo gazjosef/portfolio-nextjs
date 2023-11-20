@@ -4,6 +4,6 @@ excerpt: "A professional website designed to showcasing the full range of servic
 cover_image: "/images/posts/AntSoftwareDev.png"
 categories: ["JavaScript", "React", "NextJS", "SASS", "HeadlessCMS"]
 github: "https://github.com/gazjosef/ant-software"
-live: "https://ant-software.vercel.app/"
+live: "https://www.antsoftware.dev/"
 order: 5
 ---
