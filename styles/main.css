@@ -1899,34 +1899,12 @@ body {
 .container {
   margin-inline: auto;
   width: min(90%, 120rem);
-  display: grid;
-  place-content: center;
 }
 
 .section {
   min-height: 100vh;
   min-height: 100svh;
   padding: 10rem 0;
-}
-@media (max-width: 75em) {
-  .section {
-    padding: 7.5rem 15rem;
-  }
-}
-@media (max-width: 56.25em) {
-  .section {
-    padding: 5rem 10rem;
-  }
-}
-@media (max-width: 37.5em) {
-  .section {
-    padding: 2.5rem 5rem;
-  }
-}
-@media (max-width: 21.875em) {
-  .section {
-    padding: 1rem 2rem;
-  }
 }
 
 .footer {
