@@ -2028,6 +2028,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+@media (max-width: 37.5em) {
+  .article-contact__details {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
 .article-contact__details::before {
   content: "";
   position: absolute;
