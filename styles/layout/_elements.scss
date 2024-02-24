@@ -1,12 +1,15 @@
 .container {
   margin-inline: auto;
   width: min(90%, 120rem);
+
+  display: grid;
+  place-content: center;
 }
 
 .section {
   min-height: 100vh;
   min-height: 100svh;
-  padding: 10rem 20rem;
+  padding: 10rem 0;
 
   @include respond(tab-land) {
     padding: 7.5rem 15rem;
