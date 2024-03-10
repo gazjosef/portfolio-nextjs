@@ -41,7 +41,7 @@ function Navbar() {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a className="u-mx-1 u-text-black" href={item.url}>
+              <a className="u-mx-1 u-text-black u-uppercase" href={item.url}>
                 {item.title}
               </a>
             </li>

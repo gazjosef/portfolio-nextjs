@@ -1769,6 +1769,12 @@ body {
 .bg--hotpink {
   background-color: hotpink;
 }
+.bg--lightskyblue {
+  background-color: lightskyblue;
+}
+.bg--hotpink {
+  background-color: hotpink;
+}
 .bg--orange {
   background-color: orange;
 }
@@ -1789,6 +1795,9 @@ body {
 }
 .bg--limegreen {
   background-color: limegreen;
+}
+.bg--palevioletred {
+  background-color: palevioletred;
 }
 .bg--rebeccapurple {
   background-color: rebeccapurple;
