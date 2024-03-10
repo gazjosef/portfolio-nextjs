@@ -19,6 +19,7 @@ export default function CategoryLabel({ children }) {
     Tailwind: "deepskyblue",
     Testing: "firebrick",
     TypeScript: "dodgerblue",
+    Vite: "rebeccapurple",
     Vue: "mediumseagreen",
     $Paid: "limegreen",
   };
