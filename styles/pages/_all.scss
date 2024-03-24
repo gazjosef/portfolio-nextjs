@@ -2,7 +2,6 @@
 .article-story,
 .article-portfolio,
 .article-contact {
-  min-height: 100vh;
   padding: 10rem 20rem;
 
   @include respond(tab-land) {
@@ -12,4 +11,14 @@
   @include respond(phone) {
     padding: 2.5rem 5rem;
   }
+}
+
+.article-home {
+  min-height: calc(100vh - 8rem);
+}
+
+.article-story,
+.article-portfolio,
+.article-contact {
+  min-height: 100vh;
 }

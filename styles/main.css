@@ -1915,6 +1915,9 @@ body {
   min-height: 100svh;
   padding: 10rem 0;
 }
+.section--home {
+  min-height: calc(100vh - 8rem);
+}
 
 .footer {
   height: 5rem;
@@ -1974,7 +1977,6 @@ body {
 .article-story,
 .article-portfolio,
 .article-contact {
-  min-height: 100vh;
   padding: 10rem 20rem;
 }
 @media (max-width: 75em) {
@@ -1992,6 +1994,16 @@ body {
   .article-contact {
     padding: 2.5rem 5rem;
   }
+}
+
+.article-home {
+  min-height: calc(100vh - 8rem);
+}
+
+.article-story,
+.article-portfolio,
+.article-contact {
+  min-height: 100vh;
 }
 
 .article-portfolio {

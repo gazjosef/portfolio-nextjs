@@ -6,7 +6,7 @@ export default function Hero() {
   const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
-    <section id="home" className="section | u-bg-primary-400">
+    <section id="home" className="section section--home | u-bg-primary-400">
       <div className="container | u-mt-md | u-grid u-even-columns">
         <div ref={heroTextRef}>
           <h1 className="heading-home">
