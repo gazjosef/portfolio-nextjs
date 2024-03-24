@@ -50,8 +50,9 @@
     "live": "https://gazjosef.github.io/blackjack-game/"
   },
   {
-    "title": "Tetris Game2",
-    "cover_image": "/images/posts/tetris.png",
+    "title": "Tetris Game",
+    // "cover_image": "/images/posts/tetris.png",
+    "cover_image": "/images/posts/BlackJack.png",
     "excerpt": "",
     "categories": ["JavaScript", "SASS"],
     "tag": "games",
