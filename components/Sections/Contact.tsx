@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
               href="https://github.com/gazjosef"
               className=" u-flex u-flex-col u-items-center u-justify-center u-gap-1"
             >
-              <FaGithub size="10rem" />
+              <FaGithub size="10rem" color="#145da0" />
               <h3 className="heading-three">Github</h3>
             </a>
           </div>
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
               href="https://www.linkedin.com/in/gareth-h-a32448191/"
               className=" u-flex u-flex-col u-items-center u-justify-center u-gap-1"
             >
-              <FaLinkedin size="10rem" />
+              <FaLinkedin size="10rem" color="#145da0" />
               <h3 className="heading-three">LinkedIn</h3>
             </a>
           </div>
