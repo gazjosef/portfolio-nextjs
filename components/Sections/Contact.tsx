@@ -22,9 +22,9 @@ const Contact: React.FC = () => {
           <div>
             <a
               href="https://github.com/gazjosef"
-              className=" u-flex u-flex-col u-items-center u-justify-center"
+              className=" u-flex u-flex-col u-items-center u-justify-center u-gap-1"
             >
-              <FaGithub size="15rem" />
+              <FaGithub size="10rem" />
               <h3 className="heading-three">Github</h3>
             </a>
           </div>
@@ -32,9 +32,9 @@ const Contact: React.FC = () => {
           <div>
             <a
               href="https://www.linkedin.com/in/gareth-h-a32448191/"
-              className=" u-flex u-flex-col u-items-center u-justify-center"
+              className=" u-flex u-flex-col u-items-center u-justify-center u-gap-1"
             >
-              <FaLinkedin size="15rem" />
+              <FaLinkedin size="10rem" />
               <h3 className="heading-three">LinkedIn</h3>
             </a>
           </div>
