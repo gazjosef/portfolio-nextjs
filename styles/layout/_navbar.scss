@@ -3,7 +3,7 @@
 
   a,
   a:visited {
-    color: #000;
+    color: var(--clr-primary-500);
   }
 
   ul {

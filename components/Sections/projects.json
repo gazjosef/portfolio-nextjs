@@ -3,14 +3,7 @@
     "title": "Calendar App",
     "cover_image": "/images/posts/booking-calendar3.png",
     "excerpt": "",
-    "categories": [
-      "Vite",
-      "TypeScript",
-      "React",
-      "Tailwind",
-      "RestAPI",
-      "MongoDB"
-    ],
+    "categories": ["TypeScript", "React", "Tailwind", "RestAPI", "MongoDB"],
     "tag": "apps",
     "github": "https://github.com/gazjosef/booking-calendar",
     "live": "https://booking-calendar-frontend.vercel.app/"
@@ -19,14 +12,7 @@
     "title": "Tipping App",
     "cover_image": "/images/posts/TippingApp.png",
     "excerpt": "",
-    "categories": [
-      "Vite",
-      "TypeScript",
-      "React",
-      "Tailwind",
-      "RestAPI",
-      "MongoDB"
-    ],
+    "categories": ["TypeScript", "React", "Tailwind", "RestAPI", "MongoDB"],
     "tag": "apps",
     "github": "https://github.com/gazjosef/new-tipping-app",
     "live": "https://mern-footy-tips.herokuapp.com/"
@@ -35,7 +21,7 @@
     "title": "Weather App",
     "cover_image": "/images/posts/WeatherApp.png",
     "excerpt": "",
-    "categories": ["Vite", "TypeScript", "React", "Tailwind"],
+    "categories": ["TypeScript", "React", "Tailwind"],
     "tag": "apps",
     "github": "https://github.com/gazjosef/weather-app",
     "live": "https://weather-app-gazjosef.vercel.app/"
