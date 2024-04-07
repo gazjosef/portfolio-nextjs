@@ -6,7 +6,7 @@
     "categories": ["TypeScript", "React", "Tailwind", "RestAPI", "MongoDB"],
     "tag": "apps",
     "github": "https://github.com/gazjosef/booking-calendar",
-    "live": "https://booking-calendar-frontend.vercel.app/"
+    "live": "https://mern-booking-calendar.herokuapp.com/"
   },
   {
     "title": "Tipping App",

@@ -200,9 +200,11 @@
   --fs-800: 3rem;
   --fs-850: 3.5rem;
   --fs-900: 4rem;
-  --fw-regular: 400;
-  --fw-semi-bold: 500;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
   --fw-bold: 700;
+  --fw-extrabold: 800;
 }
 
 .u-fs-300 {
@@ -241,16 +243,24 @@
   font-size: 4rem;
 }
 
-.u-fw-regular {
+.u-fw-normal {
   font-weight: 400;
 }
 
-.u-fw-semi-bold {
+.u-fw-medium {
   font-weight: 500;
+}
+
+.u-fw-semibold {
+  font-weight: 600;
 }
 
 .u-fw-bold {
   font-weight: 700;
+}
+
+.u-fw-extrabold {
+  font-weight: 800;
 }
 
 .u-grid-cols-1 {
@@ -2358,10 +2368,10 @@ body {
   letter-spacing: 0.15rem;
 }
 .heading-logo a {
-  color: var(--clr-black-900);
+  color: var(--clr-primary-500);
 }
 .heading-logo span {
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-extrabold);
 }
 
 .nav-links a {
@@ -2435,21 +2445,26 @@ body {
 }
 
 .section {
-  min-height: 95vh;
-  min-height: 95svh;
-  padding: 10rem 20rem;
+  --padding-top-bottom: 10rem;
+  --padding-left-right: 2rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: var(--padding-top-bottom) var(--padding-left-right);
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+.section--hero {
+  min-height: 80vh;
+}
 @media (max-width: 75em) {
   .section {
-    padding: 7.5rem 15rem;
+    padding: 7.5rem 2rem;
   }
 }
 @media (max-width: 56.25em) {
   .section {
-    padding: 5rem 10rem;
+    padding: 5rem 2rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -2488,7 +2503,7 @@ body {
 }
 .navbar a,
 .navbar a:visited {
-  color: #000;
+  color: var(--clr-primary-500);
 }
 .navbar ul {
   display: flex;
@@ -2530,6 +2545,18 @@ body {
   gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 56.25em) {
+  .grid__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .grid__container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+  }
+}
 .grid__header {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
@@ -2550,7 +2577,7 @@ body {
 
 .article-contact__details {
   margin-inline: auto;
-  width: min(40%, 40rem);
+  width: min(80%, 80rem);
   border-radius: 0.5rem;
   overflow: hidden;
   display: grid;
@@ -2564,13 +2591,12 @@ body {
   color: black;
 }
 .article-contact__details > * {
-  --padding-top-bottom: 2rem;
+  --padding-top-bottom: 4rem;
   --padding-left-right: 4rem;
   background-color: var(--clr-white-0);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   padding: var(--padding-top-bottom) var(--padding-left-right);
-  width: 100%;
   text-align: center;
 }
 .article-contact__icons {
