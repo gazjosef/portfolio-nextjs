@@ -1,7 +1,7 @@
 [
   {
     "title": "Calendar App",
-    "cover_image": "/images/posts/booking-calendar3.png",
+    "cover_image": "/images/projects/booking-calendar3.png",
     "excerpt": "",
     "categories": ["TypeScript", "React", "Tailwind", "RestAPI", "MongoDB"],
     "tag": "apps",
@@ -10,7 +10,7 @@
   },
   {
     "title": "Tipping App",
-    "cover_image": "/images/posts/TippingApp.png",
+    "cover_image": "/images/projects/TippingApp.png",
     "excerpt": "",
     "categories": ["TypeScript", "React", "Tailwind", "RestAPI", "MongoDB"],
     "tag": "apps",
@@ -19,7 +19,7 @@
   },
   {
     "title": "Weather App",
-    "cover_image": "/images/posts/WeatherApp.png",
+    "cover_image": "/images/projects/WeatherApp.png",
     "excerpt": "",
     "categories": ["TypeScript", "React", "Tailwind"],
     "tag": "apps",
@@ -28,7 +28,7 @@
   },
   {
     "title": "BlackJack Game",
-    "cover_image": "/images/posts/BlackJack.png",
+    "cover_image": "/images/projects/BlackJack.png",
     "excerpt": "",
     "categories": ["JavaScript", "SASS"],
     "tag": "games",
@@ -37,7 +37,7 @@
   },
   {
     "title": "Tetris Game",
-    "cover_image": "/images/posts/Tetris.png",
+    "cover_image": "/images/projects/Tetris.png",
     "excerpt": "",
     "categories": ["JavaScript", "SASS"],
     "tag": "games",
@@ -46,7 +46,7 @@
   },
   {
     "title": "Ant Software",
-    "cover_image": "/images/posts/AntSoftwareDev.png",
+    "cover_image": "/images/projects/AntSoftwareDev.png",
     "excerpt": "",
     "categories": ["TypeScript", "React", "NextJS", "SASS", "HeadlessCMS"],
     "tag": "websites",
@@ -55,7 +55,7 @@
   },
   {
     "title": "Rush Wines",
-    "cover_image": "/images/posts/RushWines.png",
+    "cover_image": "/images/projects/RushWines.png",
     "excerpt": "",
     "categories": ["Shopify", "Liquid", "SASS"],
     "tag": "websites",
@@ -64,7 +64,7 @@
   },
   {
     "title": "Sunderland Accounting",
-    "cover_image": "/images/posts/SunderlandAccounting.png",
+    "cover_image": "/images/projects/SunderlandAccounting.png",
     "excerpt": "",
     "categories": ["TypeScript", "React", "NextJS", "SASS", "HeadlessCMS"],
     "tag": "websites",
