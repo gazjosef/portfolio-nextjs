@@ -30,6 +30,7 @@ body {
   }
 
   span {
+    color: var(--clr-primary-400);
     font-weight: var(--fw-extrabold);
   }
 }
@@ -60,7 +61,7 @@ body {
 }
 
 .heading-one {
-  color: var(--clr-primary-500);
+  color: var(--clr-primary-400);
   font-family: $font-third;
   font-size: 3.5rem;
   font-weight: 800;
@@ -71,7 +72,7 @@ body {
   &::after {
     content: "";
     width: 10rem;
-    border-bottom: 4px solid var(--clr-primary-500);
+    border-bottom: 4px solid var(--clr-primary-400);
     margin-inline: auto;
     padding-top: 0.6rem;
 
