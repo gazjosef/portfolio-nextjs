@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   const [contactTitleRef, contactDetailsRef] = useGsapFadeDown();
 
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section--contact">
       <h1
         className="heading-one | u-mb-2xl u-mx-auto u-center-text"
         ref={contactTitleRef as React.LegacyRef<HTMLHeadingElement>}

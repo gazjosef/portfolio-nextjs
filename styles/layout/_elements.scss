@@ -15,8 +15,11 @@
   scrollbar-width: none;
 
   &--hero {
-    min-height: calc(80vh);
-    // min-height: calc(100svh - 6rem);
+    min-height: calc(100svh - 6rem);
+  }
+
+  &--contact {
+    min-height: calc(100svh - 15rem);
   }
 
   @include respond(tab-land) {
