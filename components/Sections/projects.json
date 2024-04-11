@@ -37,7 +37,7 @@
   },
   {
     "title": "Tetris Game",
-    "cover_image": "/images/projects/Tetris.png",
+    "cover_image": "/images/projects/tetris.png",
     "excerpt": "",
     "categories": ["JavaScript", "SASS"],
     "tag": "games",
