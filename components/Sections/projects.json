@@ -57,7 +57,7 @@
     "title": "Rush Wines",
     "cover_image": "/images/projects/RushWines.png",
     "excerpt": "",
-    "categories": ["Shopify", "Liquid", "SASS"],
+    "categories": ["Shopify", "SASS"],
     "tag": "websites",
     "github": "https://github.com/gazjosef/rush-wines",
     "live": "https://www.rushwines.com.au"
