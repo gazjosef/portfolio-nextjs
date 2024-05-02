@@ -26,7 +26,8 @@
     display: inline-flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 0rem 0.5rem;
+    justify-content: flex-start;
+    gap: 0.5rem;
   }
 
   // &__description {

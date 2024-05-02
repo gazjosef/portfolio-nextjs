@@ -3,7 +3,7 @@
     "title": "Calendar App",
     "cover_image": "/images/projects/booking-calendar3.png",
     "excerpt": "",
-    "categories": ["TypeScript", "React", "Tailwind", "RestAPI", "MongoDB"],
+    "categories": ["TypeScript", "React", "Tailwind", "MongoDB"],
     "tag": "apps",
     "github": "https://github.com/gazjosef/booking-calendar",
     "live": "https://mern-booking-calendar.herokuapp.com/"
@@ -12,7 +12,7 @@
     "title": "Tipping App",
     "cover_image": "/images/projects/TippingApp.png",
     "excerpt": "",
-    "categories": ["TypeScript", "React", "Tailwind", "RestAPI", "MongoDB"],
+    "categories": ["TypeScript", "React", "Tailwind", "MongoDB"],
     "tag": "apps",
     "github": "https://github.com/gazjosef/new-tipping-app",
     "live": "https://mern-footy-tips.herokuapp.com/"
@@ -48,7 +48,7 @@
     "title": "Ant Software",
     "cover_image": "/images/projects/AntSoftwareDev.png",
     "excerpt": "",
-    "categories": ["TypeScript", "React", "NextJS", "SASS", "HeadlessCMS"],
+    "categories": ["TypeScript", "React", "NextJS", "SASS", "Sanity.io"],
     "tag": "websites",
     "github": "https://github.com/gazjosef/ant-software",
     "live": "https://ant-software.vercel.app/"
@@ -66,7 +66,7 @@
     "title": "Sunderland Accounting",
     "cover_image": "/images/projects/SunderlandAccounting.png",
     "excerpt": "",
-    "categories": ["TypeScript", "React", "NextJS", "SASS", "HeadlessCMS"],
+    "categories": ["TypeScript", "React", "NextJS", "SASS", "Sanity.io"],
     "tag": "websites",
     "github": "https://github.com/gazjosef/sunderland-accounting",
     "live": "https://sunderland-accounting.vercel.app/"

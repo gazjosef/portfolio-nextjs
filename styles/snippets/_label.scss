@@ -3,19 +3,27 @@
   --padding-left-right: 1.2rem;
 
   max-width: max-content;
-  background-color: var(--clr-white-0);
+  background-color: var(--clr-white-100);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: var(--padding-top-bottom) var(--padding-left-right);
 
-  color: var(--clr-white-0);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--clr-black-900);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1.5px;
   text-decoration: none;
 
   @include respond(tab-port) {
     margin-inline: auto;
+  }
+
+  img {
+    height: 2rem;
   }
 
   &--aqua {
