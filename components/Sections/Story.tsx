@@ -30,13 +30,13 @@ const Story: React.FC = () => {
           ref={storyTextRef as React.RefObject<HTMLElement>}
         >
           <p className="paragraph">
-            With expertise in TypeScript, React, Shopify, and Vue, I&apos;m on a
-            mission to create seamless user experiences. Web development
-            isn&apos;t just a profession; it&apos;s my vocation.
+            I&apos;m a front-end wizard with a knack for turning ideas into
+            interactive and user-friendly websites.
           </p>
           <p className="paragraph">
-            Crafting meaningful online experiences is my privilege, and I&apos;m
-            excited to keep pushing boundaries with the latest web technologies.
+            Crafting impactful online experiences is both a privilege and a
+            passion of mine. I&apos;m excited to continue pushing boundaries and
+            explore the latest advancements in web technologies.
           </p>
           <p className="paragraph">
             Let&apos;s build something awesome together!
