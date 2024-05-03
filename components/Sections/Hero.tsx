@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
-    <section id="home" className="hero section--hero">
+    <section id="home" className="hero section--hero | u-grid">
       <div className="container | | u-grid u-even-columns">
         <div ref={heroTextRef as React.RefObject<HTMLDivElement>}>
           <h1 className="heading-hero">

@@ -1,11 +1,12 @@
 .label {
-  --padding-top-bottom: 0.6rem;
-  --padding-left-right: 1.2rem;
+  --border-radius: 0.5rem;
+  --padding-top-bottom: 0.5rem;
+  --padding-left-right: 1rem;
 
   max-width: max-content;
   background-color: var(--clr-white-100);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   padding: var(--padding-top-bottom) var(--padding-left-right);
 
   display: flex;
