@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           )}
         </IconContext.Provider>
       </div>
-      <NavbarListToggleBtn toggle={toggle} on />
+      {/* <NavbarListToggleBtn toggle={toggle} on /> */}
     </nav>
   );
 };
