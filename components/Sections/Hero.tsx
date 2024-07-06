@@ -1,9 +1,8 @@
-import React from "react";
 import Image from "next/image";
-import { FaArrowCircleDown } from "react-icons/fa";
 import useGsapFadeDown from "../../hooks/useGsapFadeDown";
+import Button from "../Snippets/Button";
 
-const Hero: React.FC = () => {
+export default function Hero() {
   const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
@@ -19,15 +18,7 @@ const Hero: React.FC = () => {
             engaging, responsive, and user-friendly websites.
           </p>
 
-          <button className="btn btn--cta">
-            <a
-              href="#portfolio"
-              className="u-flex u-items-center u-justify-center u-gap-1"
-            >
-              Portfoloio
-              <FaArrowCircleDown />
-            </a>
-          </button>
+          <Button title="Portfoloio" styles={"btn--cta"} href={"#portfolio"} />
         </div>
 
         <div ref={heroImgRef as React.RefObject<HTMLDivElement>}>
@@ -41,5 +32,4 @@ const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
-export default Hero;
+}

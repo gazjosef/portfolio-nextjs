@@ -1,9 +1,7 @@
-import React from "react";
-import { IconContext } from "react-icons";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import useGsapFadeDown from "../../hooks/useGsapFadeDown";
 
-const Contact: React.FC = () => {
+export default function Contact() {
   const [contactTitleRef, contactDetailsRef] = useGsapFadeDown();
 
   return (
@@ -42,5 +40,4 @@ const Contact: React.FC = () => {
       </div>
     </section>
   );
-};
-export default Contact;
+}

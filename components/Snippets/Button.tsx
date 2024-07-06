@@ -1,6 +1,18 @@
-import React from "react";
+import { FaArrowCircleDown } from "react-icons/fa";
 
-const Button: React.FC = () => {
-  return <div>Button</div>;
-};
-export default Button;
+interface ButtonProps {
+  title: string;
+  styles: string;
+  href: string;
+}
+
+export default function Button({ title, styles, href }: ButtonProps) {
+  return (
+    <button className={`btn ${styles}`}>
+      <a href={href} className="u-flex u-items-center u-justify-center u-gap-1">
+        {title}
+        <FaArrowCircleDown />
+      </a>
+    </button>
+  );
+}

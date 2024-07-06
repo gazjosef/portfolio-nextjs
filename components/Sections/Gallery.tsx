@@ -1,8 +1,8 @@
-import React, { ReactEventHandler, useState } from "react";
+import { useState } from "react";
 import Project from "../Snippets/Project";
 import jsonData from "./projects.json";
 
-interface ProjectData {
+interface ProjectProps {
   title: string;
   excerpt: string;
   cover_image: string;
@@ -12,7 +12,7 @@ interface ProjectData {
   live: string;
 }
 
-const Gallery: React.FC = () => {
+export default function Gallery() {
   const [filter, setFilter] = useState<string>("all");
   const filteredProjects =
     filter === "all"
@@ -30,16 +30,14 @@ const Gallery: React.FC = () => {
         </div>
         <div id="grid-container" className="grid__container">
           {filteredProjects &&
-            filteredProjects.map((project: ProjectData) => (
+            filteredProjects.map((project: ProjectProps) => (
               <Project project={project} key={project.title} />
             ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default Gallery;
+}
 
 interface GalleryFilterBtnsProps {
   filter: string;
