@@ -31,7 +31,7 @@ const Story: React.FC = () => {
         >
           <p className="paragraph">
             With a keen eye for design and a love for creating seamless user
-            experiences, I specialize in crafting modern, responsive websites
+            experiences, I specialise in crafting modern, responsive websites
             using HTML, CSS, JavaScript, and React.
           </p>
           <p className="paragraph">
