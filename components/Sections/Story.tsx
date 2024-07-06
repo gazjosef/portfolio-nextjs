@@ -30,13 +30,14 @@ const Story: React.FC = () => {
           ref={storyTextRef as React.RefObject<HTMLElement>}
         >
           <p className="paragraph">
-            I&apos;m a front-end wizard with a knack for turning ideas into
-            interactive and user-friendly websites.
+            With a keen eye for design and a love for creating seamless user
+            experiences, I specialize in crafting modern, responsive websites
+            using HTML, CSS, JavaScript, and React.
           </p>
           <p className="paragraph">
-            Crafting impactful online experiences is both a privilege and a
-            passion of mine. I&apos;m excited to continue pushing boundaries and
-            explore the latest advancements in web technologies.
+            I thrive on turning ideas into visually appealing and functional
+            realities, constantly exploring new trends and techniques to push
+            the boundaries of web development.
           </p>
           <p className="paragraph">
             Let&apos;s build something awesome together!

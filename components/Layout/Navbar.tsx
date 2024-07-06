@@ -65,7 +65,38 @@ const Navbar: React.FC = () => {
           )}
         </IconContext.Provider>
       </div>
+      <NavbarListToggleBtn toggle={toggle} on />
     </nav>
   );
 };
 export default Navbar;
+
+function NavbarList() {
+  return <div></div>;
+}
+
+interface NavbarListToggleBtnProps {
+  toggle: boolean;
+  handleClick: () => void;
+}
+
+function NavbarListToggleBtn({
+  toggle,
+  handleClick,
+}: NavbarListToggleBtnProps) {
+  return (
+    <div
+      className="navbar__mobile-nav-toggle sr-only"
+      aria-label="Toggle navigation"
+      aria-expanded={toggle}
+    >
+      <IconContext.Provider value={{}}>
+        {toggle ? (
+          <FaTimes onClick={handleClick} />
+        ) : (
+          <FaBars onClick={handleClick} />
+        )}
+      </IconContext.Provider>
+    </div>
+  );
+}
