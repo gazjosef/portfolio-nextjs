@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
 
-const Header: React.FC = () => {
+export default function Header() {
   return (
     <header className="header">
       <div className="container">
@@ -16,5 +16,4 @@ const Header: React.FC = () => {
       </div>
     </header>
   );
-};
-export default Header;
+}
