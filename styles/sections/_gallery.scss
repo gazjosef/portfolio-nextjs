@@ -29,5 +29,9 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @include respond(sm-phone) {
+      flex-wrap: wrap;
+    }
   }
 }

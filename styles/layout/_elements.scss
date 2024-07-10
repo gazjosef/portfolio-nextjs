@@ -17,6 +17,9 @@
   &--hero {
     min-height: calc(100svh - 6rem);
 
+    // position: relative;
+    // @include absCenter;
+
     @include respond(tab-land) {
       img {
         height: 40rem;

@@ -41,6 +41,7 @@
     place-content: center;
   }
   @include respond(tab-port) {
-    display: block;
+    // display: block;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

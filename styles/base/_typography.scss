@@ -33,6 +33,10 @@ body {
     color: var(--clr-primary-400);
     font-weight: var(--fw-extrabold);
   }
+
+  @include respond(sm-phone) {
+    display: none;
+  }
 }
 
 .nav-links {

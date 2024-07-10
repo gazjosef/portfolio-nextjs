@@ -6,7 +6,7 @@ export default function Hero() {
   const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
-    <section id="home" className="hero section--hero">
+    <section id="home" className="hero section section--hero">
       <div className="container">
         <div className="u-grid u-even-columns u-gap-2">
           <div ref={heroTextRef as React.RefObject<HTMLDivElement>}>
