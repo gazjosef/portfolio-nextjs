@@ -48,7 +48,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
             href={`${project.github}`}
           >
             <IconContext.Provider value={{}}>
-              <FaGithub /> READ
+              <FaGithub /> GITHUB
             </IconContext.Provider>
           </a>
         </button>

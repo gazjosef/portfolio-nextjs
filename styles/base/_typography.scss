@@ -57,6 +57,11 @@ body {
 
   @include respond(tab-port) {
     margin-inline: auto;
+
+    h1 {
+      text-align: left;
+      font-size: clamp(1.6rem, 2.5vw, 4rem);
+    }
   }
 }
 
