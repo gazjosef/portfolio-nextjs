@@ -1,4 +1,7 @@
-import { GalleryFilterBtnsProps } from "./Gallery";
+interface GalleryFilterBtnsProps {
+  filter: string;
+  onFilter: (filter: string) => void;
+}
 
 export function GalleryFilterBtns({
   filter,
