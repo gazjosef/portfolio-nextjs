@@ -45,40 +45,20 @@ interface GalleryFilterBtnsProps {
 }
 
 function GalleryFilterBtns({ filter, onFilter }: GalleryFilterBtnsProps) {
+  const filters = ["all", "apps", "games", "websites"];
+
   return (
     <ul role="list" className="grid__filter-btns">
-      <li role="listitem">
-        <button
-          className={`btn ${filter === "all" ? "active" : ""}`}
-          onClick={() => onFilter("all")}
-        >
-          All
-        </button>
-      </li>
-      <li role="listitem">
-        <button
-          className={`btn ${filter === "apps" ? "active" : ""}`}
-          onClick={() => onFilter("apps")}
-        >
-          Apps
-        </button>
-      </li>
-      <li role="listitem">
-        <button
-          className={`btn ${filter === "games" ? "active" : ""}`}
-          onClick={() => onFilter("games")}
-        >
-          Games
-        </button>
-      </li>
-      <li role="listitem">
-        <button
-          className={`btn ${filter === "websites" ? "active" : ""}`}
-          onClick={() => onFilter("websites")}
-        >
-          Websites
-        </button>
-      </li>
+      {filters.map((filter) => (
+        <li key={filter} role="listitem">
+          <button
+            className={`btn ${filter === filter ? "active" : ""}`}
+            onClick={() => onFilter(filter)}
+          >
+            {filter.charAt(0).toUpperCase() + filter.slice(1)}
+          </button>
+        </li>
+      ))}
     </ul>
   );
 }
