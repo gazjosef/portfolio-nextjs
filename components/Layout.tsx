@@ -1,8 +1,8 @@
 import Meta from "./Meta.tsx";
 import { useRouter } from "next/router";
 
-import Header from "./Layout/Header.tsx";
-import Footer from "./Layout/Footer.tsx";
+import Header from "./Layout/Header/Header.tsx";
+import Footer from "./Layout/Footer/Footer.tsx";
 
 interface LayoutProps {
   children: React.ReactNode;

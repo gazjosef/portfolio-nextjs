@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Project from "../Snippets/Project";
-import jsonData from "./projects.json";
+import Project from "../../Snippets/Project";
+import jsonData from "../projects.json";
 
 interface ProjectProps {
   title: string;

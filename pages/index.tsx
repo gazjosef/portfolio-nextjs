@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Hero from "../components/Sections/Hero";
-import Story from "../components/Sections/Story";
-import Contact from "../components/Sections/Contact";
-import Gallery from "../components/Sections/Gallery";
+import Hero from "../components/Sections/Hero/Hero";
+import Story from "../components/Sections/Story/Story";
+import Contact from "../components/Sections/Contact/Contact";
+import Gallery from "../components/Sections/Gallery/Gallery";
 
 const Home: NextPage = (projects) => {
   return (

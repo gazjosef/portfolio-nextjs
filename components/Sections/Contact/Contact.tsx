@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import useGsapFadeDown from "../../hooks/useGsapFadeDown";
+// import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
+import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
 
 export default function Contact() {
   const [contactTitleRef, contactDetailsRef] = useGsapFadeDown();

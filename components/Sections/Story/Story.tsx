@@ -1,6 +1,6 @@
 import Image from "next/image";
-import useGsapFadeDown from "../../hooks/useGsapFadeDown";
-import Button from "../Snippets/Button";
+import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
+import Button from "../../Snippets/Button";
 
 export default function Story() {
   const [storyTitleRef, storyImgRef, storyTextRef] = useGsapFadeDown();
