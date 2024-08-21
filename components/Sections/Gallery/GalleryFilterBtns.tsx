@@ -1,3 +1,5 @@
+// import styles from "./GalleryFilterBtns.Module.scss"
+
 interface GalleryFilterBtnsProps {
   filter: string;
   onFilter: (filter: string) => void;

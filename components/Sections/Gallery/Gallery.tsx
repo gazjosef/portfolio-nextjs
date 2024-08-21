@@ -49,13 +49,13 @@ function GalleryFilterBtns({ filter, onFilter }: GalleryFilterBtnsProps) {
 
   return (
     <ul role="list" className="grid__filter-btns">
-      {filters.map((filter) => (
-        <li key={filter} role="listitem">
+      {filters.map((filterOption) => (
+        <li key={filterOption} role="listitem">
           <button
-            className={`btn ${filter === filter ? "active" : ""}`}
-            onClick={() => onFilter(filter)}
+            className={`btn ${filter === filterOption ? "active" : ""}`}
+            onClick={() => onFilter(filterOption)}
           >
-            {filter.charAt(0).toUpperCase() + filter.slice(1)}
+            {filterOption.charAt(0).toUpperCase() + filterOption.slice(1)}
           </button>
         </li>
       ))}

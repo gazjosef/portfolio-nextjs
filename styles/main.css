@@ -2374,6 +2374,11 @@ body {
   color: var(--clr-primary-400);
   font-weight: var(--fw-extrabold);
 }
+@media (max-width: 21.875em) {
+  .heading-logo {
+    display: none;
+  }
+}
 
 .nav-links a {
   font-size: 1.6rem;
@@ -2394,6 +2399,10 @@ body {
 @media (max-width: 56.25em) {
   .heading-hero {
     margin-inline: auto;
+  }
+  .heading-hero h1 {
+    text-align: left;
+    font-size: clamp(1.6rem, 2.5vw, 4rem);
   }
 }
 
@@ -2456,27 +2465,15 @@ body {
   scrollbar-width: none;
 }
 .section--hero {
-  min-height: 80vh;
+  min-height: calc(100svh - 6rem);
 }
 @media (max-width: 75em) {
-  .section {
-    padding: 7.5rem 2rem;
+  .section--hero img {
+    height: 40rem;
   }
 }
-@media (max-width: 56.25em) {
-  .section {
-    padding: 5rem 2rem;
-  }
-}
-@media (max-width: 37.5em) {
-  .section {
-    padding: 2.5rem 5rem;
-  }
-}
-@media (max-width: 21.875em) {
-  .section {
-    padding: 1rem 2rem;
-  }
+.section--contact {
+  min-height: calc(100svh - 15rem);
 }
 
 .footer {
@@ -2487,7 +2484,7 @@ body {
 
 .header {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  min-height: 6rem;
+  min-height: 8rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -2497,6 +2494,11 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 40em) {
+  .header--logo {
+    display: none;
+  }
 }
 
 .navbar {
@@ -2509,6 +2511,27 @@ body {
 .navbar ul {
   display: flex;
   gap: 2rem;
+}
+.navbar li a {
+  position: relative;
+}
+.navbar li a::before {
+  background-image: linear-gradient(90deg, #11998e, #38ef7d);
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  left: 0;
+  bottom: -2px;
+  content: " ";
+  display: block;
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  transition: 0.4s;
+  width: 12px;
+  z-index: -1;
+}
+.navbar li a:hover {
+  color: var(--clr-primary-400);
 }
 @media (max-width: 40em) {
   .navbar__menu {
@@ -2546,13 +2569,13 @@ body {
   gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
 }
-@media (max-width: 56.25em) {
+@media (max-width: 64em) {
   .grid__container {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 40em) {
   .grid__container {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 2rem;
@@ -2571,6 +2594,11 @@ body {
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 21.875em) {
+  .grid__filter-btns {
+    flex-wrap: wrap;
+  }
+}
 
 .hero {
   background-color: var(--clr-primary-200);
@@ -2584,6 +2612,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+}
+@media (max-width: 40em) {
+  .article-contact__details {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .article-contact__details > *:hover {
   border: solid 2px var(--clr-primary-500);
@@ -2685,17 +2718,21 @@ body {
 }
 
 .label {
-  --padding-top-bottom: 0.6rem;
-  --padding-left-right: 1.2rem;
+  --border-radius: 0.5rem;
+  --padding-top-bottom: 0.5rem;
+  --padding-left-right: 1rem;
   max-width: -moz-max-content;
   max-width: max-content;
-  background-color: var(--clr-white-0);
+  background-color: var(--clr-white-100);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   padding: var(--padding-top-bottom) var(--padding-left-right);
-  color: var(--clr-white-0);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--clr-black-900);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1.5px;
   text-decoration: none;
 }
@@ -2703,6 +2740,9 @@ body {
   .label {
     margin-inline: auto;
   }
+}
+.label img {
+  height: 2rem;
 }
 .label--aqua {
   background-color: aqua;
@@ -2806,7 +2846,8 @@ body {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 0rem 0.5rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 .project__buttons {
   display: flex;
@@ -2911,7 +2952,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .u-even-columns {
-    display: block;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
