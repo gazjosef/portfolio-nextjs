@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="hero section section--hero">
-      <div className="container">
+      <div className="container u-mt-lg">
         <div className="u-grid u-even-columns u-gap-2">
           <div ref={heroTextRef as React.RefObject<HTMLDivElement>}>
             <h1 className="heading-hero">
