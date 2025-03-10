@@ -2,18 +2,21 @@ import Image from "next/image";
 import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
 import Button from "../../Snippets/Button";
 import styled from "styled-components";
+import { Grid, Wrapper } from "../../../styles/Layout.styles";
 
 export const HeroSection = styled.section`
-  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--clr-primary-200);
 `;
 
 export default function Hero() {
   const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
-    <section id="home" className="hero section section--hero">
-      <div className="container u-mt-lg">
-        <div className="u-grid u-even-columns u-gap-2">
+    <HeroSection id="home">
+      <Wrapper>
+        <Grid columns="repeat(2, 1fr)" gap="2rem">
           <div ref={heroTextRef as React.RefObject<HTMLDivElement>}>
             <h1 className="heading-hero">
               Hi, I&apos;m <span>Gareth</span>.
@@ -30,7 +33,6 @@ export default function Hero() {
               href={"#portfolio"}
             />
           </div>
-
           <div ref={heroImgRef as React.RefObject<HTMLDivElement>}>
             <Image
               src="/images/section/undraw_developer_activity_re_39tg.svg"
@@ -39,8 +41,8 @@ export default function Hero() {
               height={700}
             />
           </div>
-        </div>
-      </div>
-    </section>
+        </Grid>
+      </Wrapper>
+    </HeroSection>
   );
 }

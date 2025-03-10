@@ -2,7 +2,7 @@ import Link from "next/link";
 import Navbar from "../Navbar/Navbar";
 
 import styled from "styled-components";
-import { Flex, Wrapper } from "../../../styles/Layout";
+import { Flex, Wrapper } from "../../../styles/Layout.styles";
 
 export const HeaderContainer = styled.div`
   position: fixed;

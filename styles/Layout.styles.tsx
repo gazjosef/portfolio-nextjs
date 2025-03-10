@@ -29,7 +29,7 @@ export const Grid = styled.div.withConfig({
   fullScreen?: boolean;
   height?: string;
   width?: string;
-  columns?: string; // Renamed from `gridTemplateColumns`
+  columns?: string;
   gap?: string;
   placeItems?: string;
 }>`
@@ -38,8 +38,19 @@ export const Grid = styled.div.withConfig({
   height: ${({ fullScreen, height }) =>
     fullScreen ? "100vh" : height || "auto"};
   width: ${({ fullScreen, width }) => (fullScreen ? "100vw" : width || "auto")};
-  grid-template-columns: ${({ columns }) => columns || "auto"};
-  gap: ${({ gap }) => gap || "0"};
+  grid-template-columns: ${({ columns }) =>
+    columns || "repeat(auto-fit, minmax(150px, 1fr))"};
+  gap: ${({ gap }) => gap || "1rem"};
+
+  @media (max-width: 1024px) {
+    grid-template-columns: ${({ columns }) => columns || "repeat(2, 1fr)"};
+    gap: ${({ gap }) => gap || "1.5rem"};
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: ${({ columns }) => columns || "repeat(1, 1fr)"};
+    gap: ${({ gap }) => gap || "1rem"};
+  }
 `;
 
 export const Flex = styled.div.withConfig({
