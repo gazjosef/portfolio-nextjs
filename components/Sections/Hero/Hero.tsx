@@ -1,6 +1,11 @@
 import Image from "next/image";
 import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
 import Button from "../../Snippets/Button";
+import styled from "styled-components";
+
+export const HeroSection = styled.section`
+  position: relative;
+`;
 
 export default function Hero() {
   const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
