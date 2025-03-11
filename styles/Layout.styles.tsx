@@ -9,9 +9,7 @@ export const Wrapper = styled.div.withConfig({
   --padding: ${({ padding }) => padding || "4rem"};
   --max-width: ${({ maxWidth }) => maxWidth || "var(--max-width)"};
 
-  min-width: var(--max-width);
-  width: 100%;
-  max-width: 100%;
+  width: min(90%, 120rem);
   margin-inline: auto;
   padding: var(--padding);
 
