@@ -1,6 +1,8 @@
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
-import { PrimaryHeading } from "styles/Typography.styles";
+// import { PrimaryHeading } from "styles/Typography.styles";
+import { PrimaryHeading } from "../../../styles/Typography.styles";
 
 export default function Contact() {
   const [contactTitleRef, contactDetailsRef] = useGsapFadeDown();
