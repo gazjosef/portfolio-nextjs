@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import Button from "../../Snippets/Button";
 // Styles
@@ -42,7 +43,7 @@ export const HeroText = styled.p`
 `;
 
 export default function Hero() {
-  const [, heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
+  const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
     <HeroSection id="home">
