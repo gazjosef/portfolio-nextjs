@@ -15,7 +15,6 @@ const LogoHeading = styled.div`
 `;
 
 const LogoSpan = styled.span`
-  /* color: var(--clr-primary-400); */
   color: hsl(202, 61%, 47%);
   font-weight: 800;
 `;

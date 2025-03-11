@@ -1,9 +1,9 @@
-interface Link {
+export interface Link {
   title: string;
   url: string;
 }
 
-const Links: Link[] = [
+export const Links: Link[] = [
   {
     title: "Home",
     url: "#home",

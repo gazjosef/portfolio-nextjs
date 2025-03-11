@@ -1,18 +1,18 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
 import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
+import { PrimaryHeading } from "styles/Typography.styles";
 
 export default function Contact() {
   const [contactTitleRef, contactDetailsRef] = useGsapFadeDown();
 
   return (
     <section id="contact" className="section--contact">
-      <h1
-        className="heading-one | u-mb-2xl u-mx-auto u-center-text"
+      <PrimaryHeading
+        className="u-mb-2xl u-mx-auto u-center-text"
         ref={contactTitleRef as React.LegacyRef<HTMLHeadingElement>}
       >
         Contact
-      </h1>
+      </PrimaryHeading>
       <div className="container">
         <section
           className="article-contact__details"
