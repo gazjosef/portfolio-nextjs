@@ -3,7 +3,7 @@ import Image from "next/image";
 import Button from "../../Snippets/Button";
 // Styles
 import styled from "styled-components";
-import { Grid, Wrapper } from "../../../styles/Layout.styles";
+import { Grid, Section, Wrapper } from "../../../styles/Layout.styles";
 import { Paragraph } from "../../../styles/Typography.styles";
 // import Button2 from "../../Snippets/Button/Button2";
 // Animation
@@ -46,7 +46,7 @@ export default function Hero() {
   const [heroTitleRef, heroImgRef, heroTextRef] = useGsapFadeDown();
 
   return (
-    <HeroSection id="home">
+    <Section id="home" variant="hero">
       <Wrapper>
         <Grid columns="repeat(2, 1fr)" gap="2rem">
           <section ref={heroTextRef}>
@@ -72,6 +72,6 @@ export default function Hero() {
           </section>
         </Grid>
       </Wrapper>
-    </HeroSection>
+    </Section>
   );
 }

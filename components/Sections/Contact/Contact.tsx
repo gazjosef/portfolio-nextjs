@@ -1,21 +1,22 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import useGsapFadeDown from "../../../hooks/useGsapFadeDown";
-// import { PrimaryHeading } from "styles/Typography.styles";
+// Styles
 import { PrimaryHeading } from "../../../styles/Typography.styles";
+import { Section, Wrapper } from "../../../styles/Layout.styles";
 
 export default function Contact() {
   const [contactTitleRef, contactDetailsRef] = useGsapFadeDown();
 
   return (
-    <section id="contact" className="section--contact">
+    <Section id="contact" variant="contact">
       <PrimaryHeading
         className="u-mb-2xl u-mx-auto u-center-text"
         ref={contactTitleRef as React.LegacyRef<HTMLHeadingElement>}
       >
         Contact
       </PrimaryHeading>
-      <div className="container">
+      <Wrapper>
         <section
           className="article-contact__details"
           ref={contactDetailsRef as React.RefObject<HTMLElement>}
@@ -40,7 +41,7 @@ export default function Contact() {
             </a>
           </div>
         </section>
-      </div>
-    </section>
+      </Wrapper>
+    </Section>
   );
 }

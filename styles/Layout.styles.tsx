@@ -18,6 +18,36 @@ export const Wrapper = styled.div.withConfig({
   }
 `;
 
+interface SectionProps {
+  variant?: "default" | "hero" | "contact"; // Add more if needed
+}
+
+export const Section = styled.section<SectionProps>`
+  --padding-top-bottom: 10rem;
+  --padding-left-right: 2rem;
+
+  min-height: 100vh;
+  min-height: 100svh;
+  // padding: var(--padding-top-bottom) var(--padding-left-right);
+
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  ${({ variant }) =>
+    variant === "hero" &&
+    `
+    min-height: calc(100svh - 6rem);
+    background-color: var(--clr-primary-200);
+  `}
+
+  ${({ variant }) =>
+    variant === "contact" &&
+    `
+    min-height: calc(100svh - 15rem);
+  `}
+`;
+
 export const Grid = styled.div.withConfig({
   shouldForwardProp: (prop) =>
     !["fullScreen", "height", "width", "columns", "gap", "placeItems"].includes(
