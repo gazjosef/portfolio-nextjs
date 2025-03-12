@@ -53,7 +53,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           </a>
         </button>
 
-        <button className="btn btn--inverse">
+        <button className="btn">
           <a
             className="u-flex u-items-center u-justify-center u-gap-1"
             href={`${project.live}`}
