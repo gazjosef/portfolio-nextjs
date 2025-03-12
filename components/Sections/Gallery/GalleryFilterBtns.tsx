@@ -1,4 +1,4 @@
-// import styles from "./GalleryFilterBtns.Module.scss"
+import React from "react";
 
 interface GalleryFilterBtnsProps {
   filter: string;

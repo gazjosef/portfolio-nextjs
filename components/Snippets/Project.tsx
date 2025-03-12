@@ -42,13 +42,13 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           ))}
       </div>
       <div className="project__buttons">
-        <button className="btn btn--inverse">
+        <button className="btn">
           <a
             className="u-flex u-items-center u-justify-center u-gap-1"
             href={`${project.github}`}
           >
             <IconContext.Provider value={{}}>
-              <FaGithub /> GITHUB
+              <FaGithub /> View Code
             </IconContext.Provider>
           </a>
         </button>
@@ -59,7 +59,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
             href={`${project.live}`}
           >
             <IconContext.Provider value={{}}>
-              <FaEye /> LIVE
+              <FaEye /> View Live
             </IconContext.Provider>
           </a>
         </button>

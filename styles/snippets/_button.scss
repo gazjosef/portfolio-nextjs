@@ -1,6 +1,8 @@
 .btn {
   cursor: pointer;
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: var(--clr-white-100);
+
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 0.8rem 1.6rem;
@@ -49,6 +51,7 @@
 
   &--inverse {
     background-color: $clr-primary-300;
+
     color: var(--clr-white-0);
 
     a {
