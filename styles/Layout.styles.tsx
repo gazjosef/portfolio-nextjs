@@ -37,7 +37,6 @@ export const Section = styled.section<SectionProps>`
   ${({ variant }) =>
     variant === "hero" &&
     `
-    min-height: calc(100svh - 6rem);
     background-color: var(--clr-primary-200);
   `}
 
