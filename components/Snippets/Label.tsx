@@ -37,6 +37,7 @@ const Label: React.FC<LabelProps> = ({ children }) => {
     SASS: "sass-icon",
     "Sanity.io": "sanity-icon",
     Shopify: "shopify-icon",
+    "styled-components": "styled-components-icon",
     Tailwind: "tailwindcss-icon",
     TypeScript: "typescript-icon",
   };

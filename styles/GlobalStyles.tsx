@@ -12,36 +12,35 @@ export const GlobalStyles = createGlobalStyle`
 
     /* Defines what 1rem is & set core root defaults */
     html {
-    font-size: 62.5%;
+        font-size: 62.5%;
 
-    &:focus-within {
-        scroll-behavior: smooth;
-    }
+        &:focus-within {
+            scroll-behavior: smooth;
+        }
     }
 
     /* Set box-sizing & background color */
     body {
-    box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #2f4f4f4f;
+        background-color: #222222; /* Deep charcoal for a modern feel */
 
-    background-color: #2f4f4f4f;
-    background-color: #222222; /* Deep charcoal for a modern feel */
-
-    font-family: 'Inter', sans-serif;
-
+        font-family: 'Inter', sans-serif;
     }
 
     /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
     ul[role="list"],
     ol[role="list"] {
-    list-style: none;
+        list-style: none;
     }
 
     /* Make images easier to work with */
     img,
     picture,
     svg {
-    max-width: 100%;
-    display: block;
+        max-width: 100%;
+        display: block;
     }
 
     h1,
@@ -50,8 +49,8 @@ export const GlobalStyles = createGlobalStyle`
     h4,
     h5,
     h6 {
-    -webkit-text-wrap: balance;
-    text-wrap: balance;
+        -webkit-text-wrap: balance;
+        text-wrap: balance;
     }
 
     p {
