@@ -9,15 +9,6 @@
     "live": "https://mern-footy-tips.herokuapp.com/"
   },
   {
-    "title": "Weather Map",
-    "cover_image": "/images/projects/WeatherMap.png",
-    "excerpt": "",
-    "categories": ["styled-components", "TypeScript", "React"],
-    "tag": "apps",
-    "github": "https://github.com/gazjosef/weather-map",
-    "live": "https://weather-map-omega.vercel.app/"
-  },
-  {
     "title": "BlackJack Game",
     "cover_image": "/images/projects/react-blackjack2.png",
     "excerpt": "",
@@ -34,6 +25,15 @@
     "tag": "games",
     "github": "https://github.com/gazjosef/tetris",
     "live": "https://gazjosef.github.io/tetris/"
+  },
+  {
+    "title": "Weather Map",
+    "cover_image": "/images/projects/WeatherMap.png",
+    "excerpt": "",
+    "categories": ["styled-components", "TypeScript", "React"],
+    "tag": "apps",
+    "github": "https://github.com/gazjosef/weather-map",
+    "live": "https://weather-map-omega.vercel.app/"
   },
   {
     "title": "Ant Software",
