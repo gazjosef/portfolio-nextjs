@@ -12,7 +12,7 @@
     "title": "BlackJack Game",
     "cover_image": "/images/projects/react-blackjack2.png",
     "excerpt": "",
-    "categories": ["styled-components", "TypeScript", "React"],
+    "categories": ["TypeScript", "styled-components", "React"],
     "tag": "games",
     "github": "https://github.com/gazjosef/blackjack-react",
     "live": "https://blackjack-react-sage.vercel.app/"
@@ -30,7 +30,7 @@
     "title": "Weather Map",
     "cover_image": "/images/projects/WeatherMap.png",
     "excerpt": "",
-    "categories": ["styled-components", "TypeScript", "React"],
+    "categories": ["TypeScript", "styled-components", "React"],
     "tag": "apps",
     "github": "https://github.com/gazjosef/weather-map",
     "live": "https://weather-map-omega.vercel.app/"
