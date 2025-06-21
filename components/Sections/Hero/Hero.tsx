@@ -27,7 +27,7 @@ export default function Hero() {
               engaging, responsive, and user-friendly websites.
             </Paragraph>
 
-            <Button title="Portfolio" styles={"btn--cta"} href={"#portflio"} />
+            <Button title="Portfolio" styles={"btn--cta"} href={"#portfolio"} />
           </section>
           <Image
             src="/images/section/undraw_developer_activity_re_39tg.svg"
