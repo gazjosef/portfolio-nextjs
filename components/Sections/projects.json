@@ -9,15 +9,6 @@
     "live": "https://mern-footy-tips.herokuapp.com/"
   },
   {
-    "title": "Weather Map",
-    "cover_image": "/images/projects/WeatherMap.png",
-    "excerpt": "",
-    "categories": ["styled-components", "TypeScript", "React"],
-    "tag": "apps",
-    "github": "https://github.com/gazjosef/weather-map",
-    "live": "https://weather-map-omega.vercel.app/"
-  },
-  {
     "title": "BlackJack Game",
     "cover_image": "/images/projects/react-blackjack2.png",
     "excerpt": "",
@@ -36,13 +27,22 @@
     "live": "https://gazjosef.github.io/tetris/"
   },
   {
+    "title": "Weather Map",
+    "cover_image": "/images/projects/WeatherMap.png",
+    "excerpt": "",
+    "categories": ["styled-components", "TypeScript", "React"],
+    "tag": "apps",
+    "github": "https://github.com/gazjosef/weather-map",
+    "live": "https://weather-map-omega.vercel.app/"
+  },
+  {
     "title": "Ant Software",
     "cover_image": "/images/new/ant-software.png",
     "excerpt": "",
     "categories": ["TypeScript", "React", "NextJS", "SASS", "Sanity.io"],
     "tag": "websites",
     "github": "https://github.com/gazjosef/ant-software",
-    "live": "https://ant-software.vercel.app/"
+    "live": "https://www.antsoftware.dev/"
   },
   {
     "title": "Rush Wines",
